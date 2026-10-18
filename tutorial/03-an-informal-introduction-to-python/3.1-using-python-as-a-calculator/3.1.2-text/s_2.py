@@ -1,0 +1,2 @@
+s = 'supercalifragilisticexpialidocious'
+len(s)

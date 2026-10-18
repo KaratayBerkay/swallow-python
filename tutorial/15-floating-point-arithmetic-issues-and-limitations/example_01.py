@@ -1,0 +1,5 @@
+print(0.3)
+print(0.33)
+print(0.333)
+print(0.3333)
+print(0.33333)

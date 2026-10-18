@@ -1,0 +1,48 @@
+## 7.2. Reading and writing files
+
+`open()` returns a file object, and is most commonly used with two positional arguments: `open(filename, mode)`
+
+``` python
+>>> f = open('workfile', 'w')
+```
+> Code: [f.py](f.py)
+
+The first argument is a string containing the filename. The second argument is another string containing a few characters describing the way in which the file will be used. *mode* can be `'r'` when the file will only be read, `'w'` for only writing (an existing file with the same name will be erased), and `'a'` opens the file for appending; any data written to the file is automatically added to the end. `'r+'` opens the file for both reading and writing. The *mode* argument is optional; `'r'` will be assumed if it's omitted.
+
+Normally, files are opened in *text mode*, that means, you read and write strings from and to the file, which are encoded in a specific *encoding*. If *encoding* is not specified, the default is UTF-8 (see `open()`). Appending a `'b'` to the mode opens the file in *binary mode*. Binary mode data is read and written as `bytes` objects. You can not specify *encoding* when opening file in binary mode.
+
+In text mode, the default when reading is to convert platform-specific line endings (`\n` on Unix, `\r\n` on Windows) to just `\n`. When writing in text mode, the default is to convert occurrences of `\n` back to platform-specific line endings. This behind-the-scenes modification to file data is fine for text files, but will corrupt binary data like that in `JPEG` or `EXE` files. Be very careful to use binary mode when reading and writing such files.
+
+It is good practice to use the `with` keyword when dealing with file objects. The advantage is that the file is properly closed after its suite finishes, even if an exception is raised at some point. Using `with` is also much shorter than writing equivalent `try`-`finally` blocks:
+
+``` python
+>>> with open('workfile') as f:
+...     read_data = f.read()
+
+>>> # We can check that the file has been automatically closed.
+>>> f.closed
+True
+```
+> Code: [read_data.py](read_data.py)
+
+If you're not using the `with` keyword, then you should call `f.close()` to close the file and immediately free up any system resources used by it.
+
+> **Warning**
+>
+> Calling `f.write()` without using the `with` keyword or calling `f.close()` **might** result in the arguments of `f.write()` not being completely written to the disk, even if the program exits successfully.
+
+After a file object is closed, either by a `with` statement or by calling `f.close()`, attempts to use the file object will automatically fail.
+
+``` python
+>>> f.close()
+>>> f.read()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: I/O operation on closed file.
+```
+> Code: [example_01.py](example_01.py)
+
+### Sections
+
+- [7.2.1. Methods of file objects](7.2.1-methods-of-file-objects/README.md)
+- [7.2.2. Saving structured data with `json`](7.2.2-saving-structured-data-with-json/README.md)
