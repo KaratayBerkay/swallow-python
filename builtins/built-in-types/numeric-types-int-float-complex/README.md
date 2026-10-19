@@ -321,3 +321,75 @@ def hash_complex(z):
 ```
 
 [^1]: As a consequence, the list `[1, 2]` is considered equal to `[1.0, 2.0]`, and similarly for tuples.
+
+## Çözümlü kısa örnek
+
+Bölme, taban bölmesi, kalan ve complex parçasını ayır
+
+```python
+print(repr(7/2))
+# Sonuç: 3.5
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.4: numeric-types-int-float-complex davranışını ayırt et**
+
+#### Önce
+
+[b:2](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; bölme, taban bölmesi, kalan ve complex parçasını ayır
+
+```python
+-7//2
+-7%2
+(2+3j).imag
+```
+
+Aynı işlem tablosuna `-7 / 2`, `-7 // 2`, `-7 % 2`, `5 & 3`, `5 | 2`, `5 ^ 3`, `~5`, `5 << 1`, `5 >> 1` ve negatif kaydırma sayısını ekle. Tam sayı ile float ortak işleminin türünü ve complex sıralama sınırını göster.
+
+Kaynaktaki sayısal hash sözleşmesi için `1`, `1.0`, `1+0j` değerlerini dict anahtarı olarak birlikte kullan; eşit değerlerin hash ilişkisini göster. `hash(-1)` istisnasını ve verilmiş hash_fraction kodundaki paydanın modulus ile bölünebildiği dalı, kaynakta verilen kuralla yazılı izle; algoritmayı sıfırdan yeniden yazma.
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `-4`; `1`; `3.0`.
+- [ ] Bölme, taban bölmesi, kalan ve complex parçasını ayır
+- [ ] Bit işlemleri ve işaretli kaydırmalar gerekçelendirilmiş; negatif kaydırma ValueError, complex sıralama TypeError verir.
+
+- [ ] Eşit sayısal değerler aynı anahtarı temsil eder; hash(-1) -2 olur; hash eşitliği ters yönde eşitlik kanıtı sayılmaz.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](int.bit_length/README.md)
+<!-- learning-task:end -->
+
+<!-- learning-milestone:start -->
+### Klasör milestone görevi
+
+**Milestone: Sayıyı değeriyle birlikte taşı**
+
+#### Önce
+
+Bu klasördeki bütün bölüm görevleri ve alt klasör milestone kontrolleri tamamlanmış olmalı. Sırayı [görev dizininden](../../../TASKS.md) kontrol et.
+
+#### Tek görev
+
+Signed iki baytlık ölçüm verisini int.from_bytes ile oku; hesaplanan sonucu int.to_bytes ile geri yaz. Negatif, sıfır ve sınır dışı sonuçları dene. Ayrı bir float örneğini as_integer_ratio ve hex/fromhex ile tam saklanan değerine geri döndür; complex sayıyı sıralamaya çalışmanın sınırını göster.
+
+#### Geçiş ölçütleri
+
+- [ ] Bayt sırası ve signed seçimi bilinçli; yetersiz genişlik hatası açıklanır.
+- [ ] Floatın saklanan değeri ile decimal görünümü ayrılır; int sınırsızlığı sabit bayt alanına taşınmaz.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [klasör milestone görevi](MILESTONE.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../boolean-type-bool/README.md)
+<!-- learning-milestone:end -->

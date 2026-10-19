@@ -23,3 +23,43 @@ or `False` for false and `1` or `True` for true, unless otherwise stated.
 one of their operands.)
 
 [^1]: Additional information on these special methods may be found in the Python Reference Manual ([Basic customization](https://docs.python.org/3.15/reference/datamodel.html#customization)).
+
+## Çözümlü kısa örnek
+
+Boşluk ve içerik doğruluğunu ayır
+
+```python
+print(repr(bool([])))
+# Sonuç: False
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.1: truth-value-testing davranışını ayırt et**
+
+#### Önce
+
+[b:2](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; boşluk ve içerik doğruluğunu ayır
+
+```python
+bool([False])
+bool(0)
+bool("0")
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `True`; `False`; `True`.
+- [ ] Boşluk ve içerik doğruluğunu ayır
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../boolean-operations-and-or-not/README.md)
+<!-- learning-task:end -->

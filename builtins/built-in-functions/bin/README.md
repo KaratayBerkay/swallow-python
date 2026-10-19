@@ -30,3 +30,42 @@ If the prefix "0b" is desired or not, you can use either of the following ways.
 See also [enum.bin()](https://docs.python.org/3.15/library/enum.html#enum.bin) to represent negative values as twos-complement.
 
 See also [format()](../format/README.md) for more information.
+
+## Çözümlü kısa örnek
+
+Negatif işaretiyle ikilik basamakları ve öneki ayır.
+
+```python
+print(repr(bin(5)))
+# Sonuç: '0b101'
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:3.7: bin davranışını ayırt et**
+
+#### Önce
+
+[t:4.8](../../../tutorial/04-more-control-flow-tools/4.8-defining-functions/README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; negatif işaretiyle ikilik basamakları ve öneki ayır.
+
+```python
+bin(-9)
+bin(0)
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `'-0b1001'`; `'0b0'`.
+- [ ] Negatif işaretiyle ikilik basamakları ve öneki ayır.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../bool/README.md)
+<!-- learning-task:end -->

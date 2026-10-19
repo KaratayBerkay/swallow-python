@@ -10,4 +10,4 @@ Her kontrolün sonundaki **Sonraki adım** bağlantısı seni sıradaki anlatım
 
 Doğru sonuç, mekanizma açıklaması ve küçük bir girdi değişikliğini öngörebilme birlikte değerlendirilir. [Değerlendirme kılavuzu](DEGERLENDIRME.md) bu kontrolün nasıl yapılacağını açıklar.
 
-`language-reference/` içindeki başlık iskeletleri ve `builtins/` içindeki boş klasörler, anlatım tamamlanana kadar görev rotasına alınmaz. Kapsam ve sürüm farkları görev sırasının başında açıklanır.
+`language-reference/` içindeki başlık iskeletleri, anlatım tamamlanana kadar görev rotasına alınmaz. [Built-in çalışma rotası](builtins/README.md), sabitler, türler, fonksiyonlar, hatalar, thread safety ve işlem maliyetlerini aynı görev yapısıyla kapsar. Kapsam ve sürüm farkları görev sırasının başında açıklanır.

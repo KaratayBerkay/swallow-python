@@ -63,3 +63,46 @@ The resulting list is sorted alphabetically.  For example:
 > and its detailed behavior may change across releases.  For example,
 > metaclass attributes are not in the result list when the argument is a
 > class.
+
+## Çözümlü kısa örnek
+
+Dir keşif için isim listesi verir; içerik türün davranışına göre değişebilir.
+
+```python
+class K: puan=4
+o=K()
+print(repr("puan" in dir(o)))
+# Sonuç: True
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:3.19: dir davranışını ayırt et**
+
+#### Önce
+
+[t:4.8](../../../tutorial/04-more-control-flow-tools/4.8-defining-functions/README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; dir keşif için isim listesi verir; içerik türün davranışına göre değişebilir.
+
+```python
+class K: puan=4
+o=K()
+"eksik" in dir(o)
+dir(o)==sorted(dir(o))
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `False`; `True`.
+- [ ] Dir keşif için isim listesi verir; içerik türün davranışına göre değişebilir.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../divmod/README.md)
+<!-- learning-task:end -->

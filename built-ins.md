@@ -1,55 +1,10 @@
-Built-in Types
+# Built-in çalışma haritası
 
-    Truth Value Testing
-    Boolean Operations — and, or, not
-    Comparisons
-    Numeric Types — int, float, complex
-    Boolean Type - bool
-    Iteration-related types
-    Sequence Types — list, tuple, range
-    Text and Binary Sequence Type Methods Summary
-    Text Sequence Type — str
-    Binary Sequence Types — bytes, bytearray, memoryview
-    Set Types — set, frozenset
-    Mapping types — dict, frozendict
-    Context Manager Types
-    Type Annotation Types — Generic Alias, Union
-    Other Built-in Types
-    Special Attributes
-    Integer string conversion length limitation
+Açıklama, örnek, bölüm görevi ve klasör milestone sırası için [built-in rotasını](builtins/README.md) izle. İlerleme [TASKS.md](TASKS.md) üzerinden tutulur.
 
-Built-in Constants
-
-    Constants added by the site module
-
-Built-in functions
-Built-in Exceptions
-
-    Exception context
-    Inheriting from built-in exceptions
-    Base classes
-    Concrete exceptions
-    Warnings
-    Exception groups
-    Exception hierarchy
-
-Thread Safety Guarantees
-
-    Thread safety levels
-    Thread safety for list objects
-    Thread safety for dict objects
-    Thread safety for set objects
-    Thread safety for bytearray objects
-    Thread safety for memoryview objects
-
-Time complexity of operations on built-in types
-
-    list
-    tuple
-    dict, frozendict
-    set, frozenset
-    str, bytes, bytearray
-    memoryview
-    range
-    Notes
-
+- [1. built-in-constants](builtins/built-in-constants/README.md)
+- [2. built-in-types](builtins/built-in-types/README.md)
+- [3. built-in-functions](builtins/built-in-functions/README.md)
+- [4. built-in-exceptions](builtins/built-in-exceptions/README.md)
+- [5. thread-safety-guarantees](builtins/thread-safety-guarantees/README.md)
+- [6. time-complexity-of-operations-on-built-in-types](builtins/time-complexity-of-operations-on-built-in-types/README.md)

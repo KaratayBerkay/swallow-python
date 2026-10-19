@@ -127,3 +127,72 @@ mappingproxy({'bacon': 1, 'spam': 500})
 ## Frozen dictionaries
 
 - [`frozendict`](frozendict/README.md) — Return a new frozen dictionary initialized from an optional positional argument and a possibly empty set of keyword arguments.
+
+## Çözümlü kısa örnek
+
+Anahtar eşitliği, hashability ve ekleme sırasını ayır
+
+```python
+print(repr({1:"a",True:"b"}))
+# Sonuç: {1: 'b'}
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.12: Anahtarları ve canlı sözlük görünümlerini izle**
+
+#### Önce
+
+[b:2](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Bir sözlüğün anahtarlarını ve ondan alınan görünümleri aynı çalışma içinde incele. Her adımın sonucunu çalıştırmadan önce çıkar, sonra doğrula.
+
+1. `list({"b":2,"a":1})` ve `{[1]:2}` denemelerini ayrı yap. Kaynaktaki `1`, `1.0`, `True` eşitliğinin aynı anahtarı nasıl etkilediğini açıkla.
+2. `d={"Ada":7,"Ece":9}` kur; keys, values ve items görünümlerini sakla. Uzunluklarını, sıralı dolaşımlarını, ters dolaşımlarını ve üyelik testlerini karşılaştır. Ardından `d["Can"]=5` ve `del d["Ada"]` uygula; saklanan görünümlerde neyin değiştiğini göster.
+3. Güncel keys görünümü ile `["Can","Deniz"]` arasında kesişim yap. Güncel items görünümünü `{("Ece",9)}` ile kesiştir. Values görünümüne aynı küme işlemini uygulamayı ayrı dene. `{"Ada":[7]}.items()` görünümünü `[]` ile birleştirmeyi de dene; değerlerin hashable olmasının neden önemli olduğunu açıkla.
+4. Saklanan values görünümünün `mapping` alanını `proxy` adına bağla. Proxy üzerinden atama denemesini, asıl d üzerinde Ece değerini 10 yapmayla karşılaştır. Son olarak canlı görünüm üzerinde dolaşırken anahtar ekleme veya silmenin kaynakta neden güvenilir sayılmadığını yazılı açıkla; her değişikliğin mutlaka aynı hatayı vereceğini varsayma.
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `['b', 'a']`; `TypeError`.
+- [ ] Eşit sayısal anahtarlar tek girdiyi paylaşır; görünümler doğru sırayı, üyelik anlamını ve değişiklik sonrası Ece/Can girdilerini gösterir. Items görünümünde üye `(anahtar, değer)` çiftidir.
+- [ ] Keys kesişimi `{"Can"}`, items kesişimi `{("Ece",9)}` olur. Görünüm operatörleri uygun iterable kabul eder; values küme benzeri değildir, hashlenemeyen item değeri de küme sonucuna konamaz. Son iki geçersiz deneme TypeError verir.
+- [ ] Proxy üzerinden yazma TypeError verir; d üzerinden değişiklik proxyye yansır. Salt okunur proxy, bağımsız veya dondurulmuş bir snapshot sayılmamış.
+- [ ] Görünüm üzerinde dolaşırken anahtar ekleme/silme hata veya eksik dolaşım üretebilir; güvenli bir tam dolaşım garantisi verilmemiş.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](frozendict/README.md)
+<!-- learning-task:end -->
+
+<!-- learning-milestone:start -->
+### Klasör milestone görevi
+
+**Milestone: Canlı ayarla dondurulmuş ayarı ayır**
+
+#### Önce
+
+Bu klasördeki bütün bölüm görevleri ve alt klasör milestone kontrolleri tamamlanmış olmalı. Sırayı [görev dizininden](../../../TASKS.md) kontrol et.
+
+Sürüm farkında yalnız yeni özelliği gerekçeli yazılı iz ile inceleyebilirsin; çalıştırma kanıtını bekleyen olarak kaydet.
+
+#### Tek görev
+
+Dict ile varsayılan ayarlara kullanıcı ayarlarını sağ taraf önceliğiyle uygula. Python 3.15 frozendict ile dış eşlemeyi dondur; iç listeyi değiştirmenin etkisini, yeni eşleme üretimini ve hashability koşulunu göster. Eski snapshotın hangi düzeyde bağımsız olduğunu açıkla.
+
+#### Geçiş ölçütleri
+
+- [ ] Çakışma önceliği ve ekleme sırası korunur; eski dış eşleme yeni anahtar almaz.
+- [ ] Frozendict derin dondurma değildir; hash için değerlerin de hashable olması gerekir.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [klasör milestone görevi](MILESTONE.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../context-manager-types/README.md)
+<!-- learning-milestone:end -->

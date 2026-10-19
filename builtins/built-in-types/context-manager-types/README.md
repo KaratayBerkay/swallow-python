@@ -24,3 +24,53 @@ structure for Python objects in the Python/C API. Extension types wanting to
 define these methods must provide them as a normal Python accessible method.
 Compared to the overhead of setting up the runtime context, the overhead of a
 single class dictionary lookup is negligible.
+
+<!-- learning-task:start -->
+## Bölüm görevi
+
+**Görev b:2.13: With giriş ve çıkışını izle**
+
+### Önce
+
+[b:2](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+### Tek görev
+
+Bir with akışında yöneticinin giriş metodu "hazir" döndürüyor, gövde normal bitiyor, çıkış metodu çağrılıyor. Yönetici nesne -> giriş dönüşü -> as değişkeni -> gövde -> çıkış sırasını yazılı çiz. Dosya yöneticisi gibi farklı bir türün de aynı protokolle çalışabilmesini açıkla.
+
+### Geçiş ölçütleri
+
+- [ ] Giriş, gövde, çıkış sırası ve as değişkeninin giriş dönüşünü alması doğru gösterilmiştir.
+- [ ] With belirli bir sınıf adına değil protokol metotlarına dayanır; hata argümanlarının ayrıntısı sonraki yaprak görevde incelenir.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](contextmanager.__enter__/README.md)
+<!-- learning-task:end -->
+
+<!-- learning-milestone:start -->
+## Klasör milestone görevi
+
+**Milestone: Kaynak yaşam döngüsünü yönet**
+
+### Önce
+
+Bu klasördeki bütün bölüm görevleri ve alt klasör milestone kontrolleri tamamlanmış olmalı. Sırayı [görev dizininden](../../../TASKS.md) kontrol et.
+
+### Tek görev
+
+Kaynak açıldı/kullanıldı/kapandı olaylarını kaydeden context manager yaz. Normal gövde, bastırılan ValueError ve bastırılmayan TypeError yollarını göster; as değişkeni selften farklı olsun.
+
+### Geçiş ölçütleri
+
+- [ ] Exit bütün başarılı girişlerden sonra çalışır; giriş hatasında çalışmaz.
+- [ ] Exit yalnız seçilen ValueErrorı bastırır; temizleme hatanın yanlışlıkla yutulmasına yol açmaz.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [klasör milestone görevi](MILESTONE.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../type-annotation-types-generic-alias-union/README.md)
+<!-- learning-milestone:end -->

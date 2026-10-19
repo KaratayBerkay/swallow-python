@@ -63,3 +63,43 @@ def to_bytes(n, length=1, byteorder='big', signed=False):
 > *Added in version 3.2.*
 
 > *Changed in version 3.11:* Added default argument values for `length` and `byteorder`.
+
+## Çözümlü kısa örnek
+
+Uzunluk, bayt sırası ve signed seçimi sonucu belirler
+
+```python
+print(repr((258).to_bytes(2,"big")))
+# Sonuç: b'\x01\x02'
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.4.3: int.to_bytes davranışını ayırt et**
+
+#### Önce
+
+[b:2.4](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; uzunluk, bayt sırası ve signed seçimi sonucu belirler
+
+```python
+(258).to_bytes(2,"little")
+(-2).to_bytes(1,"big",signed=True)
+(256).to_bytes(1)
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `b'\x02\x01'`; `b'\xfe'`; `OverflowError`.
+- [ ] Uzunluk, bayt sırası ve signed seçimi sonucu belirler
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../int.from_bytes/README.md)
+<!-- learning-task:end -->

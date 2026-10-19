@@ -18,3 +18,43 @@ over `&`, `|` and `^`.
 many numeric contexts, `False` and `True` behave like the integers 0 and 1, respectively.
 However, relying on this is discouraged; explicitly convert using [int()](../../built-in-functions/int/README.md)
 instead.
+
+## Çözümlü kısa örnek
+
+Bool int alt türüdür; mantıksal sonuçla aritmetik sonucu ayır
+
+```python
+print(repr(True+True))
+# Sonuç: 2
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.5: boolean-type-bool davranışını ayırt et**
+
+#### Önce
+
+[b:2](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; bool int alt türüdür; mantıksal sonuçla aritmetik sonucu ayır
+
+```python
+isinstance(False,int)
+True & False
+not True
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `True`; `False`; `False`.
+- [ ] Bool int alt türüdür; mantıksal sonuçla aritmetik sonucu ayır
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../iteration-related-types/README.md)
+<!-- learning-task:end -->

@@ -69,3 +69,28 @@ depending on the system error code.
 > **See also**
 >
 > [PEP 3151](https://peps.python.org/pep-3151/) - Reworking the OS and IO exception hierarchy
+
+<!-- learning-milestone:start -->
+### Klasör milestone görevi
+
+**Milestone: Arıza belirtilerini ayrıştır**
+
+#### Önce
+
+Bu klasördeki bütün bölüm görevleri ve alt klasör milestone kontrolleri tamamlanmış olmalı. Sırayı [görev dizininden](../../../TASKS.md) kontrol et.
+
+#### Tek görev
+
+Bir teşhis tablosu hazırla: eksik dosya, yetki yokluğu, yanlış yol türü, bağlantı reddi/reset, EOF/boş satır, geçersiz indeks/dilim, yanlış tür/değer, encode/decode, normal tükenme/generator içi açık StopIteration. Her çift için ayırıcı koşulu ve uygun handlerı yaz. Sistem arızalarını gerçekten üretme.
+
+#### Geçiş ölçütleri
+
+- [ ] Yakın görünen olaylar doğru özel hata türleriyle ayrılmıştır.
+- [ ] Sistem olayları yazılı kanıtla, basit veri olayları küçük yerel çalışmayla gösterilir; var olmayan kurtarma garantisi verilmez.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [klasör milestone görevi](MILESTONE.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../warnings/Warning/README.md)
+<!-- learning-milestone:end -->

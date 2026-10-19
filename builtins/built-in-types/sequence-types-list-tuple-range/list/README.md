@@ -70,3 +70,47 @@ For sorting examples and a brief sorting tutorial, see [Sorting Techniques](http
 > inspect, the list is undefined.  The C implementation of Python makes the
 > list appear empty for the duration, and raises [ValueError](https://docs.python.org/3.15/builtins/exceptions.html#ValueError) if it can
 > detect that the list has been mutated during a sort.
+
+## Çözümlü kısa örnek
+
+Yeni dış listeyle ortak iç nesneyi ayır
+
+```python
+a=[[1]]
+print(repr(list((1,2))))
+# Sonuç: [1, 2]
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.7.2: list davranışını ayırt et**
+
+#### Önce
+
+[b:2.7](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; yeni dış listeyle ortak iç nesneyi ayır
+
+```python
+a=[[1]]
+list(a) is a
+list(a)[0] is a[0]
+```
+
+Bir listeyi key fonksiyonuyla yerinde sort et; dönüşü ve özgün nesne kimliğini kaydet. Eşit keyli iki öğenin sırasını ve key fonksiyonunun her öğe için bir kez çalışmasını göster.
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `False`; `True`.
+- [ ] Yeni dış listeyle ortak iç nesneyi ayır
+- [ ] Sort None döndürür, aynı dış listeyi düzenler; stable sıra ve öğe başına tek key hesabı kanıtlanmıştır.
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../range/README.md)
+<!-- learning-task:end -->

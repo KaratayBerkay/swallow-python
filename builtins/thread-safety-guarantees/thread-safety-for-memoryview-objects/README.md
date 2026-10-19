@@ -45,3 +45,31 @@ with lock:
 Resizing or reallocating the underlying object (such as calling
 [bytearray.resize()](https://docs.python.org/3.15/builtins/stdtypes.html#bytearray.resize)) while a memoryview is exported raises
 [BufferError](../../built-in-exceptions/base-classes/BufferError/README.md). This is enforced regardless of threading.
+
+<!-- learning-task:start -->
+## Bölüm görevi
+
+**Görev b:5.6: Eşzamanlılık iddiasını durum akışıyla sınayalım**
+
+### Önce
+
+[b:5](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+Bu görevde verilen durumların yazılı çözümü geçerlidir; ek çalışma ortamı veya harici araç kurulumu gerekmez.
+
+### Tek görev
+
+Aynı bytearray tamponunun iki görünümü var; biri toreadonly ile elde edilmiş. B yazarken A salt okunur görünümden okuyor. Durumu immutable bytes tamponuyla karşılaştır. Bir görünümün release edilmesiyle diğerinin yaşamını ve yeniden boyutlandırma engelini ayır. Gerçek thread yarışı üretmek yerine verilen sıralamayı yazılı çöz; her garanti için bu sayfadaki koşulu belirt.
+
+### Geçiş ölçütleri
+
+- [ ] Readonly erişim kaynağı dondurmaz; aynı mutable bölgeye eşzamanlı okuma/yazma dış eşgüdüm gerektirir.
+- [ ] Bytes üzerinden eşzamanlı okumalar güvenlidir; view metadatası güvenliği tampon verisinin güvenliği değildir.
+- [ ] Bütün exportlar bırakılmadan tampon yeniden boyutlandırma engeli kalkmış sayılmaz.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Klasörün bütün alt görevleri bittiyse milestone kontrolüne geç.](../README.md#klasör-milestone-görevi)
+<!-- learning-task:end -->

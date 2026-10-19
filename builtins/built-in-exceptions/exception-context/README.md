@@ -35,3 +35,28 @@ is [None](https://docs.python.org/3.15/builtins/constants.html#None) and `__supp
 In either case, the exception itself is always shown after any chained
 exceptions so that the final line of the traceback always shows the last
 exception that was raised.
+
+<!-- learning-task:start -->
+#### Bölüm görevi
+
+**Görev b:4.1: Hata zincirini üç biçimde karşılaştır**
+
+##### Önce
+
+[b:4](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+##### Tek görev
+
+KeyError yakalandığında ValueError üreten üç küçük fonksiyon yaz: yalın raise, `from asil`, `from None`. Dışarıda hataları yakalayıp context/cause/suppress_context alanlarını göster; tracebackte hangi zincirin görünür olduğunu açıkla.
+
+##### Geçiş ölçütleri
+
+- [ ] Yalın raise context tutar; açık from cause ve suppress_context=True ayarlar.
+- [ ] From None görüntüde eski hatayı gizler ama __context__ içinden silmez.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../inheriting-from-built-in-exceptions/README.md)
+<!-- learning-task:end -->

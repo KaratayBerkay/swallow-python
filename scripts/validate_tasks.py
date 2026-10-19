@@ -14,7 +14,44 @@ LINK = re.compile(r'\[[^\]]*\]\(([^)]+)\)')
 LEARNING_BLOCK = re.compile(
     r'\n<!-- (validation-links|learning-task|learning-milestone):start -->\n'
     r'.*?<!-- \1:end -->\n?', re.DOTALL)
-SECTION_MENU = re.compile(r'^#{2,6} Sections\s*$', re.MULTILINE)
+SECTION_MENU = re.compile(r'^#{2,6} (?:Sections|Contents|Entries)\s*$', re.MULTILINE)
+
+
+def without_fenced_code(text):
+    return re.sub(r'^(`{3,}|~{3,})[^\n]*\n.*?^\1[^\n]*$', '',
+                  text, flags=re.MULTILINE | re.DOTALL)
+
+
+def markdown_links(text):
+    """Ignore Python subscriptions and calls inside Markdown code spans."""
+    prose = without_fenced_code(text)
+    prose = re.sub(r'(`+).*?\1', '', prose, flags=re.DOTALL)
+    return LINK.findall(prose)
+
+
+def checkpoint_errors(text, checkpoint_id, evaluation, reused=False):
+    """Check the assessment contract independently of its rendered copy."""
+    errors = []
+    prose = without_fenced_code(text)
+    action = '## Tek kontrol' if reused and '## Tek kontrol' in prose else '## Tek görev'
+    headings = ['## Önce', action]
+    if not reused or '## Geçiş ölçütleri' in prose:
+        headings.append('## Geçiş ölçütleri')
+    if text.count('```') % 2:
+        errors.append(f'{checkpoint_id}: unbalanced fenced code block.')
+    for heading in headings:
+        sections = re.findall(r'^' + re.escape(heading) + r'[ \t]*\n(.*?)(?=^## |\Z)',
+                              prose, re.MULTILINE | re.DOTALL)
+        if len(sections) != 1:
+            errors.append(f'{checkpoint_id}: missing or repeated {heading}.')
+        elif heading == '## Geçiş ölçütleri':
+            if not re.search(r'^- \[[ xX]\] \S', sections[0], re.MULTILINE):
+                errors.append(f'{checkpoint_id}: missing concrete criteria.')
+        elif not sections[0].strip():
+            errors.append(f'{checkpoint_id}: empty {heading}.')
+    if '[Değerlendirme yöntemi](' + evaluation + ')' not in prose:
+        errors.append(f'{checkpoint_id}: missing shared evaluation method link.')
+    return errors
 
 
 def clean_source(text):
@@ -58,7 +95,7 @@ def validate(root, manifest):
     require(len(rows) == len(sections), 'Duplicate section identifier.')
     actual_sources = {
         str(path.relative_to(root))
-        for folder in ('tutorial', 'language-reference')
+        for folder in ('tutorial', 'language-reference', 'builtins')
         for path in (root / folder).rglob('README.md')
     }
     require(actual_sources == {row['source'] for row in sections},
@@ -81,6 +118,7 @@ def validate(root, manifest):
 
     walk('t:root')
     walk('r:root')
+    walk('b:root')
     position = {sid: index for index, sid in enumerate(ordered)}
     require(len(position) == len(ordered), 'Traversal repeats a checkpoint.')
 
@@ -99,13 +137,19 @@ def validate(root, manifest):
         next_line = re.search(r'^\*\*Sonraki adım:\*\* (.+)$', inserted, re.MULTILINE)
         require(bool(next_line) and LINK.findall(next_line.group(1)) == [expected_link],
                 f'{event_id}: next-step link skips or misorders a checkpoint.')
-    artifacts = {'README.md', 'TASKS.md', 'DEGERLENDIRME.md', 'tutorial/README.md'}
+    artifacts = {'README.md', 'TASKS.md', 'DEGERLENDIRME.md', 'built-ins.md', 'tutorial/README.md'}
     for sid, row in rows.items():
         source = root / row['source']
         if not source.is_file():
             errors.append(f'Missing source: {source}')
             continue
         text = source.read_text()
+        for link in markdown_links(clean_source(text)):
+            if re.match(r'[a-zA-Z][\w+.-]*:', link) or link.startswith('#'):
+                continue
+            target = (source.parent / link.split('#')[0]).resolve()
+            require(target.is_relative_to(root.resolve()) and target.exists(),
+                    f'{sid}: broken source link: {link}.')
         if 'sha256' in row:
             digest = hashlib.sha256(clean_source(text).encode()).hexdigest()
             require(digest == row['sha256'],
@@ -124,15 +168,9 @@ def validate(root, manifest):
             target = root / row['task']
             if target.is_file():
                 task_text = target.read_text()
-                for heading in ('## Önce', '## Tek görev', '## Geçiş ölçütleri'):
-                    require(task_text.count(heading) == 1,
-                            f'{sid}: missing or repeated {heading}.')
                 evaluation = Path(os.path.relpath('DEGERLENDIRME.md',
                                                  paths[sid].parent)).as_posix()
-                require(f'[Değerlendirme yöntemi]({evaluation})' in task_text,
-                        f'{sid}: missing shared evaluation method link.')
-                require(bool(re.search(r'^- \[[ xX]\] ', task_text, re.MULTILINE)),
-                        f'{sid}: missing concrete criteria.')
+                errors.extend(checkpoint_errors(task_text, sid, evaluation))
                 if row['python'] != '3.11':
                     require(row['python'] in task_text,
                             f'{sid}: version restriction is not visible.')
@@ -162,6 +200,19 @@ def validate(root, manifest):
             require(bool(row.get('reason')), f'{sid}: omission needs a reason.')
             require(not source.with_name('TASK.md').exists(),
                     f'{sid}: task exists for a non-teaching section.')
+            if row.get('covered_by'):
+                target_id = row['covered_by']
+                require(target_id in tasks,
+                        f'{sid}: canonical coverage must point directly to a task.')
+                if target_id in rows:
+                    link = Path(os.path.relpath(rows[target_id]['source'],
+                                               paths[sid].parent)).as_posix()
+                    require(f']({link}#bölüm-görevi)' in text,
+                            f'{sid}: alias must link to its canonical inline task.')
+            elif sid.startswith('b:'):
+                require(any(paths[other].parent.parent == source.parent.relative_to(root)
+                            for other in rows),
+                        f'{sid}: leaf navigation needs canonical task coverage.')
 
         children = [other for other in rows
                     if paths[other].parent.parent == paths[sid].parent]
@@ -177,6 +228,16 @@ def validate(root, manifest):
         artifacts.add(row['task'])
         mid = 'milestone:' + sid
         require(row['id'] == mid, f'{sid}: milestone identifier mismatch.')
+        require(row['task'] == str(paths[sid].with_name('MILESTONE.md')),
+                f'{sid}: milestone must be next to its source.')
+        checkpoint = root / row['task']
+        if checkpoint.is_file():
+            checkpoint_text = checkpoint.read_text()
+            require(checkpoint_text.startswith('# Milestone: '),
+                    f'{mid}: missing milestone title.')
+            evaluation = Path(os.path.relpath('DEGERLENDIRME.md',
+                                             checkpoint.parent.relative_to(root))).as_posix()
+            errors.extend(checkpoint_errors(checkpoint_text, mid, evaluation, bool(row['reuse'])))
         expected = {tid for tid in tasks
                     if paths[tid].is_relative_to(paths[sid].parent)}
         expected |= {'milestone:' + child for child in milestones
@@ -189,6 +250,25 @@ def validate(root, manifest):
         if row['reuse']:
             require(row['reuse'] in row['after'],
                     f'{sid}: reused checkpoint must be inside this completed folder.')
+            reuse_id = row['reuse'].removeprefix('milestone:')
+            reused_row = (milestones.get(reuse_id) if row['reuse'].startswith('milestone:')
+                          else tasks.get(reuse_id))
+            require(reused_row is not None, f'{mid}: reused checkpoint does not exist.')
+            if reused_row and checkpoint.is_file():
+                destinations = []
+                for link in markdown_links(checkpoint_text):
+                    name, _, fragment = link.partition('#')
+                    target = (checkpoint.parent / name).resolve()
+                    if row['reuse'].startswith('milestone:'):
+                        if fragment == 'klasör-milestone-görevi':
+                            destinations.append(target)
+                    else:
+                        destinations.append(target)
+                    if target == (root / reused_row['task']).resolve():
+                        destinations.append(target)
+                require(any(target in destinations for target in (
+                    (root / reused_row['task']).resolve(), (root / paths[reuse_id]).resolve())),
+                    f'{mid}: missing link to reused checkpoint.')
         source_text = (root / paths[sid]).read_text()
         blocks = list(re.finditer(
             r'\n<!-- learning-milestone:start -->\n(.*?)<!-- learning-milestone:end -->\n?',
@@ -211,12 +291,16 @@ def validate(root, manifest):
     expected_tasks |= {row['task'] for row in milestones.values()}
     actual_tasks = {str(p.relative_to(root))
                     for name in ('TASK.md', 'MILESTONE.md')
-                    for base in ('tutorial', 'language-reference')
+                    for base in ('tutorial', 'language-reference', 'builtins')
                     for p in (root / base).rglob(name)}
     require(actual_tasks == expected_tasks, 'Orphan or missing task/milestone files.')
     builtin_folders = {str(p.parent.relative_to(root))
-                       for p in (root / 'builtins').rglob('.gitkeep')}
-    require(builtin_folders == set(manifest['empty_builtin_folders']),
+                       for p in (root / 'builtins').rglob('.gitkeep')
+                       if not (p.parent / 'README.md').exists()}
+    fixtures = set(manifest.get('builtin_fixture_folders', []))
+    require(not fixtures & set(manifest['empty_builtin_folders']),
+            'Built-in fixtures cannot also be undocumented learning placeholders.')
+    require(builtin_folders == set(manifest['empty_builtin_folders']) | fixtures,
             'Built-in placeholder inventory changed; review coverage.')
     for folder in builtin_folders:
         require(not any((root / folder).glob('*.md')),
@@ -231,14 +315,13 @@ def validate(root, manifest):
                       for sid, row in milestones.items()}}
     require(index_order == [event_paths[sid] for sid in ordered],
             'TASKS.md must list checkpoints once in numeric preorder/postorder.')
-    # Inline tasks keep the original lesson's external citations. Validate local
-    # links and hygiene inside the inserted blocks, without rewriting citations.
+    # Original lessons may cite remote documentation; assessment blocks remain local.
     for row in sections:
         text = (root / row['source']).read_text()
         for match in LEARNING_BLOCK.finditer(text):
             inserted = match.group()
             require('\u2014' not in inserted, f'{row["id"]}: prohibited inline punctuation.')
-            for link in LINK.findall(inserted):
+            for link in markdown_links(inserted):
                 target = (root / row['source']).parent / link.split('#')[0]
                 require(target.resolve().is_relative_to(root.resolve()) and target.exists(),
                         f'{row["id"]}: broken inline link: {link}.')
@@ -252,7 +335,7 @@ def validate(root, manifest):
         require(not re.search(r'(?i)(generated by|co-authored-by|as an ai|written by openai)', text),
                 f'{name}: prohibited attribution.')
         link_text = LEARNING_BLOCK.sub('', text) if name == 'tutorial/README.md' else text
-        for link in LINK.findall(link_text):
+        for link in markdown_links(link_text):
             require(not re.match(r'[a-z]+://', link),
                     f'{name}: learner-facing task has an unexpected remote dependency.')
             target = (path.parent / link.split('#')[0]).resolve()

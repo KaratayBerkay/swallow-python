@@ -30,3 +30,42 @@ string rather than all of a set of characters.  For example:
 > Code: [example_02.py](example_02.py)
 
 See also `strip()`.
+
+## Çözümlü kısa örnek
+
+Chars tek bir son ek değil karakter kümesidir
+
+```python
+print(repr(" a  ".rstrip()))
+# Sonuç: ' a'
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.9.39: str.rstrip davranışını ayırt et**
+
+#### Önce
+
+[b:2.9](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; chars tek bir son ek değil karakter kümesidir
+
+```python
+"abXabba".rstrip("ab")
+"abXba".rstrip("ab")
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `'abX'`; `'abX'`.
+- [ ] Chars tek bir son ek değil karakter kümesidir
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../str.split/README.md)
+<!-- learning-task:end -->

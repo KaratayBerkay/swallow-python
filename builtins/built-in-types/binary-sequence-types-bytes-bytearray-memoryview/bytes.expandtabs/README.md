@@ -31,3 +31,46 @@ b'01  012 0123    01234'
 >
 > The bytearray version of this method does *not* operate in place - it
 > always produces a new object, even if no changes were made.
+
+## Çözümlü kısa örnek
+
+ASCII bayt kurallarıyla çalış; tab sabit sayıda boşluk değil sonraki tab durağına ilerlemedir
+
+```python
+print(repr(b'a\tb'.expandtabs(4)))
+# Sonuç: b'a   b'
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.10.54: bytes.expandtabs davranışını ayırt et**
+
+#### Önce
+
+[b:2.10](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; ASCII bayt kurallarıyla çalış; tab sabit sayıda boşluk değil sonraki tab durağına ilerlemedir
+
+```python
+b'ab\tc'.expandtabs(4)
+b'abcd\tx'.expandtabs(4)
+b'a\nb\tc'.expandtabs(4)
+```
+
+Geçerli bir denemeyi eşdeğer bytearray ile tekrarla; sonuç türünü ve özgün bytearrayın korunup korunmadığını göster.
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `b'ab  c'`; `b'abcd    x'`; `b'a\nb   c'`.
+- [ ] ASCII bayt kurallarıyla çalış; tab sabit sayıda boşluk değil sonraki tab durağına ilerlemedir
+- [ ] Bytearray karşılığı doğru sonuç türüyle gösterilmiş; yeni binary dizi döndüren yöntem yerinde mutasyon sayılmamıştır.
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../bytes.isalnum/README.md)
+<!-- learning-task:end -->

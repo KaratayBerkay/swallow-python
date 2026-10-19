@@ -27,3 +27,42 @@ The following example uses a mapping to replace `'a'` with `'X'`,
 
 See also the [codecs](https://docs.python.org/3.15/library/codecs.html#module-codecs) module for a more flexible approach to custom
 character mappings.
+
+## Çözümlü kısa örnek
+
+Tabloda eksik karakter korunur; None siler; metin birden çok karaktere dönüşebilir
+
+```python
+print(repr("ab".translate({ord("a"):"X"})))
+# Sonuç: 'Xb'
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.9.46: str.translate davranışını ayırt et**
+
+#### Önce
+
+[b:2.9](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; tabloda eksik karakter korunur; None siler; metin birden çok karaktere dönüşebilir
+
+```python
+"abca".translate({ord("a"):"XY",ord("b"):None})
+"abc".translate({})
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `'XYcXY'`; `'abc'`.
+- [ ] Tabloda eksik karakter korunur; None siler; metin birden çok karaktere dönüşebilir
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../str.upper/README.md)
+<!-- learning-task:end -->

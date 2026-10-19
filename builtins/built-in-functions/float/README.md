@@ -68,3 +68,42 @@ The float type is described in [Numeric Types — int, float, complex](https://d
 > *Changed in version 3.7:* The parameter is now positional-only.
 
 > *Changed in version 3.8:* Falls back to [__index__()](https://docs.python.org/3.15/reference/datamodel.html#object.__index__) if [__float__()](https://docs.python.org/3.15/reference/datamodel.html#object.__float__) is not defined.
+
+## Çözümlü kısa örnek
+
+Ondalık metin dönüşümüyle geçersiz metin hatasını ayır.
+
+```python
+print(repr(float("1.25")))
+# Sonuç: 1.25
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:3.25: float davranışını ayırt et**
+
+#### Önce
+
+[t:4.8](../../../tutorial/04-more-control-flow-tools/4.8-defining-functions/README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; ondalık metin dönüşümüyle geçersiz metin hatasını ayır.
+
+```python
+float("  -2.5 ")
+float("two")
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `-2.5`; `ValueError`.
+- [ ] Ondalık metin dönüşümüyle geçersiz metin hatasını ayır.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../format/README.md)
+<!-- learning-task:end -->

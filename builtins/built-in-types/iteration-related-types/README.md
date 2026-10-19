@@ -115,3 +115,53 @@ the underlying generator function:
 - [`agen.asend`](agen.asend/README.md) — Returns an awaitable which, when run, "sends" a value into the underlying asynchronous generator function: the *value* argument becomes the result…
 - [`agen.athrow`](agen.athrow/README.md) — Returns an awaitable that, when run, raises an exception at the point where the underlying asynchronous generator function is currently suspended.
 - [`agen.aclose`](agen.aclose/README.md) — Returns an awaitable that when run will throw a GeneratorExit into the underlying asynchronous generator function at the point where it is…
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.6: Iterator durumunu kaybetmeden tüket**
+
+#### Önce
+
+[b:2](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Bir [4,6] listesi, bu listeyi gezen tek iterator ve ikinci bağımsız iterator oluştur. İlk iteratordan bir öğe tüket; onu list ile tüket; yeniden tüket; ikinci iteratorı tüket. Aynı veri ile aynı tüketim durumunu ayır.
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar 4, [6], [], [4,6] olur; liste değişmez.
+- [ ] Iterable veri kaynağıyla iteratorın kalan konumu ayrı nesne sorumluluklarıdır.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](container.__iter__/README.md)
+<!-- learning-task:end -->
+
+<!-- learning-milestone:start -->
+### Klasör milestone görevi
+
+**Milestone: Tüketim protokolünü birleştir**
+
+#### Önce
+
+Bu klasördeki bütün bölüm görevleri ve alt klasör milestone kontrolleri tamamlanmış olmalı. Sırayı [görev dizininden](../../../TASKS.md) kontrol et.
+
+#### Tek görev
+
+Bir generator önce hazır bilgisini yield etsin, send ile aldığı sayıyı yield etsin, sonra return 9 yapsın. Oluşturma, ilk next, send, son next ve close durumlarını kaydet. Aynı işlemin async karşılıklarını, hazır verilen asend/anext sözleşmeleriyle yazılı eşleştir.
+
+#### Geçiş ölçütleri
+
+- [ ] Gönderilen değer yield ifadesine bağlanır; StopIteration.value=9 okunur.
+- [ ] Iterator yeniden başlamaz; async awaitable oluşturma ve çalıştırma anları ayrılır.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [klasör milestone görevi](MILESTONE.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../sequence-types-list-tuple-range/README.md)
+<!-- learning-milestone:end -->

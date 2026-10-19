@@ -54,3 +54,42 @@ def from_bytes(bytes, byteorder='big', signed=False):
 > *Added in version 3.2.*
 
 > *Changed in version 3.11:* Added default argument value for `byteorder`.
+
+## Çözümlü kısa örnek
+
+Aynı baytların değeri byteorder ve signed ile değişir
+
+```python
+print(repr(int.from_bytes(b"\x01\x02","big")))
+# Sonuç: 258
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.4.4: int.from_bytes davranışını ayırt et**
+
+#### Önce
+
+[b:2.4](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; aynı baytların değeri byteorder ve signed ile değişir
+
+```python
+int.from_bytes(b"\x01\x02","little")
+int.from_bytes(b"\xff","big",signed=True)
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `513`; `-1`.
+- [ ] Aynı baytların değeri byteorder ve signed ile değişir
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../int.as_integer_ratio/README.md)
+<!-- learning-task:end -->

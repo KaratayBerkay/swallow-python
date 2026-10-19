@@ -23,3 +23,43 @@ True
 > Code: [example_01.py](example_01.py)
 
 See also `startswith()` and `removesuffix()`.
+
+## Çözümlü kısa örnek
+
+Tuple seçenekleri ve dilim sınırları son ek denetimini belirler
+
+```python
+print(repr("a.py".endswith(".py")))
+# Sonuç: True
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.9.9: str.endswith davranışını ayırt et**
+
+#### Önce
+
+[b:2.9](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; tuple seçenekleri ve dilim sınırları son ek denetimini belirler
+
+```python
+"a.txt".endswith((".py",".txt"))
+"abXY".endswith("b",0,2)
+"abc".endswith("z")
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `True`; `True`; `False`.
+- [ ] Tuple seçenekleri ve dilim sınırları son ek denetimini belirler
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../str.expandtabs/README.md)
+<!-- learning-task:end -->

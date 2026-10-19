@@ -52,3 +52,42 @@ See also [Customizing class creation](https://docs.python.org/3.15/reference/dat
 > longer use the one-argument form to get the type of an object.
 
 > *Changed in version 3.15:* *dict* can now be a [frozendict](../frozendict/README.md).
+
+## Çözümlü kısa örnek
+
+Tek argüman türü bulur; üç argüman sınıf oluşturur.
+
+```python
+print(repr(type(3) is int))
+# Sonuç: True
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:3.70: type davranışını ayırt et**
+
+#### Önce
+
+[t:9.5](../../../tutorial/09-classes/9.5-inheritance/README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; tek argüman türü bulur; üç argüman sınıf oluşturur.
+
+```python
+type(True) is int
+type("K",(),{"puan":4})().puan
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `False`; `4`.
+- [ ] Tek argüman türü bulur; üç argüman sınıf oluşturur.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../vars/README.md)
+<!-- learning-task:end -->

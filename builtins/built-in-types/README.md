@@ -18,6 +18,31 @@ value, and converted to a string (with the [repr()](../built-in-functions/repr/R
 slightly different [str()](../built-in-functions/str/README.md) function).  The latter function is implicitly
 used when an object is written by the [print()](../built-in-functions/print/README.md) function.
 
+
+<!-- learning-task:start -->
+## Bölüm görevi
+
+**Görev b:2: Dönüş değeriyle yerinde değişimi ayır**
+
+### Önce
+
+[t:4.8](../../tutorial/04-more-control-flow-tools/4.8-defining-functions/README.md) ve bu sayfanın açıklama/örnekleri.
+
+### Tek görev
+
+Tutorialda işlediğin bir liste üzerinde append, pop ve sorted işlemlerini ayrı örneklerde kullan. Her çağrı için dönen değer, başlangıç nesnesinin son durumu ve yeni nesne oluşup oluşmadığını göster.
+
+### Geçiş ölçütleri
+
+- [ ] Append yerinde ekler ve None döner; pop öğeyi döndürerek kaldırır; sorted yeni liste üretir.
+- [ ] Bir yöntem çağrısının her zaman koleksiyonun kendisini döndürdüğü varsayılmamıştır.
+
+[Değerlendirme yöntemi](../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](truth-value-testing/README.md)
+<!-- learning-task:end -->
 ## Contents
 
 - [Truth Value Testing](truth-value-testing/README.md) — Any object can be tested for truth value, for use in an if or while condition or as operand of the Boolean operations below.
@@ -266,3 +291,28 @@ used when an object is written by the [print()](../built-in-functions/print/READ
   - [`definition.__doc__`](special-attributes/definition.__doc__/README.md) — The documentation string of a class or function, or None if undefined.
   - [`definition.__type_params__`](special-attributes/definition.__type_params__/README.md) — The type parameters of generic classes, functions, and type aliases.
 - [Integer string conversion length limitation](integer-string-conversion-length-limitation/README.md) — CPython has a global limit for converting between int and str to mitigate denial of service attacks.
+
+<!-- learning-milestone:start -->
+## Klasör milestone görevi
+
+**Milestone: Veriyi doğru nesnelerle işle**
+
+### Önce
+
+Bu klasördeki bütün bölüm görevleri ve alt klasör milestone kontrolleri tamamlanmış olmalı. Sırayı [görev dizininden](../../TASKS.md) kontrol et.
+
+### Tek görev
+
+Bir fonksiyon yaz: (ad,puan) çiftlerinden geçerli kayıtları yeni dictte topla; aynı adın son puanı kazansın; pozitif puanlı adları sıralı tuple olarak döndür; eşsiz adları set ile doğrula. Girdiyi değiştirme, boş girdi ve yinelenen adları test et. Çıktı metnini UTF-8 bytesa çevirip geri çöz; her dönüşümde mutability, sıra ve tür kararını açıkla.
+
+### Geçiş ölçütleri
+
+- [ ] Yinelenen, boş ve Unicode girdiler için doğru sonuç; özgün girdi korunur.
+- [ ] Dict çakışması, tuple değişmezliği, set sıra bağımsızlığı ve metin/binary sınırı gerekçelendirilir.
+
+[Değerlendirme yöntemi](../../DEGERLENDIRME.md)
+
+Ayrı dosya: [klasör milestone görevi](MILESTONE.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../built-in-functions/abs/README.md)
+<!-- learning-milestone:end -->

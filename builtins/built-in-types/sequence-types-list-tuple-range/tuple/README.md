@@ -34,3 +34,45 @@ operations.
 Tuples are [generic](https://docs.python.org/3.15/library/typing.html#generics) over the types of their contents.
 For more information, refer to
 [the typing documentation on annotating tuples](https://docs.python.org/3.15/library/typing.html#annotating-tuples).
+
+## Çözümlü kısa örnek
+
+Tuple kurma ile parantez kullanma aynı şey değildir
+
+```python
+t=(1,2)
+print(repr(tuple([1,2])))
+# Sonuç: (1, 2)
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.7.1: tuple davranışını ayırt et**
+
+#### Önce
+
+[b:2.7](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; tuple kurma ile parantez kullanma aynı şey değildir
+
+```python
+t=(1,2)
+type((7,)) is tuple
+type((7)) is int
+tuple(t) is t
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `True`; `True`; `True`.
+- [ ] Tuple kurma ile parantez kullanma aynı şey değildir
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../list/README.md)
+<!-- learning-task:end -->

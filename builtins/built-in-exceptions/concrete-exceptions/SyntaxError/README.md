@@ -47,3 +47,28 @@ expression.  For example, compiling f'Bad {a b} field' results in this
 args attribute: ('f-string: ...', ('', 1, 2, '(a b)n', 1, 5)).
 
 > *Changed in version 3.10:* Added the `end_lineno` and `end_offset` attributes.
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:4.4.23: Parser konum bilgisini yorumla**
+
+#### Önce
+
+[t:8.3](../../../../tutorial/08-errors-and-exceptions/8.3-handling-exceptions/README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+`compile("x =", "ornek.py", "exec")` çağrısını try/except SyntaxError ile yakala. msg, filename, lineno, offset, text, end_lineno ve end_offset alanlarını raporla. İlk satırın neden lineno=1 olduğunu ve str(e) ile alanların aynı veri olmadığını açıkla.
+
+#### Geçiş ölçütleri
+
+- [ ] Hata derleme sırasında oluşur, dosya adı ornek.py ve satır 1 olur.
+- [ ] Konum metadatası raporlanır; tam hata mesajının sürümler arasında aynı olması şart koşulmaz.
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../IndentationError/README.md)
+<!-- learning-task:end -->

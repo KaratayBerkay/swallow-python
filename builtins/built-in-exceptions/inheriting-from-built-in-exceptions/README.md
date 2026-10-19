@@ -10,3 +10,28 @@ attribute, as well as due to possible memory layout incompatibilities.
 > detail and might change between Python versions, leading to new
 > conflicts in the future.  Therefore, it's recommended to avoid
 > subclassing multiple exception types altogether.
+
+<!-- learning-task:start -->
+## Bölüm görevi
+
+**Görev b:4.2: Tek hata sorumluluğu tasarla**
+
+### Önce
+
+[b:4](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+### Tek görev
+
+ValueError alt sınıfı bir AlanHatasi yaz; geçersiz yaş değeri için yükselt ve hem kendi türü hem ValueError ile ayrı denemelerde yakala. İki built-in exceptiondan aynı anda kalıtım almak yerine tek kol seçimini açıklayarak args bilgisini koru.
+
+### Geçiş ölçütleri
+
+- [ ] Özel tür bir Exception alt türüdür; iki yakalama da kalıtım gereği çalışır.
+- [ ] Tek built-in kalıtım kolu seçilir; olası bellek düzeni ve sürüm uyumu çatışmaları gerekçelendirilir.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../base-classes/BaseException/README.md)
+<!-- learning-task:end -->

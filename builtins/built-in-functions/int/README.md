@@ -68,3 +68,43 @@ The integer type is described in [Numeric Types — int, float, complex](https:/
 > See the [integer string conversion length limitation](https://docs.python.org/3.15/builtins/stdtypes.html#int-max-str-digits) documentation.
 
 > *Changed in version 3.14:* `int()` no longer delegates to the [__trunc__()](https://docs.python.org/3.15/reference/datamodel.html#object.__trunc__) method.
+
+## Çözümlü kısa örnek
+
+Metni tabana göre yorumlama ile floatı sıfıra doğru kesmeyi ayır.
+
+```python
+print(repr(int("12")))
+# Sonuç: 12
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:3.37: int davranışını ayırt et**
+
+#### Önce
+
+[t:4.8](../../../tutorial/04-more-control-flow-tools/4.8-defining-functions/README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; metni tabana göre yorumlama ile floatı sıfıra doğru kesmeyi ayır.
+
+```python
+int("101",2)
+int(-3.9)
+int("1.2")
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `5`; `-3`; `ValueError`.
+- [ ] Metni tabana göre yorumlama ile floatı sıfıra doğru kesmeyi ayır.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../isinstance/README.md)
+<!-- learning-task:end -->

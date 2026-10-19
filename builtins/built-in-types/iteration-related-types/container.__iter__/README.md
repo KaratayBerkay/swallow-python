@@ -12,3 +12,28 @@ multiple forms of iteration would be a tree structure which supports both
 breadth-first and depth-first traversal.)  This method corresponds to the
 [tp_iter](https://docs.python.org/3.15/c-api/typeobj.html#c.PyTypeObject.tp_iter) slot of the type structure for Python
 objects in the Python/C API.
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.6.1: container.__iter__ durum geçişini kanıtla**
+
+#### Önce
+
+[b:2.6](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Bir container iki bağımsız iterator veriyor. Birinciden iki öğe al; ikinci ilk hangi öğeyi verir? Sonuçları çağrı -> durulan nokta -> sonraki durum tablosuyla göster.
+
+#### Geçiş ölçütleri
+
+- [ ] Container __iter__ yeni iterator sağlayabilir; ikinci ilk öğeden başlar.
+- [ ] Çağrı ve tüketim/ilerleme anı birbirinden ayrılmıştır.
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../iterator.__iter__/README.md)
+<!-- learning-task:end -->

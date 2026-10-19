@@ -48,3 +48,28 @@ For more information on static methods, see [The standard type hierarchy](https:
 > [__qualname__](https://docs.python.org/3.15/reference/datamodel.html#function.__qualname__), [__doc__](https://docs.python.org/3.15/reference/datamodel.html#function.__doc__) and
 > [__annotations__](https://docs.python.org/3.15/reference/datamodel.html#function.__annotations__)), have a new `__wrapped__` attribute,
 > and are now callable as regular functions.
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:3.65: staticmethod sözleşmesini uygula**
+
+#### Önce
+
+[t:9.5](../../../tutorial/09-classes/9.5-inheritance/README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+`Donustur` sınıfına iki sayının toplamını veren bir staticmethod ekle. Sınıftan ve örnekten çağır. Aynı parametre listesine sıradan yöntem dekoratörsüz bırakılırsa örnek üzerinden neden farklı bağlandığını açıkla.
+
+#### Geçiş ölçütleri
+
+- [ ] Her iki staticmethod çağrısı aynı sonucu üretir; self veya cls örtük eklenmez.
+- [ ] Örnek üzerinden normal yöntemde örtük ilk argüman farkı gösterilmiştir.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../sum/README.md)
+<!-- learning-task:end -->

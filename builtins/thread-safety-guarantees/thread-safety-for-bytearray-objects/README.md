@@ -84,3 +84,30 @@ The [len()](../../built-in-functions/len/README.md) function is lock-free and [a
 >
 > Consider external synchronization when sharing [bytearray](../../built-in-types/binary-sequence-types-bytes-bytearray-memoryview/bytearray/README.md) instances
 > across threads.  See [Python support for free threading](https://docs.python.org/3.15/howto/free-threading-python.html#freethreading-python-howto) for more information.
+
+<!-- learning-task:start -->
+## Bölüm görevi
+
+**Görev b:5.5: Eşzamanlılık iddiasını durum akışıyla sınayalım**
+
+### Önce
+
+[b:5](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+Bu görevde verilen durumların yazılı çözümü geçerlidir; ek çalışma ortamı veya harici araç kurulumu gerekmez.
+
+### Tek görev
+
+ba içinde 65 varken A üyelik kontrolünü geçiyor; B bu değeri kaldırıyor; A remove(65) yapıyor. Akışı çöz. Len, tek indeks/dilim, copy, eşitlik/birleştirme ve iterasyon için garanti düzeyini ayır; kopya üzerinden iterasyon çözümünün sınırını açıkla. Gerçek thread yarışı üretmek yerine verilen sıralamayı yazılı çöz; her garanti için bu sayfadaki koşulu belirt.
+
+### Geçiş ölçütleri
+
+- [ ] A ValueError alabilir; check-then-act atomik değildir.
+- [ ] Len atomik; eşitlik/birleştirme kilitsiz ara durum görebilir; copy üzerinde iterasyon özgün ba değişiminden ayrılır.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../thread-safety-for-memoryview-objects/README.md)
+<!-- learning-task:end -->

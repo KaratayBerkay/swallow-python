@@ -32,3 +32,28 @@ be cleared.
 
 > *Changed in version 3.12:* The second signature (type[, value[, traceback]]) is deprecated and
 > may be removed in a future version of Python.
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.6.6: generator.throw durum geçişini kanıtla**
+
+#### Önce
+
+[b:2.6](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Hazır bir generatorın yield noktasında durduğu biliniyor. Gövdedeki try/except ValueError bu hatayı yakalayıp 8 yield ediyor. throw(ValueError("x")) sonucunu, yakalanmayan TypeError ile karşılaştır. Sonuçları çağrı -> durulan nokta -> sonraki durum tablosuyla göster.
+
+#### Geçiş ölçütleri
+
+- [ ] Yakalanan hata generator içinde işlenir, 8 döner; yakalanmayan TypeError dışarı yayılır ve generator kapanır.
+- [ ] Çağrı ve tüketim/ilerleme anı birbirinden ayrılmıştır.
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../generator.close/README.md)
+<!-- learning-task:end -->

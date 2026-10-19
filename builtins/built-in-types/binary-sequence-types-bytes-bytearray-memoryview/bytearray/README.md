@@ -120,3 +120,48 @@ then `take_bytes()` without a size.
 > *Added in version 3.15:* See the [What's New](https://docs.python.org/3.15/whatsnew/3.15.html#whatsnew315-bytearray-take-bytes) entry for
 > common code patterns which can be optimized with
 > [bytearray.take_bytes()](https://docs.python.org/3.15/builtins/stdtypes.html#bytearray.take_bytes).
+
+## Çözümlü kısa örnek
+
+Bytearray uzunluk, değer ve dönüştürme sözleşmelerini ayır
+
+```python
+print(repr(bytearray(2)))
+# Sonuç: bytearray(b'\x00\x00')
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.10.2: bytearray davranışını ayırt et**
+
+#### Önce
+
+[b:2.10](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+Sürüm: Python 3.15 veya üzeri. Daha eski yorumlayıcıda yalnız bu sürüme bağlı kısmı gerekçeli yazılı iz ile çözebilirsin; çalıştırma kanıtını bekleyen olarak kaydet.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; bytearray uzunluk, değer ve dönüştürme sözleşmelerini ayır
+
+```python
+bytearray([65,66])
+bytes(bytearray(b"AB"))
+bytearray([256])
+```
+
+Fromhex ve hex ile veriyi gidiş dönüş dönüştür. Python 3.14+ resize ile küçültmeyi ve sıfır baytlarla büyütmeyi göster. Python 3.15+ take_bytes için b"ABCD" üzerinde 2, -1, None ve sınır dışı n girdilerini yeni nesnelerde dene; dönüş bytes ile kalan bytearrayı kaydet.
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `bytearray(b'AB')`; `b'AB'`; `ValueError`.
+- [ ] Bytearray uzunluk, değer ve dönüştürme sözleşmelerini ayır
+- [ ] Resize küçültmede sonu keser, büyütmede sıfır ekler; take_bytes(2) b"AB" alıp b"CD" bırakır, -1 ilk üç baytı alır, None hepsini alıp boşaltır; sınır dışı IndexError verir.
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../memoryview/README.md)
+<!-- learning-task:end -->

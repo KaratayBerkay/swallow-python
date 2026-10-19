@@ -30,3 +30,42 @@ See also `rfind()` and `index()`.
 > True
 > ```
 > > Code: [example_02.py](example_02.py)
+
+## Çözümlü kısa örnek
+
+Bulunamama -1 olur; bulunan indeks özgün metne aittir
+
+```python
+print(repr("ababa".find("ba")))
+# Sonuç: 1
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.9.11: str.find davranışını ayırt et**
+
+#### Önce
+
+[b:2.9](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; bulunamama -1 olur; bulunan indeks özgün metne aittir
+
+```python
+"ababa".find("ba",2)
+"ababa".find("x")
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `3`; `-1`.
+- [ ] Bulunamama -1 olur; bulunan indeks özgün metne aittir
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../str.format_map/README.md)
+<!-- learning-task:end -->

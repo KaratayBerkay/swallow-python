@@ -443,3 +443,54 @@ TypeError: cannot create 'typing.Union' instances
 
 > *Changed in version 3.14:* Union objects are now instances of [typing.Union](https://docs.python.org/3.15/library/typing.html#typing.Union). Previously, they were instances
 > of [types.UnionType](https://docs.python.org/3.15/library/types.html#types.UnionType), which remains an alias for [typing.Union](https://docs.python.org/3.15/library/typing.html#typing.Union).
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.14: Tür açıklamasını çalışma zamanı doğrulamasından ayır**
+
+#### Önce
+
+[b:2](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+`list[int](["x"])` oluştur; anotasyonun öğeyi zorla int yapıp yapmadığını göster. `int | str` için isinstance dene; `list[int]` için isinstance sınırını göster. Unionda yinelenen türlerin ve sıra değişiminin etkisini açıkla.
+
+#### Geçiş ölçütleri
+
+- [ ] Listede "x" kalır; generic alias runtime öğe doğrulaması değildir.
+- [ ] isinstance(3,int|str) True; isinstance([],list[int]) TypeError verir.
+- [ ] Union sırası ve tekrarlar ayrı seçenek yaratmaz; anotasyon ile gerçek nesnenin türü ayrılmıştır.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](genericalias.__args__/README.md)
+<!-- learning-task:end -->
+
+<!-- learning-milestone:start -->
+### Klasör milestone görevi
+
+**Milestone: Tür açıklamasının ağacını çöz**
+
+#### Önce
+
+Bu klasördeki bütün bölüm görevleri ve alt klasör milestone kontrolleri tamamlanmış olmalı. Sırayı [görev dizininden](../../../TASKS.md) kontrol et.
+
+#### Tek görev
+
+dict[str,list[int]] açıklamasını origin/args üzerinden iki seviyede çöz; list[T] içindeki serbest parametreyi somut intle değiştirince __parameters__ sonucunu göster. Normal ve unpacked alias işaretini karşılaştır; int|str için geçerli runtime denetimini generic list denetimiyle ayır.
+
+#### Geçiş ölçütleri
+
+- [ ] Tür açıklaması veri dönüşümü veya otomatik öğe denetimi sayılmamıştır.
+- [ ] Origin/args/parameters/unpacked farklı bilgileri taşır; parameterized generic ile isinstance TypeError sınırı korunur.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [klasör milestone görevi](MILESTONE.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../other-built-in-types/README.md)
+<!-- learning-milestone:end -->

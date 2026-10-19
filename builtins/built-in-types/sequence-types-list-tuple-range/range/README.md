@@ -66,3 +66,43 @@ The value of the *stop* parameter
 
 The value of the *step* parameter (or `1` if the parameter was
 not supplied)
+
+## Çözümlü kısa örnek
+
+Range uç sınırı dışlar; negatif adım ve boş aralık kuralları geçerlidir
+
+```python
+print(repr(list(range(3))))
+# Sonuç: [0, 1, 2]
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.7.3: range davranışını ayırt et**
+
+#### Önce
+
+[b:2.7](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; range uç sınırı dışlar; negatif adım ve boş aralık kuralları geçerlidir
+
+```python
+list(range(6,0,-2))
+list(range(1,1))
+range(0,3,0)
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `[6, 4, 2]`; `[]`; `ValueError`.
+- [ ] Range uç sınırı dışlar; negatif adım ve boş aralık kuralları geçerlidir
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../sequence.count/README.md)
+<!-- learning-task:end -->

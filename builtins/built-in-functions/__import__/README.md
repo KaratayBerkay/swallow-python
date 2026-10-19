@@ -73,3 +73,28 @@ use [importlib.import_module()](https://docs.python.org/3.15/library/importlib.h
 
 > *Changed in version 3.9:* When the command line options [-E](https://docs.python.org/3.15/using/cmdline.html#cmdoption-E) or [-I](https://docs.python.org/3.15/using/cmdline.html#cmdoption-I) are being used,
 > the environment variable [PYTHONCASEOK](https://docs.python.org/3.15/using/cmdline.html#envvar-PYTHONCASEOK) is now ignored.
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:3.73: Fromlist dönüş nesnesini izle**
+
+#### Önce
+
+[t:4.8](../../../tutorial/04-more-control-flow-tools/4.8-defining-functions/README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Tutorial import sistemindeki bir `paket/alt.py` örneğini kullan. `__import__("paket.alt")` ile `__import__("paket.alt",fromlist=["deger"])` dönüşlerini karşılaştır. Aynı modüller yüklenmişken dönen nesnenin neden farklı olabildiğini ve sıradan import tercihinin gerekçesini açıkla.
+
+#### Geçiş ölçütleri
+
+- [ ] İlk dönüş üst düzey paket, ikinci dönüş paket.alt modülüdür.
+- [ ] Fromlist dönüş nesnesini etkiler; normal uygulamada import ifadesi tercih edilir.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Klasörün bütün alt görevleri bittiyse milestone kontrolüne geç.](../README.md#klasör-milestone-görevi)
+<!-- learning-task:end -->

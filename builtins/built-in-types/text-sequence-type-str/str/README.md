@@ -43,3 +43,43 @@ For more information on the `str` class and its methods, see
 [Text Sequence Type — str](https://docs.python.org/3.15/builtins/stdtypes.html#textseq) and the [String Methods](https://docs.python.org/3.15/builtins/stdtypes.html#string-methods) section below.  To output
 formatted strings, see the [f-strings](https://docs.python.org/3.15/reference/lexical_analysis.html#f-strings) and [Format string syntax](https://docs.python.org/3.15/library/string.html#formatstrings)
 sections.  In addition, see the [Text Processing Services](https://docs.python.org/3.15/library/text.html#stringservices) section.
+
+## Çözümlü kısa örnek
+
+Nesne temsilini bayt çözümlemeyle karıştırma
+
+```python
+print(repr(str(12)))
+# Sonuç: '12'
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.9.1: str davranışını ayırt et**
+
+#### Önce
+
+[b:2.9](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; nesne temsilini bayt çözümlemeyle karıştırma
+
+```python
+str(b"ab")
+str(b"ab","utf-8")
+str(b"\xff","utf-8")
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `"b'ab'"`; `'ab'`; `UnicodeDecodeError`.
+- [ ] Nesne temsilini bayt çözümlemeyle karıştırma
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../str.join/README.md)
+<!-- learning-task:end -->

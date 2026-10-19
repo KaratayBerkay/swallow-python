@@ -101,3 +101,46 @@ negative values from the left.
 
 > *Changed in version 3.8:* [bytes.hex()](https://docs.python.org/3.15/builtins/stdtypes.html#bytes.hex) now supports optional *sep* and *bytes_per_sep*
 > parameters to insert separators between bytes in the hex output.
+
+## Çözümlü kısa örnek
+
+ASCII literal, hex dönüşüm ve değişmezliği bağla
+
+```python
+print(repr(b"A"[0]))
+# Sonuç: 65
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.10.1: bytes davranışını ayırt et**
+
+#### Önce
+
+[b:2.10](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; ASCII literal, hex dönüşüm ve değişmezliği bağla
+
+```python
+bytes.fromhex("41 42")
+b"AB".hex()
+b"AB"=="AB"
+```
+
+Fromhex ile boşluk içeren hex metni ve hatalı tek hex basamağını dene. Hex için ayırıcı ve bytes_per_sep seçeneğini kullan. Binary `%` biçimlendirmede ASCII sayıyla %b girdisini göster; Unicode metni doğrudan binary alana vermenin sınırını açıkla.
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `b'AB'`; `'4142'`; `False`.
+- [ ] ASCII literal, hex dönüşüm ve değişmezliği bağla
+- [ ] Hatalı hex ValueError; biçimlendirme sonucu bytes; bytes ile str kendiliğinden birbirine dönüşmez.
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../bytearray/README.md)
+<!-- learning-task:end -->

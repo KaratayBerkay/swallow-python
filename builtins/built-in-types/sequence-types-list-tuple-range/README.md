@@ -320,3 +320,71 @@ objects that compare equal might have different [start](https://docs.python.org/
 >   applications.
 
 [^1]: They must have since the parser can't tell the type of the operands.
+
+## Çözümlü kısa örnek
+
+Negatif indeks ve dilimde dış sınırla tek indeks hatasını ayır
+
+```python
+print(repr([3,5,7][-1]))
+# Sonuç: 7
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.7: sequence-types-list-tuple-range davranışını ayırt et**
+
+#### Önce
+
+[b:2](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; negatif indeks ve dilimde dış sınırla tek indeks hatasını ayır
+
+```python
+[3,5,7][1:99]
+[3,5,7][99]
+[1,2]*2
+```
+
+`a=[[0]]*2` örneğinde bir iç listeyi değiştirerek tekrarın referans paylaştığını göster. Extended slice atamasında eşit uzunluk şartını ve tuple içinde mutable öğe bulunabileceğini ayrı örnekle kanıtla.
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `[5, 7]`; `IndexError`; `[1, 2, 1, 2]`.
+- [ ] Negatif indeks ve dilimde dış sınırla tek indeks hatasını ayır
+- [ ] Tekrarın iç nesneyi kopyalamadığı gösterilir; adımı 1 olmayan dilime uzunluk uyumsuz atama ValueError verir; tuple değişmezliği iç öğeyi dondurmaz.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](tuple/README.md)
+<!-- learning-task:end -->
+
+<!-- learning-milestone:start -->
+### Klasör milestone görevi
+
+**Milestone: Bağımsız çalışma listesini düzenle**
+
+#### Önce
+
+Bu klasördeki bütün bölüm görevleri ve alt klasör milestone kontrolleri tamamlanmış olmalı. Sırayı [görev dizininden](../../../TASKS.md) kontrol et.
+
+#### Tek görev
+
+İç içe listeli bir kayıt listesinden dış kopya al; append/extend/insert/remove/pop ile sadece çalışma kopyasının dış üyelerini düzenle. Tek bir iç öğe değiştirip shallow paylaşımı kanıtla. Sonucu stable sort et; tuple çıktısını ve range ile seçilen indeksleri raporla.
+
+#### Geçiş ölçütleri
+
+- [ ] Dış bağımsızlık ve iç referans paylaşımı doğru gösterilmiştir.
+- [ ] Değer/indeks ayrımı, None dönen yöntemler ve sort stabilitesi gerekçelendirilir; boş ve eksik öğe yolları denenir.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [klasör milestone görevi](MILESTONE.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../text-and-binary-sequence-type-methods-summary/README.md)
+<!-- learning-milestone:end -->

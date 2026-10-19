@@ -27,3 +27,42 @@ string rather than all of a set of characters.  For example:
 'three!'
 ```
 > Code: [example_02.py](example_02.py)
+
+## Çözümlü kısa örnek
+
+Chars bir önek değil karakter kümesidir; yalnız solda çalışır
+
+```python
+print(repr("  a  ".lstrip()))
+# Sonuç: 'a  '
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.9.28: str.lstrip davranışını ayırt et**
+
+#### Önce
+
+[b:2.9](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; chars bir önek değil karakter kümesidir; yalnız solda çalışır
+
+```python
+"abbaXba".lstrip("ab")
+"abXab".lstrip("ab")
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `'Xba'`; `'Xab'`.
+- [ ] Chars bir önek değil karakter kümesidir; yalnız solda çalışır
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../str.maketrans/README.md)
+<!-- learning-task:end -->

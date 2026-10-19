@@ -45,3 +45,42 @@ expressions:
 > Code: [example_03.py](example_03.py)
 
 See also `istitle()`.
+
+## Çözümlü kısa örnek
+
+Dil bağımsız sözcük sınırları apostrofta da yeni başlık başlatabilir
+
+```python
+print(repr("ada ece".title()))
+# Sonuç: 'Ada Ece'
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.9.45: str.title davranışını ayırt et**
+
+#### Önce
+
+[b:2.9](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; dil bağımsız sözcük sınırları apostrofta da yeni başlık başlatabilir
+
+```python
+"they're here".title()
+"a1b".title()
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `"They'Re Here"`; `'A1B'`.
+- [ ] Dil bağımsız sözcük sınırları apostrofta da yeni başlık başlatabilir
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../str.translate/README.md)
+<!-- learning-task:end -->

@@ -325,3 +325,68 @@ For information on the thread safety of [memoryview](memoryview/README.md) objec
 the [free-threaded build](https://docs.python.org/3.15/glossary.html#term-free-threaded-build), see [Thread safety for memoryview objects](https://docs.python.org/3.15/builtins/threadsafety.html#thread-safety-memoryview).
 
 [^1]: To format only a tuple you should therefore provide a singleton tuple whose only element is the tuple to be formatted.
+
+## Çözümlü kısa örnek
+
+Binary indeks tamsayı verir; dilim binary dizidir
+
+```python
+print(repr(b"AB"[0]))
+# Sonuç: 65
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.10: binary-sequence-types-bytes-bytearray-memoryview davranışını ayırt et**
+
+#### Önce
+
+[b:2](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; binary indeks tamsayı verir; dilim binary dizidir
+
+```python
+b"AB"[0:1]
+bytes([0,255])
+bytes([256])
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `b'A'`; `b'\x00\xff'`; `ValueError`.
+- [ ] Binary indeks tamsayı verir; dilim binary dizidir
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](bytes/README.md)
+<!-- learning-task:end -->
+
+<!-- learning-milestone:start -->
+### Klasör milestone görevi
+
+**Milestone: Binary paketi kopya ve görünümle işle**
+
+#### Önce
+
+Bu klasördeki bütün bölüm görevleri ve alt klasör milestone kontrolleri tamamlanmış olmalı. Sırayı [görev dizininden](../../../TASKS.md) kontrol et.
+
+#### Tek görev
+
+`bytearray(b"ID=7;OK")` verisinde ayırıcıyı bul, memoryview ile payloadın alt görünümünü al ve aynı uzunlukta değiştir. Str çıktısını decode ile üret; bağımsız bytes snapshotını ve readonly görünümü tut. Sonraki kaynak değişiminde hangisinin değiştiğini kanıtla; bütün görünümleri release ettikten sonra boyut değiştir.
+
+#### Geçiş ölçütleri
+
+- [ ] Snapshot değişmez, görünümler aynı tamponu izler; ASCII bayt ile Unicode çözümlemesi ayrılır.
+- [ ] Görünüm üzerinden boyut değiştirilemez; canlı export varken bytearray resize engeli hesaba katılmıştır.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [klasör milestone görevi](MILESTONE.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../set-types-set-frozenset/README.md)
+<!-- learning-milestone:end -->

@@ -25,3 +25,46 @@ b'-0042'
 >
 > The bytearray version of this method does *not* operate in place - it
 > always produces a new object, even if no changes were made.
+
+## Çözümlü kısa örnek
+
+ASCII bayt kurallarıyla çalış; sıfırlar işaretten sonra eklenir; kısa genişlik kesmez
+
+```python
+print(repr(b'42'.zfill(4)))
+# Sonuç: b'0042'
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.10.82: bytes.zfill davranışını ayırt et**
+
+#### Önce
+
+[b:2.10](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; ASCII bayt kurallarıyla çalış; sıfırlar işaretten sonra eklenir; kısa genişlik kesmez
+
+```python
+b'-7'.zfill(4)
+b'+7'.zfill(4)
+b'123'.zfill(2)
+```
+
+Geçerli bir denemeyi eşdeğer bytearray ile tekrarla; sonuç türünü ve özgün bytearrayın korunup korunmadığını göster.
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `b'-007'`; `b'+007'`; `b'123'`.
+- [ ] ASCII bayt kurallarıyla çalış; sıfırlar işaretten sonra eklenir; kısa genişlik kesmez
+- [ ] Bytearray karşılığı doğru sonuç türüyle gösterilmiş; yeni binary dizi döndüren yöntem yerinde mutasyon sayılmamıştır.
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Klasörün bütün alt görevleri bittiyse milestone kontrolüne geç.](../README.md#klasör-milestone-görevi)
+<!-- learning-task:end -->

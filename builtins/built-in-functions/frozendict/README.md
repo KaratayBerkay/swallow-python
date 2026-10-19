@@ -13,3 +13,5 @@ For other containers see the built-in [dict](../dict/README.md), [list](../list/
 and [tuple](../tuple/README.md) classes, as well as the [collections](https://docs.python.org/3.15/library/collections.html#module-collections) module.
 
 > *Added in version 3.15.*
+
+**Ortak kontrol:** Önce [asıl anlatım ve örneği](../../built-in-types/mapping-types-dict-frozendict/frozendict/README.md) oku; ardından [b:2.12.1 bölüm görevini](../../built-in-types/mapping-types-dict-frozendict/frozendict/README.md#bölüm-görevi) çöz. Aynı davranış için ikinci çözüm istenmez.

@@ -38,3 +38,43 @@ that can be specified in format strings.
 > *Changed in version 3.7:* When formatting a number with the `n` type, the function sets
 > temporarily the `LC_CTYPE` locale to the `LC_NUMERIC` locale in some
 > cases.
+
+## Çözümlü kısa örnek
+
+Alanları konumsal ve adlandırılmış argümanlara eşleştir
+
+```python
+print(repr("{}".format(4)))
+# Sonuç: '4'
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.9.3: str.format davranışını ayırt et**
+
+#### Önce
+
+[b:2.9](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; alanları konumsal ve adlandırılmış argümanlara eşleştir
+
+```python
+"{1}:{0}".format("a","b")
+"{ad}:{puan}".format(ad="Ada",puan=7)
+"{eksik}".format(ad="Ada")
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `'b:a'`; `'Ada:7'`; `KeyError`.
+- [ ] Alanları konumsal ve adlandırılmış argümanlara eşleştir
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../str.capitalize/README.md)
+<!-- learning-task:end -->

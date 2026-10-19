@@ -40,3 +40,43 @@ exception.
 Two more operations with the same syntactic priority, `in` and
 `not in`, are supported by types that are [iterable](https://docs.python.org/3.15/glossary.html#term-iterable) or
 implement the [__contains__()](https://docs.python.org/3.15/reference/datamodel.html#object.__contains__) method.
+
+## Çözümlü kısa örnek
+
+Eşitlik, kimlik ve zincirleme farklı ilişkileri sınar
+
+```python
+print(repr([1]==[1]))
+# Sonuç: True
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.3: comparisons davranışını ayırt et**
+
+#### Önce
+
+[b:2](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; eşitlik, kimlik ve zincirleme farklı ilişkileri sınar
+
+```python
+[1] is [1]
+1<2<3
+1<2>3
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `False`; `True`; `False`.
+- [ ] Eşitlik, kimlik ve zincirleme farklı ilişkileri sınar
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../numeric-types-int-float-complex/README.md)
+<!-- learning-task:end -->

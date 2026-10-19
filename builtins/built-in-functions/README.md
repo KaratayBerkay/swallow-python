@@ -3,13 +3,9 @@
 The Python interpreter has a number of functions and types built into it that
 are always available.  They are listed here in alphabetical order.
 
-Every folder holds a `README.md` with the explanation from the
-official documentation plus the examples as runnable `example_*.py`
-files. Run one with:
-
-``` console
-$ python3 abs/example_01.py
-```
+Açıklamalar her fonksiyonun README sayfasındadır. Bazı örneklerin ayrıca
+example_*.py dosyası vardır; yalnız sayfada verilen dosya bağlantılarını kullan.
+REPL parçaları ve kasıtlı hata örnekleri bağımsız program gibi topluca çalıştırılmaz.
 
 ## Contents
 
@@ -86,3 +82,28 @@ $ python3 abs/example_01.py
 - [`vars()`](vars/README.md) — Return the __dict__ attribute for a module, class, instance, or any other object with a __dict__ attribute.
 - [`zip()`](zip/README.md) — Iterate over several iterables in parallel, producing tuples with an item from each one.
 - [`__import__()`](__import__/README.md) — This function is invoked by the import statement.
+
+<!-- learning-milestone:start -->
+## Klasör milestone görevi
+
+**Milestone: Yerleşik araçlarla rapor üret**
+
+### Önce
+
+Bu klasördeki bütün bölüm görevleri ve alt klasör milestone kontrolleri tamamlanmış olmalı. Sırayı [görev dizininden](../../TASKS.md) kontrol et.
+
+### Tek görev
+
+Bir fonksiyon yaz: ad/puan çiftlerini enumerate ile numaralandır, geçerli sayısal kayıtları filter veya eşdeğer comprehension ile seç, map veya eşdeğer dönüşümle puanlarını çıkar. Sum, min/max default ve sorted key ile özetle; zip(strict=True) ile ayrı ad/puan listelerinin uzunluk uyumsuzluğunu yakala. Her seçilen built-in için daha basit eşdeğer akışı açıkla.
+
+### Geçiş ölçütleri
+
+- [ ] Boş, yinelenen ve uzunluk uyuşmazlığı olan girdiler denenmiştir; iteratorlar yanlışlıkla iki kez tüketilmez.
+- [ ] Araçlar sonuç türü/tüketim/varsayılan/hata sözleşmesine göre seçilir; bütün built-inleri tek programa sıkıştırma şartı yoktur.
+
+[Değerlendirme yöntemi](../../DEGERLENDIRME.md)
+
+Ayrı dosya: [klasör milestone görevi](MILESTONE.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../built-in-exceptions/README.md)
+<!-- learning-milestone:end -->

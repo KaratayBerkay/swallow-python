@@ -190,3 +190,29 @@ the original call.
 
 > *Changed in version 3.15:* UTF-8 is now the default encoding, instead of the
 > platform-dependent locale encoding ([PEP 686](https://peps.python.org/pep-686/)).
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:3.51: open sözleşmesini uygula**
+
+#### Önce
+
+[t:4.8](../../../tutorial/04-more-control-flow-tools/4.8-defining-functions/README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Yalnız kendin oluşturduğun `builtin_deneme.txt` dosyasında with ile UTF-8 metin yaz ve yeniden oku. r/w/a/x kiplerinin bu dosya üzerindeki sonucunu açıkla; x ile yeniden oluşturma hatasını yakala. Aynı içeriği rb kipinde okuyarak tür farkını göster.
+
+#### Geçiş ölçütleri
+
+- [ ] Metin okuma str, rb okuma bytes verir; UTF-8 açıkça seçilmiştir.
+- [ ] w mevcut içeriği keser, a sona ekler, x mevcut dosyada FileExistsError verir; with sonunda kapatır.
+- [ ] Dosya anlatılmayan sistem ayarları gerektirmez; yalnız çalışma klasöründeki deneme dosyası kullanılır.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../ord/README.md)
+<!-- learning-task:end -->

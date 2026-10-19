@@ -83,3 +83,42 @@ The complex type is described in [Numeric Types — int, float, complex](https:/
 
 > *Deprecated since version 3.14:* Passing a complex number as the *real* or *imag* argument is now
 > deprecated; it should only be passed as a single positional argument.
+
+## Çözümlü kısa örnek
+
+Metin sözdizimiyle iki sayısal parçayı ve geçersiz metni ayır.
+
+```python
+print(repr(complex("2+3j")))
+# Sonuç: (2+3j)
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:3.16: complex davranışını ayırt et**
+
+#### Önce
+
+[t:4.8](../../../tutorial/04-more-control-flow-tools/4.8-defining-functions/README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; metin sözdizimiyle iki sayısal parçayı ve geçersiz metni ayır.
+
+```python
+complex(4,-2)
+complex("1 + 2j")
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `(4-2j)`; `ValueError`.
+- [ ] Metin sözdizimiyle iki sayısal parçayı ve geçersiz metni ayır.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../delattr/README.md)
+<!-- learning-task:end -->

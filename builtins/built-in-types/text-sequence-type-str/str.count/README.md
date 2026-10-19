@@ -24,3 +24,43 @@ which is the length of the string plus one. For example:
 17
 ```
 > Code: [example_01.py](example_01.py)
+
+## Çözümlü kısa örnek
+
+Örtüşen eşleşmeler sayılmaz; boş aranan metnin sınırlarını açıkla
+
+```python
+print(repr("aba".count("a")))
+# Sonuç: 2
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.9.7: str.count davranışını ayırt et**
+
+#### Önce
+
+[b:2.9](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; örtüşen eşleşmeler sayılmaz; boş aranan metnin sınırlarını açıkla
+
+```python
+"aaaa".count("aa")
+"abc".count("")
+"ababa".count("a",1,4)
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `2`; `4`; `1`.
+- [ ] Örtüşen eşleşmeler sayılmaz; boş aranan metnin sınırlarını açıkla
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../str.encode/README.md)
+<!-- learning-task:end -->

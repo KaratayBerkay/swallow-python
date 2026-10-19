@@ -57,3 +57,30 @@ of other threads. This is the strongest form of thread safety.
 
 Example: [PyMutex_IsLocked()](https://docs.python.org/3.15/c-api/synchronization.html#c.PyMutex_IsLocked) performs an atomic read of the mutex
 state and can be called from any thread at any time.
+
+<!-- learning-task:start -->
+#### Bölüm görevi
+
+**Görev b:5.1: Eşzamanlılık iddiasını durum akışıyla sınayalım**
+
+##### Önce
+
+[b:5](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+Bu görevde verilen durumların yazılı çözümü geçerlidir; ek çalışma ortamı veya harici araç kurulumu gerekmez.
+
+##### Tek görev
+
+A işlemine iki threadde çağrı yapılması hiçbir durumda desteklenmiyor; B yalnız dış kilitle aynı nesnede kullanılabiliyor; C ayrı nesnelerde güvenli; D aynı nesnede güvenli; E tek anda olmuş gibi gözüküyor. Beş seviyeye eşleştir. İki ayrı memoryview aynı tamponu paylaşınca "ayrı nesne" gerekçesini de değerlendir. Gerçek thread yarışı üretmek yerine verilen sıralamayı yazılı çöz; her garanti için bu sayfadaki koşulu belirt.
+
+##### Geçiş ölçütleri
+
+- [ ] Sıra incompatible, compatible, safe on distinct objects, safe on shared objects, atomic.
+- [ ] Ayrı nesne kimliği paylaşılan alt durum olmadığını kanıtlamaz.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../thread-safety-for-list-objects/README.md)
+<!-- learning-task:end -->

@@ -30,3 +30,43 @@ unless a decoding error actually occurs,
 
 > *Changed in version 3.9:* The value of the *errors* argument is now checked in [Python Development Mode](https://docs.python.org/3.15/library/devmode.html#devmode) and
 > in [debug mode](https://docs.python.org/3.15/using/configure.html#debug-build).
+
+## Çözümlü kısa örnek
+
+Çözümleme str verir; geçersiz baytta hata politikasını ayır
+
+```python
+print(repr(b"A".decode()))
+# Sonuç: 'A'
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.10.10: bytes.decode davranışını ayırt et**
+
+#### Önce
+
+[b:2.10](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; çözümleme str verir; geçersiz baytta hata politikasını ayır
+
+```python
+b"\xc4\xb0".decode("utf-8")
+b"\xff".decode("utf-8")
+b"\xff".decode("utf-8","replace")
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `'İ'`; `UnicodeDecodeError`; `'�'`.
+- [ ] Çözümleme str verir; geçersiz baytta hata politikasını ayır
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../bytes.endswith/README.md)
+<!-- learning-task:end -->

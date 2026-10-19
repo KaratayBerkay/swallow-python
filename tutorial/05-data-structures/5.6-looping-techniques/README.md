@@ -22,7 +22,7 @@ When looping through a sequence, the position index and corresponding value can 
 1 tac
 2 toe
 ```
-> Code: [example_01.py](example_01.py)
+> Code: [enumerate.py](enumerate.py)
 
 To loop over two or more sequences at the same time, the entries can be paired with the `zip()` function.
 
@@ -36,7 +36,7 @@ What is your name?  It is lancelot.
 What is your quest?  It is the holy grail.
 What is your favorite color?  It is blue.
 ```
-> Code: [questions.py](questions.py)
+> Code: [zip.py](zip.py)
 
 To loop over a sequence in reverse, first specify the sequence in a forward direction and then call the `reversed()` function.
 
@@ -50,7 +50,7 @@ To loop over a sequence in reverse, first specify the sequence in a forward dire
 3
 1
 ```
-> Code: [example_02.py](example_02.py)
+> Code: [reversed-range.py](reversed-range.py)
 
 To loop over a sequence in sorted order, use the `sorted()` function which returns a new sorted list while leaving the source unaltered.
 

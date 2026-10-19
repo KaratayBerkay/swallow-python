@@ -391,3 +391,71 @@ that `'\0'` is the end of the string.
 > longer replaced by `%g` conversions.
 
 [^1]: To format only a tuple you should therefore provide a singleton tuple whose only element is the tuple to be formatted.
+
+## Çözümlü kısa örnek
+
+Unicode karakteriyle bayt dizisi aynı nesne değildir
+
+```python
+print(repr("İ"[0]))
+# Sonuç: 'İ'
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.9: text-sequence-type-str davranışını ayırt et**
+
+#### Önce
+
+[b:2](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; unicode karakteriyle bayt dizisi aynı nesne değildir
+
+```python
+len("İ")
+"a" "b"
+"ab"[0:9]
+```
+
+Aynı çalışmaya `%` biçimlendirmeyle ad ve puan yerleştirmeyi, `%%` ile literal yüzdeyi, yanlış sayıda alan verilmesi hatasını ekle. Metin içine yerleştirmeyle özgün Unicode metni değiştirmeyi ayır.
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `1`; `'ab'`; `'ab'`.
+- [ ] Unicode karakteriyle bayt dizisi aynı nesne değildir
+- [ ] Biçimlendirme yeni str verir; literal yüzde kaçışı ve argüman sayısı uyuşmazlığı açıklanır.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](str/README.md)
+<!-- learning-task:end -->
+
+<!-- learning-milestone:start -->
+### Klasör milestone görevi
+
+**Milestone: Satır tabanlı metni çözümle**
+
+#### Önce
+
+Bu klasördeki bütün bölüm görevleri ve alt klasör milestone kontrolleri tamamlanmış olmalı. Sırayı [görev dizininden](../../../TASKS.md) kontrol et.
+
+#### Tek görev
+
+`"  Ada:7\nEce:9\nAda:8\n"` metnini splitlines ile satırlara ayır; kenar boşluklarını temizle; partition ile ad ve puanı çıkar. Boş ad, ayırıcısız satır ve boş metin girdilerini açıkça ele al. Yinelenen adların son değerini kullanıp adlara göre sıralı `ad=puan` metnini join ile üret; özgün metni koru.
+
+#### Geçiş ölçütleri
+
+- [ ] Örnek çıktı Ada=8 ve Ece=9 satırlarıdır; hatalı satırların davranışı tutarlı seçilmiştir.
+- [ ] Split/partition/strip/join seçimleri ve str değişmezliği açıklanmıştır; tüm yöntemleri gereksiz yere kullanma şartı yoktur.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [klasör milestone görevi](MILESTONE.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../binary-sequence-types-bytes-bytearray-memoryview/README.md)
+<!-- learning-milestone:end -->

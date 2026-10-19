@@ -1,0 +1,21 @@
+# Görev b:3.25: float davranışını ayırt et
+
+## Önce
+
+[t:4.8](../../../tutorial/04-more-control-flow-tools/4.8-defining-functions/README.md) ve bu sayfanın açıklama/örnekleri.
+
+## Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; ondalık metin dönüşümüyle geçersiz metin hatasını ayır.
+
+```python
+float("  -2.5 ")
+float("two")
+```
+
+## Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `-2.5`; `ValueError`.
+- [ ] Ondalık metin dönüşümüyle geçersiz metin hatasını ayır.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)

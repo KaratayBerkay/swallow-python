@@ -61,3 +61,28 @@ file name passed to the function.
 > the function, instead of the name encoded to or decoded from the
 > [filesystem encoding and error handler](https://docs.python.org/3.15/glossary.html#term-filesystem-encoding-and-error-handler). Also, the *filename2*
 > constructor argument and attribute was added.
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:4.4.15: Sistem hatasının alanlarını koru**
+
+#### Önce
+
+[t:8.3](../../../../tutorial/08-errors-and-exceptions/8.3-handling-exceptions/README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+`e=OSError(2,"yok","ornek.txt")` nesnesini oluştur. Tür, errno, strerror, filename ve args değerlerini kaydet. Mesajı eşleştirerek karar vermek yerine hata türü/alanlarını kullanmanın neden daha doğru olduğunu açıkla; verilmemiş filename2 ve platforma özgü winerror alanlarını genelleme.
+
+#### Geçiş ölçütleri
+
+- [ ] Bu kurucu FileNotFoundError alt türünü verir; errno=2, filename="ornek.txt", args=(2,"yok").
+- [ ] Dosya adı mesajdan ayrı alandır; platforma özel alanlar her ortamda bulunmak zorunda değildir.
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../OverflowError/README.md)
+<!-- learning-task:end -->

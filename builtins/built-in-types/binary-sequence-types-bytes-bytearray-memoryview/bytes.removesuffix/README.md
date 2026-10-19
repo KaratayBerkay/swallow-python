@@ -25,3 +25,45 @@ The *suffix* may be any [bytes-like object](https://docs.python.org/3.15/glossar
 > it always produces a new object, even if no changes were made.
 
 > *Added in version 3.9.*
+
+## Çözümlü kısa örnek
+
+ASCII bayt kurallarıyla çalış; tam son ek yalnız bir kez kaldırılır; boş ek metni silmez
+
+```python
+print(repr(b'ad.txt'.removesuffix(b'.txt')))
+# Sonuç: b'ad'
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.10.8: bytes.removesuffix davranışını ayırt et**
+
+#### Önce
+
+[b:2.10](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; ASCII bayt kurallarıyla çalış; tam son ek yalnız bir kez kaldırılır; boş ek metni silmez
+
+```python
+b'ababa'.removesuffix(b'ba')
+b'abc'.removesuffix(b'')
+```
+
+Geçerli bir denemeyi eşdeğer bytearray ile tekrarla; sonuç türünü ve özgün bytearrayın korunup korunmadığını göster.
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `b'aba'`; `b'abc'`.
+- [ ] ASCII bayt kurallarıyla çalış; tam son ek yalnız bir kez kaldırılır; boş ek metni silmez
+- [ ] Bytearray karşılığı doğru sonuç türüyle gösterilmiş; yeni binary dizi döndüren yöntem yerinde mutasyon sayılmamıştır.
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../bytes.decode/README.md)
+<!-- learning-task:end -->

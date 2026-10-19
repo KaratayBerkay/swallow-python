@@ -20,3 +20,43 @@ True
 False
 ```
 > Code: [example_01.py](example_01.py)
+
+## Çözümlü kısa örnek
+
+Decimal rakamla tüm sayısal Unicode karakterlerini ayır
+
+```python
+print(repr("12".isdecimal()))
+# Sonuç: True
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.9.17: str.isdecimal davranışını ayırt et**
+
+#### Önce
+
+[b:2.9](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; decimal rakamla tüm sayısal Unicode karakterlerini ayır
+
+```python
+"١٢".isdecimal()
+"²".isdecimal()
+"".isdecimal()
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `True`; `False`; `False`.
+- [ ] Decimal rakamla tüm sayısal Unicode karakterlerini ayır
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../str.isdigit/README.md)
+<!-- learning-task:end -->

@@ -21,3 +21,42 @@ A [TypeError](https://docs.python.org/3.15/builtins/exceptions.html#TypeError) e
 
 > *Changed in version 3.4:* `object().__format__(format_spec)` raises [TypeError](https://docs.python.org/3.15/builtins/exceptions.html#TypeError)
 > if *format_spec* is not an empty string.
+
+## Çözümlü kısa örnek
+
+Alan genişliği alt sınırdır; biçimlenen sonuç yeni metindir.
+
+```python
+print(repr(format(2.5,".1f")))
+# Sonuç: '2.5'
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:3.26: format davranışını ayırt et**
+
+#### Önce
+
+[t:4.8](../../../tutorial/04-more-control-flow-tools/4.8-defining-functions/README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; alan genişliği alt sınırdır; biçimlenen sonuç yeni metindir.
+
+```python
+format(7,"04d")
+format(12.345,".2f")
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `'0007'`; `'12.35'`.
+- [ ] Alan genişliği alt sınırdır; biçimlenen sonuç yeni metindir.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../frozenset/README.md)
+<!-- learning-task:end -->

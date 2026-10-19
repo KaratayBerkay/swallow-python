@@ -38,3 +38,42 @@ integer using a base of 16.
 >
 > To obtain a hexadecimal string representation for a float, use the
 > [float.hex()](https://docs.python.org/3.15/builtins/stdtypes.html#float.hex) method.
+
+## Çözümlü kısa örnek
+
+Negatif işaretle taban önekini ayır.
+
+```python
+print(repr(hex(15)))
+# Sonuç: '0xf'
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:3.34: hex davranışını ayırt et**
+
+#### Önce
+
+[t:4.8](../../../tutorial/04-more-control-flow-tools/4.8-defining-functions/README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; negatif işaretle taban önekini ayır.
+
+```python
+hex(-31)
+hex(0)
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `'-0x1f'`; `'0x0'`.
+- [ ] Negatif işaretle taban önekini ayır.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../id/README.md)
+<!-- learning-task:end -->

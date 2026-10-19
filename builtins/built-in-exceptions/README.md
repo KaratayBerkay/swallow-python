@@ -25,6 +25,31 @@ class or one of its subclasses, and not from [BaseException](base-classes/BaseEx
 information on defining exceptions is available in the Python Tutorial under
 [User-defined Exceptions](https://docs.python.org/3.15/tutorial/errors.html#tut-userexceptions).
 
+
+<!-- learning-task:start -->
+## Bölüm görevi
+
+**Görev b:4: Yakalama sınırını uygulamayla kanıtla**
+
+### Önce
+
+[t:8.3](../../tutorial/08-errors-and-exceptions/8.3-handling-exceptions/README.md) ve bu sayfanın açıklama/örnekleri.
+
+### Tek görev
+
+ValueError alt sınıfı bir VeriHatasi oluştur. İki handler sırasını karşılaştır: önce ValueError sonra VeriHatasi; önce VeriHatasi sonra ValueError. Aynı isimde fakat farklı sınıf nesneleri olan iki hatanın birbirini yakalamadığını göster.
+
+### Geçiş ölçütleri
+
+- [ ] Alt tür önce yazılırsa özel handler çalışır; üst tür önce yazılırsa alt türü de o yakalar.
+- [ ] Adların eşit olması exception sınıflarını eşdeğer yapmaz; kalıtım ilişkisi gerekir.
+
+[Değerlendirme yöntemi](../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](exception-context/README.md)
+<!-- learning-task:end -->
 ## Contents
 
 - [Exception context](exception-context/README.md) — Three attributes on exception objects provide information about the context in which the exception was raised:
@@ -106,3 +131,28 @@ information on defining exceptions is available in the Python Tutorial under
   - [`ExceptionGroup`](exception-groups/ExceptionGroup/README.md) — Both of these exception types wrap the exceptions in the sequence excs.
   - [`BaseExceptionGroup`](exception-groups/BaseExceptionGroup/README.md) — Documented together with ExceptionGroup.
 - [Exception hierarchy](exception-hierarchy/README.md) — The class hierarchy for built-in exceptions is:
+
+<!-- learning-milestone:start -->
+## Klasör milestone görevi
+
+**Milestone: Hata bilgisini kaybetmeyen okuyucu yaz**
+
+### Önce
+
+Bu klasördeki bütün bölüm görevleri ve alt klasör milestone kontrolleri tamamlanmış olmalı. Sırayı [görev dizininden](../../TASKS.md) kontrol et.
+
+### Tek görev
+
+Metin kayıttan ad ve puan okuyan küçük fonksiyon yaz. Yanlış tür, geçersiz sayı ve eksik alan için farklı hata davranışını seç; çağıran katmanda kendi AlanHatasi türüne `raise ... from asil` ile dönüştür. Birden çok bağımsız kaydın hatasını ExceptionGroup içinde topla; başarılı kayıtları koru.
+
+### Geçiş ölçütleri
+
+- [ ] Dar handlerlar doğru yerde çalışır; SystemExit/KeyboardInterrupt yanlışlıkla yutulmaz.
+- [ ] Asıl cause ve alan açıklaması korunur; grup içindeki hatalar türlerine göre ayrılabilir.
+
+[Değerlendirme yöntemi](../../DEGERLENDIRME.md)
+
+Ayrı dosya: [klasör milestone görevi](MILESTONE.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../thread-safety-guarantees/README.md)
+<!-- learning-milestone:end -->

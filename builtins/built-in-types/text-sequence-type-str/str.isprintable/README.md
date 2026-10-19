@@ -29,3 +29,43 @@ For example:
 > Code: [example_01.py](example_01.py)
 
 See also `isspace()`.
+
+## Çözümlü kısa örnek
+
+Boş metin ile satır sonu içeren metnin sonucu farklıdır
+
+```python
+print(repr("abc".isprintable()))
+# Sonuç: True
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.9.22: str.isprintable davranışını ayırt et**
+
+#### Önce
+
+[b:2.9](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; boş metin ile satır sonu içeren metnin sonucu farklıdır
+
+```python
+"".isprintable()
+"a\nb".isprintable()
+" ".isprintable()
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `True`; `False`; `True`.
+- [ ] Boş metin ile satır sonu içeren metnin sonucu farklıdır
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../str.isspace/README.md)
+<!-- learning-task:end -->

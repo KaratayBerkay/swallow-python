@@ -4,10 +4,10 @@ The module used to create and manage virtual environments is called `venv`. `ven
 
 To create a virtual environment, decide upon a directory where you want to place it, and run the `venv` module as a script with the directory path:
 
-``` python
+``` bash
 python -m venv tutorial-env
 ```
-> Code: [example_01.py](example_01.py)
+> Command: [example_01.sh](example_01.sh)
 
 This will create the `tutorial-env` directory if it doesn't exist, and also create directories inside it containing a copy of the Python interpreter and various supporting files.
 
@@ -17,17 +17,17 @@ Once you've created a virtual environment, you may activate it.
 
 On Windows, run:
 
-``` python
+``` console
 tutorial-env\Scripts\activate
 ```
-> Code: [example_02.py](example_02.py)
+> Command: [example_02.sh](example_02.sh)
 
 On Unix or MacOS, run:
 
-``` python
+``` bash
 source tutorial-env/bin/activate
 ```
-> Code: [example_03.py](example_03.py)
+> Command: [example_03.sh](example_03.sh)
 
 (This script is written for the bash shell. If you use the **csh** or **fish** shells, there are alternate `activate.csh` and `activate.fish` scripts you should use instead.)
 
@@ -49,10 +49,10 @@ Note that the activated virtual environment does not alter the `PYTHONPATH` vari
 
 To deactivate a virtual environment, type:
 
-``` python
+``` bash
 deactivate
 ```
-> Code: [example_04.py](example_04.py)
+> Command: [example_04.sh](example_04.sh)
 
 into the terminal.
 

@@ -13,3 +13,28 @@ The following exceptions are used as warning categories; see the
 - [`EncodingWarning`](EncodingWarning/README.md) — Base class for warnings related to encodings.
 - [`BytesWarning`](BytesWarning/README.md) — Base class for warnings related to bytes and bytearray.
 - [`ResourceWarning`](ResourceWarning/README.md) — Base class for warnings related to resource usage.
+
+<!-- learning-milestone:start -->
+## Klasör milestone görevi
+
+**Milestone: Uyarıyı muhatabına göre seç**
+
+### Önce
+
+Bu klasördeki bütün bölüm görevleri ve alt klasör milestone kontrolleri tamamlanmış olmalı. Sırayı [görev dizininden](../../../TASKS.md) kontrol et.
+
+### Tek görev
+
+Aynı değişiklik için geliştiriciye yönelik deprecation, son kullanıcıya yönelik deprecation ve henüz deprecated olmayan gelecek planını kategorilere ayır. Kaynak, encoding, import ve kuşkulu syntax olaylarını da sınıflandır. Görünmez warning ile gerçekleşmemiş olayın farkını açıkla.
+
+### Geçiş ölçütleri
+
+- [ ] DeprecationWarning/FutureWarning/PendingDeprecationWarning hedef ve zaman bakımından ayrılır.
+- [ ] Diğer kategoriler uygun olaya bağlanır; filtre bir olayı görünmez yapabilir, başarılı veya zararsız olduğunu kanıtlamaz.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [klasör milestone görevi](MILESTONE.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../exception-groups/ExceptionGroup/README.md)
+<!-- learning-milestone:end -->

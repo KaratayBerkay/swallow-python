@@ -36,3 +36,28 @@ The index after the last invalid data in [object](../../../built-in-functions/ob
 
 This value should not be negative as it is interpreted as an
 absolute offset but this constraint is not enforced at runtime.
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:4.4.30: Geçersiz veri aralığını ayır**
+
+#### Önce
+
+[t:8.3](../../../../tutorial/08-errors-and-exceptions/8.3-handling-exceptions/README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+`b"A\xffB".decode("utf-8")` ve `"AİB".encode("ascii")` hatalarını ayrı yakala. Encoding, object, start, end, reason alanlarını ve `e.object[e.start:e.end]` dilimini göster.
+
+#### Geçiş ölçütleri
+
+- [ ] İlk hata UnicodeDecodeError ve sorunlu dilim b"\xff"; ikinci UnicodeEncodeError ve sorunlu dilim "İ".
+- [ ] Start dahil, end hariçtir; encoding ve reason tanı koymak için korunur.
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../UnicodeEncodeError/README.md)
+<!-- learning-task:end -->

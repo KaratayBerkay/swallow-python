@@ -31,3 +31,30 @@ If you need to add or remove at both ends, consider using a
 [^3]: Plus the cost of iterating over *t*, which may be expensive for an arbitrary iterable.
 [^4]: This is the worst case scenario. Sorting is adaptive and input that is already sorted or reverse-sorted takes only *O*(*n*) comparisons. See [Objects/listsort.txt](https://github.com/python/cpython/tree/3.15/Objects/listsort.txt) for more information.
 [^5]: The number of elements is stored in the object, so `len()` does not need to count them.
+
+<!-- learning-task:start -->
+## Bölüm görevi
+
+**Görev b:6.1: Maliyeti işlemden türet**
+
+### Önce
+
+[b:6](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+Bu görevde verilen durumların yazılı çözümü geçerlidir; ek çalışma ortamı veya harici araç kurulumu gerekmez.
+
+### Tek görev
+
+n öğelik listeden pop(), pop(0), ortadan insert, k öğelik dilim, append ve sort maliyetlerini çıkar. N kez pop(0) ile listeyi boşaltmayı N kez pop() ile karşılaştır. Süre ölçümünü geçiş kanıtı olarak kullanma; tablo ve dipnotla gerekçelendir.
+
+### Geçiş ölçütleri
+
+- [ ] Sondan pop amortized O(1), baştan pop O(n), dilim O(k), genel sort O(n log n).
+- [ ] Baştan tekrarlı boşaltma O(N²), sondan O(N); append amortized maliyet ile tek resize maliyeti ayrılır.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../tuple/README.md)
+<!-- learning-task:end -->

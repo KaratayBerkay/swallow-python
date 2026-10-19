@@ -30,6 +30,7 @@ def place(root):
 
     walk('t:root')
     walk('r:root')
+    walk('b:root')
     following = {event[0]: events[i + 1] if i + 1 < len(events) else None
                  for i, event in enumerate(events)}
 

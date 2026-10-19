@@ -15,3 +15,43 @@ a [TypeError](https://docs.python.org/3.15/builtins/exceptions.html#TypeError) e
 raised for an invalid type if an earlier check succeeds.
 
 > *Changed in version 3.10:* *classinfo* can be a [Union Type](https://docs.python.org/3.15/builtins/stdtypes.html#types-union).
+
+## Çözümlü kısa örnek
+
+Alt sınıf ilişkisini tam tür eşitliğiyle karıştırma.
+
+```python
+print(repr(isinstance(3,int)))
+# Sonuç: True
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:3.38: isinstance davranışını ayırt et**
+
+#### Önce
+
+[t:4.8](../../../tutorial/04-more-control-flow-tools/4.8-defining-functions/README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; alt sınıf ilişkisini tam tür eşitliğiyle karıştırma.
+
+```python
+isinstance(True,int)
+isinstance("x",(int,str))
+type(True) is int
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `True`; `True`; `False`.
+- [ ] Alt sınıf ilişkisini tam tür eşitliğiyle karıştırma.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../issubclass/README.md)
+<!-- learning-task:end -->

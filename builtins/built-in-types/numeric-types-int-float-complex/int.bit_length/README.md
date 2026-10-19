@@ -32,3 +32,42 @@ def bit_length(self):
 ```
 
 > *Added in version 3.1.*
+
+## Çözümlü kısa örnek
+
+İşaret ve baştaki sıfırlar sayılmaz; sıfırın uzunluğu sıfırdır
+
+```python
+print(repr((8).bit_length()))
+# Sonuç: 4
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.4.1: int.bit_length davranışını ayırt et**
+
+#### Önce
+
+[b:2.4](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; i̇şaret ve baştaki sıfırlar sayılmaz; sıfırın uzunluğu sıfırdır
+
+```python
+(-9).bit_length()
+(0).bit_length()
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `4`; `0`.
+- [ ] İşaret ve baştaki sıfırlar sayılmaz; sıfırın uzunluğu sıfırdır
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../int.bit_count/README.md)
+<!-- learning-task:end -->

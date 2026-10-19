@@ -23,3 +23,37 @@ method should return a false value to indicate that the method completed
 successfully and does not want to suppress the raised exception. This allows
 context management code to easily detect whether or not an [__exit__()](https://docs.python.org/3.15/reference/datamodel.html#object.__exit__)
 method has actually failed.
+
+## Çözümlü kısa örnek
+
+```python
+# Normal bitişte exit(None, None, None) çağrılır.
+# Gövde hata verirse exit(hata_turu, hata, traceback) çağrılır.
+# Doğru dönüş hatayı bastırır; yanlış dönüş yayılmasını sürdürür.
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.13.2: Bastırma kararını görünür kıl**
+
+#### Önce
+
+[b:2.13](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aynı ValueError üreten gövdeyi __exit__ True ve False döndüren iki yönetici ile dene. Normal gövdede True dönüşüyle karşılaştır. Hata sınıfı, değeri ve traceback argümanlarını kaydet.
+
+#### Geçiş ölçütleri
+
+- [ ] True gövde hatasını bastırır, False yayılmasını sürdürür.
+- [ ] Normal bitişte (None,None,None) verilir; dönüşün doğruluğu normal akışı değiştirmez.
+- [ ] Exit gövdedeki hatayı elle yeniden raise etmek zorunda değildir.
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Klasörün bütün alt görevleri bittiyse milestone kontrolüne geç.](../README.md#klasör-milestone-görevi)
+<!-- learning-task:end -->

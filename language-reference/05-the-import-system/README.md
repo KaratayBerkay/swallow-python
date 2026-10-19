@@ -95,5 +95,5 @@ Ayrı dosya: [bölüm görevi](TASK.md).
 
 Ayrı dosya: [klasör milestone görevi](MILESTONE.md).
 
-Bu öğrenme rotasındaki son kontrol.
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../../builtins/built-in-constants/README.md)
 <!-- learning-milestone:end -->

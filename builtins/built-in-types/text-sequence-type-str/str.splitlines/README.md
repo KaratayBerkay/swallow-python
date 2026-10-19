@@ -58,3 +58,43 @@ For comparison, `split('\n')` gives:
 ['Two lines', '']
 ```
 > Code: [example_03.py](example_03.py)
+
+## Çözümlü kısa örnek
+
+Sondaki satır sonu ek boş satır üretmez; keepends sonlandırıcıyı korur
+
+```python
+print(repr("a\nb".splitlines()))
+# Sonuç: ['a', 'b']
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.9.41: str.splitlines davranışını ayırt et**
+
+#### Önce
+
+[b:2.9](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; sondaki satır sonu ek boş satır üretmez; keepends sonlandırıcıyı korur
+
+```python
+"a\n".splitlines()
+"a\n\nb".splitlines(True)
+"".splitlines()
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `['a']`; `['a\n', '\n', 'b']`; `[]`.
+- [ ] Sondaki satır sonu ek boş satır üretmez; keepends sonlandırıcıyı korur
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../str.startswith/README.md)
+<!-- learning-task:end -->

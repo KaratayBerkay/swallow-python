@@ -27,3 +27,43 @@ False
 > Code: [example_01.py](example_01.py)
 
 See also `isdecimal()` and `isnumeric()`.
+
+## Çözümlü kısa örnek
+
+Üst simge rakam kabul edilir; kesir her zaman digit değildir
+
+```python
+print(repr("12".isdigit()))
+# Sonuç: True
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.9.18: str.isdigit davranışını ayırt et**
+
+#### Önce
+
+[b:2.9](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; üst simge rakam kabul edilir; kesir her zaman digit değildir
+
+```python
+"²".isdigit()
+"⅕".isdigit()
+"".isdigit()
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `True`; `False`; `False`.
+- [ ] Üst simge rakam kabul edilir; kesir her zaman digit değildir
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../str.isidentifier/README.md)
+<!-- learning-task:end -->

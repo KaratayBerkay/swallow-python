@@ -19,3 +19,40 @@ decimal context to a copy of the original decimal context and then return the
 copy. This allows changes to be made to the current decimal context in the body
 of the `with` statement without affecting code outside the
 `with` statement.
+
+## Çözümlü kısa örnek
+
+```python
+class Yonetici:
+    def __enter__(self): return "acik"
+    def __exit__(self, *hata): return False
+
+with Yonetici() as durum:
+    print(durum)
+# acik
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.13.1: Giriş değerini yöneticiden ayır**
+
+#### Önce
+
+[b:2.13](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+__enter__ metodu self yerine "hazir" döndüren context manager yaz. With as değişkeni ve yönetici nesnenin farklı olduğunu göster. __enter__ hata verirse gövde ve __exit__ çalışır mı, akış üzerinden açıkla.
+
+#### Geçiş ölçütleri
+
+- [ ] As değişkeni "hazir" olur; yönetici __exit__ çağrısı için ayrıca tutulur.
+- [ ] Enter tamamlanmazsa gövdeye girilmez ve bu yöneticinin exit metodu çağrılmaz.
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../contextmanager.__exit__/README.md)
+<!-- learning-task:end -->

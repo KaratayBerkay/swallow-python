@@ -190,3 +190,68 @@ Sets and frozensets are [generic](https://docs.python.org/3.15/library/typing.ht
 >
 > For detailed information on thread-safety guarantees for [set](set/README.md)
 > objects, see [Thread safety for set objects](https://docs.python.org/3.15/builtins/threadsafety.html#thread-safety-set).
+
+## Çözümlü kısa örnek
+
+Tekrar silme, üyelik ve sıra bağımsızlığını bağla
+
+```python
+print(repr(sorted(set([3,1,3]))))
+# Sonuç: [1, 3]
+```
+
+<!-- learning-task:start -->
+#### Bölüm görevi
+
+**Görev b:2.11: set-types-set-frozenset davranışını ayırt et**
+
+##### Önce
+
+[b:2](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+##### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; tekrar silme, üyelik ve sıra bağımsızlığını bağla
+
+```python
+{1,2}=={2,1}
+{1,2} < {2,3}
+{1,2} <= {1,2,3}
+```
+
+##### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `True`; `False`; `True`.
+- [ ] Tekrar silme, üyelik ve sıra bağımsızlığını bağla
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](set/README.md)
+<!-- learning-task:end -->
+
+<!-- learning-milestone:start -->
+#### Klasör milestone görevi
+
+**Milestone: Üyelik politikasını küme cebiriyle kur**
+
+##### Önce
+
+Bu klasördeki bütün bölüm görevleri ve alt klasör milestone kontrolleri tamamlanmış olmalı. Sırayı [görev dizininden](../../../TASKS.md) kontrol et.
+
+##### Tek görev
+
+İzinli, istenen ve engelli kullanıcı kümelerinden kabul edilenleri, reddedilenleri ve yalnız bir listede bulunanları üret. Kaynak kümeleri koruyan sürüm ile çalışma kümesini yerinde güncelleyen sürümü karşılaştır. İç içe küme gerekiyorsa frozenset kullan.
+
+##### Geçiş ölçütleri
+
+- [ ] Kesişim/fark/simetrik fark doğru seçilmiştir; çıktı sırasına bağlı hata yoktur.
+- [ ] Yeni sonuç ile yerinde güncelleme ayrılır; hashable öğe gereği açıklanır; boş ve tam çakışan kümeler denenir.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [klasör milestone görevi](MILESTONE.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../mapping-types-dict-frozendict/README.md)
+<!-- learning-milestone:end -->

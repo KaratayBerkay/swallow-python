@@ -22,3 +22,42 @@ For example:
 > Code: [example_01.py](example_01.py)
 
 See also `partition()`.
+
+## Çözümlü kısa örnek
+
+Sağdaki ayırıcı seçilir; bulunamazsa özgün metin son parçadır
+
+```python
+print(repr("a=b".rpartition("=")))
+# Sonuç: ('a', '=', 'b')
+```
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev b:2.9.37: str.rpartition davranışını ayırt et**
+
+#### Önce
+
+[b:2.9](../README.md) ve bu sayfanın açıklama/örnekleri.
+
+#### Tek görev
+
+Aşağıdaki denemeleri ayrı ayrı incele. Sonuç veya hata türünü önce çıkar, sonra doğrula; sağdaki ayırıcı seçilir; bulunamazsa özgün metin son parçadır
+
+```python
+"a=b=c".rpartition("=")
+"abc".rpartition("=")
+```
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar sırayla: `('a=b', '=', 'c')`; `('', '', 'abc')`.
+- [ ] Sağdaki ayırıcı seçilir; bulunamazsa özgün metin son parçadır
+
+[Değerlendirme yöntemi](../../../../DEGERLENDIRME.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../str.rsplit/README.md)
+<!-- learning-task:end -->
