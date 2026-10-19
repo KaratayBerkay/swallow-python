@@ -14,3 +14,35 @@ Sequence objects typically may be compared to other objects with the same sequen
 > Code: [example_01.py](example_01.py)
 
 Note that comparing objects of different types with `<` or `>` is legal provided that the objects have appropriate comparison methods. For example, mixed numeric types are compared according to their numeric value, so 0 equals 0.0, etc. Otherwise, rather than providing an arbitrary ordering, the interpreter will raise a `TypeError` exception.
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev 5.8: Sıralamanın ilk belirleyici öğesini bul**
+
+**Odak:** Sözlük sırası anlamındaki lexicographic karşılaştırma, önek, iç içe diziler ve tür uyumu.
+
+#### Önce
+
+- Bu bölümün [anlatımını ve içindeki örnekleri](README.md) tamamla.
+- Ön bilgi: [t:5.7](../5.7-more-on-conditions/README.md).
+
+#### Tek görev
+
+1. Şu karşılaştırmaların her biri için yalnız sonucu değil, sonucu belirleyen ilk öğeyi yaz: [2, 9] < [3, 0]; [2, 9] < [2, 9, -1]; (1, ("ab", "c")) < (1, ("ac", "a")); (1, 2) == (1.0, 2.0); "B" < "a"; [1, "x"] < [1, 2].
+
+2. Sonra ifadeleri ayrı girişlerde doğrula.
+
+#### Geçiş ölçütleri
+
+- [ ] İlk beş sonuç doğru; sonuncu str/int sıralaması nedeniyle TypeError.
+- [ ] İlk fark bulunan yerde sonraki öğelerin karşılaştırılmadığı gösterilmiş.
+- [ ] Önek durumunda kısa dizi küçük; iç içe karşılaştırma yine aynı kuralla.
+- [ ] Metin sırası Unicode kod noktasıyla açıklanmış, alfabetik/yerel sıralama sanılmamış.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md) · [Sıra](../../../TASKS.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Klasörün bütün alt görevleri bittiyse milestone kontrolüne geç.](../README.md#klasör-milestone-görevi)
+<!-- learning-task:end -->

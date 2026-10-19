@@ -31,3 +31,37 @@ The rest of the line provides detail based on the type of exception and what cau
 The preceding part of the error message shows the context where the exception occurred, in the form of a stack traceback. In general it contains a stack traceback listing source lines; however, it will not display lines read from standard input.
 
 Built-in Exceptions lists the built-in exceptions and their meanings.
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev 8.2: Hata izinden bozulan işlemi bul**
+
+**Odak:** Exception türü, mesajı, traceback bağlamı ve parse hatasından ayrım.
+
+#### Önce
+
+- Bu bölümün [anlatımını ve içindeki örnekleri](README.md) tamamla.
+- Ön bilgi: [t:8.1](../8.1-syntax-errors/README.md).
+
+#### Tek görev
+
+1. Yeni bir oturumda 6 / 0, tanımlanmamış missing_name + 1 ve "count=" + 3 ifadelerini ayrı ayrı dene.
+
+2. Her biri için türü, mesajın anlattığı bozuk işlemi ve ilgili kaynak satırını not et.
+
+3. Hepsini tek dosyada peş peşe yazınca neden yalnız ilk hatayı görebileceğini açıkla.
+
+#### Geçiş ölçütleri
+
+- [ ] Türler ZeroDivisionError, NameError, TypeError.
+- [ ] Hata mesajı ezberlenmeden ilgili bölme/ad erişimi/toplama işlemi gösterilmiş.
+- [ ] İfadeler sözdizimsel olarak geçerli; sorun çalışma anında.
+- [ ] Yakalanmayan hata mevcut yürütmeyi durdurduğu için sonraki satırların kendiliğinden denenmediği açıklanmış.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md) · [Sıra](../../../TASKS.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../8.3-handling-exceptions/README.md)
+<!-- learning-task:end -->

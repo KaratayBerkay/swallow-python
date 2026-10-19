@@ -63,3 +63,37 @@ class Bag:
 Methods may reference global names in the same way as ordinary functions. The global scope associated with a method is the module containing its definition. (A class is never used as a global scope.) While one rarely encounters a good reason for using global data in a method, there are many legitimate uses of the global scope: for one thing, functions and modules imported into the global scope can be used by methods, as well as functions and classes defined in it. Usually, the class containing the method is itself defined in this global scope, and in the next section we'll find some good reasons why a method would want to reference its own class.
 
 Each value is an object, and therefore has a *class* (also called its *type*). It is stored as `object.__class__`.
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev 9.4: Nitelik aramasının önceliğini izle**
+
+**Odak:** Örnek niteliğinin sınıfı gölgelemesi, self üzerinden metot çağrısı ve sınıf dışındaki fonksiyon.
+
+#### Önce
+
+- Bu bölümün [anlatımını ve içindeki örnekleri](README.md) tamamla.
+- Ön bilgi: [t:9.3.5](../9.3-a-first-look-at-classes/9.3.5-class-and-instance-variables/README.md).
+- Ön bilgi: [t:6](../../06-modules/README.md).
+
+#### Tek görev
+
+1. Notebook sınıfının kopyasında bir örneğin category değerini "personal" yap; diğer örnek ve sınıf değerini kontrol et, sonra örnekteki niteliği sil. add_twice metodunun self.add_note çağrısını iki kez kullanmasını sağla.
+
+2. Bölümdeki f1/g/h örneğini hazır iskelet olarak okuyup h ile g ilişkisinin ve metot içinden global ad aramasının nerede gerçekleştiğini açıkla.
+
+#### Geçiş ölçütleri
+
+- [ ] Örnek ataması yalnız bir örneğin sınıf değerini gölgeliyor; del sonrası sınıf değeri tekrar görünüyor.
+- [ ] add_twice tek örneğin listesine iki not ekliyor.
+- [ ] self sözcüğünün özel anahtar değil anlaşılır adlandırma geleneği olduğu açıklanmış.
+- [ ] Sınıfa bağlanan dış fonksiyonun metot olabilmesi ve h/g ortak fonksiyon referansı açıklanmış.
+- [ ] Metotların global kapsamı sınıf sözlüğü değil tanımlandıkları modül; `__class__` nesnenin türüyle ilişkilendirilmiş.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md) · [Sıra](../../../TASKS.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../9.5-inheritance/README.md)
+<!-- learning-task:end -->

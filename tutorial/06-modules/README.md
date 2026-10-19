@@ -56,9 +56,79 @@ If you intend to use a function often you can assign it to a local name:
 ```
 > Code: [fib_2.py](fib_2.py)
 
+
+<!-- learning-task:start -->
+## Bölüm görevi
+
+**Görev 6: İşlevi başka dosyadan kullan**
+
+**Odak:** Modül dosyası, import ile ad bağlama, modül niteliği ve `__name__`.
+
+### Önce
+
+- Bu bölümün [anlatımını ve içindeki örnekleri](README.md) tamamla.
+- Ön bilgi: [t:4.8](../04-more-control-flow-tools/4.8-defining-functions/README.md).
+
+### Tek görev
+
+1. Ayrı bir çalışma klasöründe counts.py içine count_items(items) işlevini yaz; len(items) döndürsün.
+
+2. Aynı klasörden başlattığın REPL içinde import counts ile işlevi çağır, `counts.__name__` değerini göster ve f = counts.count_items ile ikinci ad üzerinden çağır.
+
+3. Python oturumu yeniden başlayınca nelerin kaybolduğunu, dosyanın neden kaldığını açıkla.
+
+### Geçiş ölçütleri
+
+- [ ] counts.count_items([3, 5]) ve f([3, 5]) sonuçları 2.
+- [ ] import counts, count_items adını tek başına yerel alana eklemiyor.
+- [ ] `counts.__name__` counts metni; dosya adı .py son ekiyle ilişkili.
+- [ ] Yeni oturumda tekrar import gerektiği açıklanmış; sonraki bölümdeki from/as teknikleri gerekmiyor.
+
+[Değerlendirme yöntemi](../../DEGERLENDIRME.md) · [Sıra](../../TASKS.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](6.1-more-on-modules/README.md)
+<!-- learning-task:end -->
 ## Sections
 
 - [6.1. More on Modules](6.1-more-on-modules/README.md)
 - [6.2. Standard Modules](6.2-standard-modules/README.md)
 - [6.3. The `dir()` Function](6.3-the-dir-function/README.md)
 - [6.4. Packages](6.4-packages/README.md)
+
+<!-- learning-milestone:start -->
+## Klasör milestone görevi
+
+**Milestone: Tekrar kullanılabilir hesap paketini teslim et**
+
+**Zamanı:** Bu klasörün kendi anlatımı, bütün alt bölümleri ve onların görevleri bittikten sonra.
+
+**Odak:** Modül/paket sınırları, kontrollü başlangıç, public adlar ve keşif.
+
+### Önce
+
+[Klasör anlatımı](README.md) ve [sayısal sıradaki alt görevler](../../TASKS.md) tamamlanmış olmalı. Bu klasörün dışından yalnız daha önce işlenmiş bölüm bilgileri kullanılabilir.
+
+### Tek görev
+
+1. studycalc paketinde operations.py içinde total(values), driver.py içinde yalnız ana girişte örnek veriyle sonuç yazdıran kod olsun. `__init__`.py üzerinden total adını açıkça sun.
+
+2. Ayrı REPLde import studycalc, from studycalc import total ve bir alias çağrısı yap; dir ile erişilebilir adları kontrol et. driver için paket bağlamında -m başlatma planı yaz.
+
+3. Bir ad gölgeleme hatasını oluşturmak yerine hangi dosya adından kaçınacağını açıklayan teşhis notu ekle.
+
+### Geçiş ölçütleri
+
+- [ ] Paket işlevi ve doğrudan alınan işlev aynı veride aynı sonucu veriyor.
+- [ ] Normal importta driver raporu çalışmıyor.
+- [ ] Public adlar bilinçli dışarı açılmış; tüm adları * ile yayma varsayımı yok.
+- [ ] Arama yolu ve yeniden import/reload farkı açıklanmış.
+- [ ] Başka klasörden çalıştırma gereksinimi paket dosyalarının yanında olmakla karıştırılmamış; daha önce işlenmeyen paket kurulumu gerekmiyor.
+
+[Değerlendirme yöntemi](../../DEGERLENDIRME.md) · [Sıra](../../TASKS.md)
+
+Ayrı dosya: [klasör milestone görevi](MILESTONE.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../07-input-and-output/7.1-fancier-output-formatting/README.md)
+<!-- learning-milestone:end -->

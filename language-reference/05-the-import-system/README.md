@@ -12,6 +12,41 @@ When a module is first imported, Python searches for the module and if found, it
 
 Changed in version 3.3: The import system has been updated to fully implement the second phase of [**PEP 302**](https://peps.python.org/pep-0302/). There is no longer any implicit import machinery - the full import system is exposed through `sys.meta_path`. In addition, native namespace package support has been implemented (see [**PEP 420**](https://peps.python.org/pep-0420/)).
 
+
+<!-- learning-task:start -->
+## Bölüm görevi
+
+**Görev 5: Modülü bulmayla ad bağlamayı ayır**
+
+**Odak:** import arama/oluşturma ve yerel ad bağlama, doğrudan `__import__` çağrısının farkı.
+
+### Önce
+
+- Bu bölümün [anlatımını ve içindeki örnekleri](README.md) tamamla.
+- Ön bilgi: [t:6.4.2](../../tutorial/06-modules/6.4-packages/6.4.2-intra-package-references/README.md).
+
+### Tek görev
+
+1. Ayrı yeni oturumlarda üç ifade için olay tablosu yaz: import math; `__import__`("math"); m = `__import__`("math").
+
+2. Her satırda modülün bulunması/oluşması ve yerel kapsamda math veya m adının bağlanması olaylarını ayır. dir() ile bağlanan adları kontrol et.
+
+3. Var olmayan benzersiz bir modül adı için hata türünü de belirt.
+
+### Geçiş ölçütleri
+
+- [ ] import math yerel math adını bağlıyor.
+- [ ] Doğrudan `__import__` modülü döndürüyor, yerel math adı oluşturması beklenmiyor.
+- [ ] Atama üçüncü durumda m adını bağlıyor.
+- [ ] Bulunamayan modül ModuleNotFoundError; arama yan etkileri ile yerel ad bağlama ayrılmış.
+- [ ] importlib gibi başka giriş yollarının `__import__` mekanizmasını atlayabileceği kaynak sınırlarıyla açıklanmış.
+
+[Değerlendirme yöntemi](../../DEGERLENDIRME.md) · [Sıra](../../TASKS.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](5.1-importlib/README.md)
+<!-- learning-task:end -->
 ## Sections
 
 - [5.1. `importlib`](5.1-importlib/README.md)
@@ -23,3 +58,42 @@ Changed in version 3.3: The import system has been updated to fully implement th
 - [5.7. Package Relative Imports](5.7-package-relative-imports/README.md)
 - [5.8. Special considerations for \_\_main\_\_](5.8-special-considerations-for-main/README.md)
 - [5.9. References](5.9-references/README.md)
+
+<!-- learning-milestone:start -->
+## Klasör milestone görevi
+
+**Milestone: Import sorununu doğru katmanda teşhis et**
+
+**Zamanı:** Bu klasörün kendi anlatımı, bütün alt bölümleri ve onların görevleri bittikten sonra.
+
+**Odak:** Import sisteminin bütün işlenmiş katmanlarını tek inceleme ağacında kullanma.
+
+### Önce
+
+[Klasör anlatımı](README.md) ve [sayısal sıradaki alt görevler](../../TASKS.md) tamamlanmış olmalı. Bu klasörün dışından yalnız daha önce işlenmiş bölüm bilgileri kullanılabilir.
+
+### Tek görev
+
+1. Bir geliştirici "aynı modülü değiştirip tekrar import ettim ama eski değeri gördüm; -m ile dosyadan çalıştırma da farklı" diyor.
+
+2. Teşhis kaydında yerel ad bağlama, sys.modules, reload, meta path/path cache, bytecode geçerliliği, parent alt modül bağı, göreli import bağlamı ve `__main__.__spec__` katmanlarını ayır.
+
+3. Üç kontrollü varyant için beklenen iz yaz: aynı oturumda tekrar import; yeni süreçte kaynak değişimi; -m ile ana giriş.
+
+4. Hookları değiştirerek çözmek yerine eldeki bulgudan hangi katmanın sorumlu olduğunu gerekçelendir.
+
+### Geçiş ölçütleri
+
+- [ ] Aynı oturumun eski değerini önce modül cacheiyle açıklıyor; .pyc otomatik suçlanmıyor.
+- [ ] Yeni süreçte kaynak/bytecode geçerliliği ayrı; finder cache modül nesnesi tutuyor sanılmamış.
+- [ ] Reload kimliği, namespace/parent bağı ve göreli import tabanı tutarlı.
+- [ ] -m ile dosya yolunun ana spec farkı doğru; import edilebilir nesneyle ana nesne ayrılmış.
+- [ ] Güncel exec_module ile tarihsel load_module karıştırılmamış; bilgi eksikliği boş referans bölümlerinden tamamlanmış sayılmamış.
+- [ ] Her öneri ilgili gözlemle destekli; gerçek import hook veya sistem ayarı değiştirilmemiş.
+
+[Değerlendirme yöntemi](../../DEGERLENDIRME.md) · [Sıra](../../TASKS.md)
+
+Ayrı dosya: [klasör milestone görevi](MILESTONE.md).
+
+Bu öğrenme rotasındaki son kontrol.
+<!-- learning-milestone:end -->

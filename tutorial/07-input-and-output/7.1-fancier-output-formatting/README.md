@@ -59,9 +59,75 @@ The value of x is 32.5, and y is 40000...
 
 The `string` module contains support for a simple templating approach based upon regular expressions, via `string.Template`. This offers yet another way to substitute values into strings, using placeholders like `$x` and replacing them with values from a dictionary. This syntax is easy to use, although it offers much less control for formatting.
 
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev 7.1: Aynı verinin üç gösterimini ayır**
+
+**Odak:** print, str/repr, temel f-string ve str.format ile sunum.
+
+#### Önce
+
+- Bu bölümün [anlatımını ve içindeki örnekleri](README.md) tamamla.
+- Ön bilgi: [t:5.5](../../05-data-structures/5.5-dictionaries/README.md).
+- Ön bilgi: [t:6](../../06-modules/README.md).
+
+#### Tek görev
+
+1. name = "Ada", count = 3, message = "Ready\nGo" verileriyle aynı "Ada has 3 items" mesajını f-string ve format kullanarak kur. message için print(message), print(str(message)), print(repr(message)) sonuçlarını karşılaştır. 3/8 oranını README içindeki yüzde biçimiyle iki ondalıkla göster; sayısal değer ile biçimlenmiş metni ayrı tut.
+
+#### Geçiş ölçütleri
+
+- [ ] İki mesaj aynı metni üretiyor.
+- [ ] İlk iki gösterim iki satır, repr gösterimi tırnak ve kaçış içeren temsil.
+- [ ] Yüzde görünümü 37.50%; kaynak oran 0.375 olarak korunmuş.
+- [ ] Gösterim biçimlemenin temel veriyi değiştirmediği açıklanmış.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md) · [Sıra](../../../TASKS.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](7.1.1-formatted-string-literals/README.md)
+<!-- learning-task:end -->
 ### Sections
 
 - [7.1.1. Formatted string literals](7.1.1-formatted-string-literals/README.md)
 - [7.1.2. The string format() method](7.1.2-the-string-format-method/README.md)
 - [7.1.3. Manual string formatting](7.1.3-manual-string-formatting/README.md)
 - [7.1.4. Old string formatting](7.1.4-old-string-formatting/README.md)
+
+<!-- learning-milestone:start -->
+### Klasör milestone görevi
+
+**Milestone: Bir raporun verisini ve görünümünü ayrı doğrula**
+
+**Zamanı:** Bu klasörün kendi anlatımı, bütün alt bölümleri ve onların görevleri bittikten sonra.
+
+**Odak:** f-string/format/eski % ve manuel hizalamanın aynı veride uygulanması.
+
+#### Önce
+
+[Klasör anlatımı](README.md) ve [sayısal sıradaki alt görevler](../../../TASKS.md) tamamlanmış olmalı. Bu klasörün dışından yalnız daha önce işlenmiş bölüm bilgileri kullanılabilir.
+
+#### Tek görev
+
+1. name="Ada", count=7, total=12.5 için küçük bir rapor üret.
+
+2. Ana satırda f-string ile genişlik ve iki ondalık kullan; aynı sayısal görünümü format ve eski % yöntemiyle doğrula.
+
+3. Ayrı bir kod alanını zfill ile doldur ve uzun adın kesilmeden alanı aşmasını göster. repr görünümünden boşluk/satır sonlarını kontrol et.
+
+#### Geçiş ölçütleri
+
+- [ ] Üç sayısal görünüm 12.50; alan genişlikleri doğru.
+- [ ] Doldurma ve kesme farklı işlem; asıl veriler korunmuş.
+- [ ] repr teşhis görünümü normal kullanıcı mesajı sanılmamış.
+- [ ] Şablonda hangi alanın hangi değerden geldiği açıklanmış; bir tek çıktıyı sabit metin yazmak yeterli değil.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md) · [Sıra](../../../TASKS.md)
+
+Ayrı dosya: [klasör milestone görevi](MILESTONE.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../7.2-reading-and-writing-files/README.md)
+<!-- learning-milestone:end -->

@@ -36,6 +36,66 @@ A special quirk of Python is that -- if no `global` or `nonlocal` statement is i
 
 The `global` statement can be used to indicate that particular variables live in the global scope and should be rebound there; the `nonlocal` statement indicates that particular variables live in an enclosing scope and should be rebound there.
 
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev 9.2: Bir adı nerede aradığını ve nereye yazdığını ayır**
+
+**Odak:** Namespace, LEGB, yerel/global/nonlocal bağlama ve fonksiyonun tanımlandığı modül.
+
+#### Önce
+
+- Bu bölümün [anlatımını ve içindeki örnekleri](README.md) tamamla.
+- Ön bilgi: [t:9.1](../9.1-a-word-about-names-and-objects/README.md).
+- Ön bilgi: [t:6.1](../../06-modules/6.1-more-on-modules/README.md).
+
+#### Tek görev
+
+1. Modül düzeyinde label = "module" kur. outer içinde label = "outer"; içindeki read yalnız label okusun, change_local yeni yerel label atasın, change_outer nonlocal ile outer değerini, change_module global ile modül değerini değiştirsin.
+
+2. Çağrılar arasına print ekleyip her okuma/yazmanın hangi namespace kullandığını not et.
+
+3. Fonksiyon başka modülden çağrılsaydı global hedefin neresi olacağını açıkla.
+
+#### Geçiş ölçütleri
+
+- [ ] Normal okuma en yakın çevreleyen label değerini buluyor.
+- [ ] Normal atama yalnız iç fonksiyona, nonlocal outer alanına, global tanımın modülüne yazıyor.
+- [ ] Yerel/çevreleyen/global/builtins arama sırası belirtilmiş.
+- [ ] Ad alanının oluşturulma anı ile kapsamın kaynak kod konumu ayrılmış.
+- [ ] del ve import/def işlemlerinin de ad bağlamasına etkisi açıklanmış; sınıf kapsamı ayrıntıları istenmemiş.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md) · [Sıra](../../../TASKS.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](9.2.1-scopes-and-namespaces-example/README.md)
+<!-- learning-task:end -->
 ### Sections
 
 - [9.2.1. Scopes and Namespaces Example](9.2.1-scopes-and-namespaces-example/README.md)
+
+<!-- learning-milestone:start -->
+### Klasör milestone görevi
+
+**Milestone: Kapsam geçişi**
+
+**Zamanı:** Bu klasörün kendi anlatımı, bütün alt bölümleri ve onların görevleri bittikten sonra.
+
+**Odak:** Namespace bağlarını aynı akışta izleme.
+
+#### Önce
+
+[Klasör anlatımı](README.md) ve [sayısal sıradaki alt görevler](../../../TASKS.md) tamamlanmış olmalı. Bu klasörün dışından yalnız daha önce işlenmiş bölüm bilgileri kullanılabilir.
+
+#### Tek kontrol
+
+Bu klasörün kapsamı altındaki tek kontrolle aynıdır. [Mevcut görevin](9.2.1-scopes-and-namespaces-example/TASK.md) geçiş ölçütleri bu milestone için de geçerlidir. Aynı işi ikinci kez yapman gerekmez.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md) · [Sıra](../../../TASKS.md)
+
+Ayrı dosya: [klasör milestone görevi](MILESTONE.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../9.3-a-first-look-at-classes/9.3.1-class-definition-syntax/README.md)
+<!-- learning-milestone:end -->

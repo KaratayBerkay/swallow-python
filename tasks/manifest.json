@@ -1,0 +1,4301 @@
+{
+  "format": 1,
+  "sections": [
+    {
+      "id": "t:root",
+      "source": "tutorial/README.md",
+      "status": "navigation",
+      "reason": "Bölüm haritası/önizleme/kaynakça; yeni uygulama davranışı burada öğretilmiyor."
+    },
+    {
+      "id": "t:2",
+      "source": "tutorial/02-using-the-python-interpreter/README.md",
+      "status": "navigation",
+      "reason": "Bölüm haritası/önizleme/kaynakça; yeni uygulama davranışı burada öğretilmiyor.",
+      "sha256": "ae782d13733fc54c9ae7e44a20ada08469b373ff419a2cff99494b3e444b5ed1"
+    },
+    {
+      "id": "t:2.1",
+      "source": "tutorial/02-using-the-python-interpreter/2.1-invoking-the-interpreter/README.md",
+      "status": "task",
+      "task": "tutorial/02-using-the-python-interpreter/2.1-invoking-the-interpreter/TASK.md",
+      "prerequisites": [],
+      "python": "3.11",
+      "sha256": "bae64da4a81ecf3744f90b6f2362de85749d70b5a7aee730b61c32a9e3db8518"
+    },
+    {
+      "id": "t:2.1.1",
+      "source": "tutorial/02-using-the-python-interpreter/2.1-invoking-the-interpreter/2.1.1-argument-passing/README.md",
+      "status": "task",
+      "task": "tutorial/02-using-the-python-interpreter/2.1-invoking-the-interpreter/2.1.1-argument-passing/TASK.md",
+      "prerequisites": [
+        "t:2.1"
+      ],
+      "python": "3.11",
+      "sha256": "3d6dcc4fb23cedf547f94578323e9afa909f2e3423c5d59a7ec35328488ecfef"
+    },
+    {
+      "id": "t:2.1.2",
+      "source": "tutorial/02-using-the-python-interpreter/2.1-invoking-the-interpreter/2.1.2-interactive-mode/README.md",
+      "status": "task",
+      "task": "tutorial/02-using-the-python-interpreter/2.1-invoking-the-interpreter/2.1.2-interactive-mode/TASK.md",
+      "prerequisites": [
+        "t:2.1"
+      ],
+      "python": "3.11",
+      "sha256": "9171ad3e89d67a233c0575772b050fcb332fe521c691fdeaa3d0764c0f54ce4d"
+    },
+    {
+      "id": "t:2.2",
+      "source": "tutorial/02-using-the-python-interpreter/2.2-the-interpreter-and-its-environment/README.md",
+      "status": "navigation",
+      "reason": "Bölüm haritası/önizleme/kaynakça; yeni uygulama davranışı burada öğretilmiyor.",
+      "sha256": "ec96ee52e8ac1f373851d8ceaaa33aefb5e14bd1416dc59ef712184aa360b8f2"
+    },
+    {
+      "id": "t:2.2.1",
+      "source": "tutorial/02-using-the-python-interpreter/2.2-the-interpreter-and-its-environment/2.2.1-source-code-encoding/README.md",
+      "status": "task",
+      "task": "tutorial/02-using-the-python-interpreter/2.2-the-interpreter-and-its-environment/2.2.1-source-code-encoding/TASK.md",
+      "prerequisites": [
+        "t:2.1"
+      ],
+      "python": "3.11",
+      "sha256": "17202fc55293b7c8907bdd8f8e5f0a70c042037c33e37e62740acb8e99bab07a"
+    },
+    {
+      "id": "t:3",
+      "source": "tutorial/03-an-informal-introduction-to-python/README.md",
+      "status": "task",
+      "task": "tutorial/03-an-informal-introduction-to-python/TASK.md",
+      "prerequisites": [
+        "t:2.1.2"
+      ],
+      "python": "3.11",
+      "sha256": "1ab675a618ed73c1fc582e02354638b67f8f8584e16d11746d9c88859aa07e82"
+    },
+    {
+      "id": "t:3.1",
+      "source": "tutorial/03-an-informal-introduction-to-python/3.1-using-python-as-a-calculator/README.md",
+      "status": "navigation",
+      "reason": "Bölüm haritası/önizleme/kaynakça; yeni uygulama davranışı burada öğretilmiyor.",
+      "sha256": "68d7092a3d42747ff7d41301009fdb0fbe92083e437f3fcf84380ffc90b9ebaf"
+    },
+    {
+      "id": "t:3.1.1",
+      "source": "tutorial/03-an-informal-introduction-to-python/3.1-using-python-as-a-calculator/3.1.1-numbers/README.md",
+      "status": "task",
+      "task": "tutorial/03-an-informal-introduction-to-python/3.1-using-python-as-a-calculator/3.1.1-numbers/TASK.md",
+      "prerequisites": [
+        "t:3",
+        "t:2.1"
+      ],
+      "python": "3.11",
+      "sha256": "49a0ab27da8f09c6653472f6735248a1902cd47e1322079e9aefa0aeccfbf9d6"
+    },
+    {
+      "id": "t:3.1.2",
+      "source": "tutorial/03-an-informal-introduction-to-python/3.1-using-python-as-a-calculator/3.1.2-text/README.md",
+      "status": "task",
+      "task": "tutorial/03-an-informal-introduction-to-python/3.1-using-python-as-a-calculator/3.1.2-text/TASK.md",
+      "prerequisites": [
+        "t:3.1.1"
+      ],
+      "python": "3.11",
+      "sha256": "c2d12660ea32f9dd3d64399c3565bdd9cfa475f88a49751095cff1e2e7c47088"
+    },
+    {
+      "id": "t:3.1.3",
+      "source": "tutorial/03-an-informal-introduction-to-python/3.1-using-python-as-a-calculator/3.1.3-lists/README.md",
+      "status": "task",
+      "task": "tutorial/03-an-informal-introduction-to-python/3.1-using-python-as-a-calculator/3.1.3-lists/TASK.md",
+      "prerequisites": [
+        "t:3.1.2"
+      ],
+      "python": "3.11",
+      "sha256": "22b7887a57c52383127373df3c6ce153c662078fd4d3b2aabc202d9b19388a3c"
+    },
+    {
+      "id": "t:3.2",
+      "source": "tutorial/03-an-informal-introduction-to-python/3.2-first-steps-towards-programming/README.md",
+      "status": "task",
+      "task": "tutorial/03-an-informal-introduction-to-python/3.2-first-steps-towards-programming/TASK.md",
+      "prerequisites": [
+        "t:3.1.3"
+      ],
+      "python": "3.11",
+      "sha256": "bd4e2c8ea54b351fe4904b3adefe76259839c074c9c47d362a2fa53262dae6a7"
+    },
+    {
+      "id": "t:4",
+      "source": "tutorial/04-more-control-flow-tools/README.md",
+      "status": "navigation",
+      "reason": "Bölüm haritası/önizleme/kaynakça; yeni uygulama davranışı burada öğretilmiyor.",
+      "sha256": "41f7ac2d675eca7479024b8c565e62c9fc9f8c1abbf6018c1e4f6d2e7548a58a"
+    },
+    {
+      "id": "t:4.1",
+      "source": "tutorial/04-more-control-flow-tools/4.1-if-statements/README.md",
+      "status": "task",
+      "task": "tutorial/04-more-control-flow-tools/4.1-if-statements/TASK.md",
+      "prerequisites": [
+        "t:3.2"
+      ],
+      "python": "3.11",
+      "sha256": "7ebf5d5942131f8973d9eb223e68286414075d5ec1067e81680af7ddacf86c3b"
+    },
+    {
+      "id": "t:4.2",
+      "source": "tutorial/04-more-control-flow-tools/4.2-for-statements/README.md",
+      "status": "task",
+      "task": "tutorial/04-more-control-flow-tools/4.2-for-statements/TASK.md",
+      "prerequisites": [
+        "t:4.1",
+        "t:3.1.3"
+      ],
+      "python": "3.11",
+      "sha256": "94d3aa66000c963a73c56e5c890130cb72d42a3f8ecb9f59297d4c48229d0c3d"
+    },
+    {
+      "id": "t:4.3",
+      "source": "tutorial/04-more-control-flow-tools/4.3-the-range-function/README.md",
+      "status": "task",
+      "task": "tutorial/04-more-control-flow-tools/4.3-the-range-function/TASK.md",
+      "prerequisites": [
+        "t:4.2"
+      ],
+      "python": "3.11",
+      "sha256": "e7ae3c8215a64fa6181de9de475fa0d46233dd7ff3957ec54a5df25f0935b7e1"
+    },
+    {
+      "id": "t:4.4",
+      "source": "tutorial/04-more-control-flow-tools/4.4-break-and-continue-statements/README.md",
+      "status": "task",
+      "task": "tutorial/04-more-control-flow-tools/4.4-break-and-continue-statements/TASK.md",
+      "prerequisites": [
+        "t:4.3",
+        "t:4.1"
+      ],
+      "python": "3.11",
+      "sha256": "00f25e1f00ebb4d71cde6bb9ee8c8f67dc12057d4ac159ffe631b0a96126547b"
+    },
+    {
+      "id": "t:4.5",
+      "source": "tutorial/04-more-control-flow-tools/4.5-else-clauses-on-loops/README.md",
+      "status": "task",
+      "task": "tutorial/04-more-control-flow-tools/4.5-else-clauses-on-loops/TASK.md",
+      "prerequisites": [
+        "t:4.4"
+      ],
+      "python": "3.11",
+      "sha256": "b38b37e87c778dd1ef8917625313af5a2adece07670ce294c769c879b52b305a"
+    },
+    {
+      "id": "t:4.6",
+      "source": "tutorial/04-more-control-flow-tools/4.6-pass-statements/README.md",
+      "status": "task",
+      "task": "tutorial/04-more-control-flow-tools/4.6-pass-statements/TASK.md",
+      "prerequisites": [
+        "t:4.5"
+      ],
+      "python": "3.11",
+      "sha256": "0742f9303be063b6a79b09df25942cab4113476af583f60d78b36ce8e6b97b29"
+    },
+    {
+      "id": "t:4.7",
+      "source": "tutorial/04-more-control-flow-tools/4.7-match-statements/README.md",
+      "status": "task",
+      "task": "tutorial/04-more-control-flow-tools/4.7-match-statements/TASK.md",
+      "prerequisites": [
+        "t:4.6",
+        "t:3.1.3"
+      ],
+      "python": "3.11",
+      "sha256": "3279685495c56f9e333bc695046561ab122a9606d78bdc14a852a4705254e14c"
+    },
+    {
+      "id": "t:4.8",
+      "source": "tutorial/04-more-control-flow-tools/4.8-defining-functions/README.md",
+      "status": "task",
+      "task": "tutorial/04-more-control-flow-tools/4.8-defining-functions/TASK.md",
+      "prerequisites": [
+        "t:3.2",
+        "t:4.6"
+      ],
+      "python": "3.11",
+      "sha256": "353e7da8609f35a18c03d5647d816ae9e022230a9055bb41c0851b778fb74a38"
+    },
+    {
+      "id": "t:4.9",
+      "source": "tutorial/04-more-control-flow-tools/4.9-more-on-defining-functions/README.md",
+      "status": "navigation",
+      "reason": "Bölüm haritası/önizleme/kaynakça; yeni uygulama davranışı burada öğretilmiyor.",
+      "sha256": "53283ec291c46e7d9df0654ab19c412e2d230604c360eaae0b04c723924145bf"
+    },
+    {
+      "id": "t:4.9.1",
+      "source": "tutorial/04-more-control-flow-tools/4.9-more-on-defining-functions/4.9.1-default-argument-values/README.md",
+      "status": "task",
+      "task": "tutorial/04-more-control-flow-tools/4.9-more-on-defining-functions/4.9.1-default-argument-values/TASK.md",
+      "prerequisites": [
+        "t:4.8",
+        "t:3.1.3"
+      ],
+      "python": "3.11",
+      "sha256": "55cc17f38eaeb3e63c320facec7a177d993e029d08ce22ef3bc36990bf466dc1"
+    },
+    {
+      "id": "t:4.9.2",
+      "source": "tutorial/04-more-control-flow-tools/4.9-more-on-defining-functions/4.9.2-keyword-arguments/README.md",
+      "status": "task",
+      "task": "tutorial/04-more-control-flow-tools/4.9-more-on-defining-functions/4.9.2-keyword-arguments/TASK.md",
+      "prerequisites": [
+        "t:4.9.1"
+      ],
+      "python": "3.11",
+      "sha256": "c3bf5e8725cdc851feb2ada0ef26845a14bb5e56bed87a4147f427ea9be5e543"
+    },
+    {
+      "id": "t:4.9.3",
+      "source": "tutorial/04-more-control-flow-tools/4.9-more-on-defining-functions/4.9.3-special-parameters/README.md",
+      "status": "task",
+      "task": "tutorial/04-more-control-flow-tools/4.9-more-on-defining-functions/4.9.3-special-parameters/TASK.md",
+      "prerequisites": [
+        "t:4.9.2"
+      ],
+      "python": "3.11",
+      "sha256": "a9532183b94419b23f355c094a05e300198dfea475ae491a924ea12a441744eb"
+    },
+    {
+      "id": "t:4.9.3.1",
+      "source": "tutorial/04-more-control-flow-tools/4.9-more-on-defining-functions/4.9.3-special-parameters/4.9.3.1-positional-or-keyword-arguments/README.md",
+      "status": "task",
+      "task": "tutorial/04-more-control-flow-tools/4.9-more-on-defining-functions/4.9.3-special-parameters/4.9.3.1-positional-or-keyword-arguments/TASK.md",
+      "prerequisites": [
+        "t:4.9.3"
+      ],
+      "python": "3.11",
+      "sha256": "5a5b67311793c0498eb4513a0fab27809a3c98396e51e1b67c89f67fb831c5d7"
+    },
+    {
+      "id": "t:4.9.3.2",
+      "source": "tutorial/04-more-control-flow-tools/4.9-more-on-defining-functions/4.9.3-special-parameters/4.9.3.2-positional-only-parameters/README.md",
+      "status": "task",
+      "task": "tutorial/04-more-control-flow-tools/4.9-more-on-defining-functions/4.9.3-special-parameters/4.9.3.2-positional-only-parameters/TASK.md",
+      "prerequisites": [
+        "t:4.9.3.1"
+      ],
+      "python": "3.11",
+      "sha256": "298ca08a57d968a24ef93d8c0dca6572d60c99b22100ab1d25a5275bb13ffd49"
+    },
+    {
+      "id": "t:4.9.3.3",
+      "source": "tutorial/04-more-control-flow-tools/4.9-more-on-defining-functions/4.9.3-special-parameters/4.9.3.3-keyword-only-arguments/README.md",
+      "status": "task",
+      "task": "tutorial/04-more-control-flow-tools/4.9-more-on-defining-functions/4.9.3-special-parameters/4.9.3.3-keyword-only-arguments/TASK.md",
+      "prerequisites": [
+        "t:4.9.3.2"
+      ],
+      "python": "3.11",
+      "sha256": "0928d4a12c458a4dc4eb911d784a4a5c7a209202efdeeb3fb93a60c9e87ebdd5"
+    },
+    {
+      "id": "t:4.9.3.4",
+      "source": "tutorial/04-more-control-flow-tools/4.9-more-on-defining-functions/4.9.3-special-parameters/4.9.3.4-function-examples/README.md",
+      "status": "task",
+      "task": "tutorial/04-more-control-flow-tools/4.9-more-on-defining-functions/4.9.3-special-parameters/4.9.3.4-function-examples/TASK.md",
+      "prerequisites": [
+        "t:4.9.3.3",
+        "t:4.9.2"
+      ],
+      "python": "3.11",
+      "sha256": "16c127600e098f5562e41bcb10352eab7f1de2b776d938832114a92a85aa0641"
+    },
+    {
+      "id": "t:4.9.3.5",
+      "source": "tutorial/04-more-control-flow-tools/4.9-more-on-defining-functions/4.9.3-special-parameters/4.9.3.5-recap/README.md",
+      "status": "task",
+      "task": "tutorial/04-more-control-flow-tools/4.9-more-on-defining-functions/4.9.3-special-parameters/4.9.3.5-recap/TASK.md",
+      "prerequisites": [
+        "t:4.9.3.4"
+      ],
+      "python": "3.11",
+      "sha256": "998ced29d6ecee253015dad0d718443bce65118af221dbb95721d63562d3a56e"
+    },
+    {
+      "id": "t:4.9.4",
+      "source": "tutorial/04-more-control-flow-tools/4.9-more-on-defining-functions/4.9.4-arbitrary-argument-lists/README.md",
+      "status": "task",
+      "task": "tutorial/04-more-control-flow-tools/4.9-more-on-defining-functions/4.9.4-arbitrary-argument-lists/TASK.md",
+      "prerequisites": [
+        "t:4.9.3.5"
+      ],
+      "python": "3.11",
+      "sha256": "44e8c862d21dd50f2257ae972d8e23fb2a13eec18400bebfc0076150451b1226"
+    },
+    {
+      "id": "t:4.9.5",
+      "source": "tutorial/04-more-control-flow-tools/4.9-more-on-defining-functions/4.9.5-unpacking-argument-lists/README.md",
+      "status": "task",
+      "task": "tutorial/04-more-control-flow-tools/4.9-more-on-defining-functions/4.9.5-unpacking-argument-lists/TASK.md",
+      "prerequisites": [
+        "t:4.9.4",
+        "t:4.3"
+      ],
+      "python": "3.11",
+      "sha256": "d16beca9d8fee7db67e1f4756f21fd588ab34f5ad7454a8606629049592b47a4"
+    },
+    {
+      "id": "t:4.9.6",
+      "source": "tutorial/04-more-control-flow-tools/4.9-more-on-defining-functions/4.9.6-lambda-expressions/README.md",
+      "status": "task",
+      "task": "tutorial/04-more-control-flow-tools/4.9-more-on-defining-functions/4.9.6-lambda-expressions/TASK.md",
+      "prerequisites": [
+        "t:4.9.5"
+      ],
+      "python": "3.11",
+      "sha256": "8faf2e602ff78bb4aff82f835bb787bb105d435207bdbafb67a13c6e5ed420af"
+    },
+    {
+      "id": "t:4.9.7",
+      "source": "tutorial/04-more-control-flow-tools/4.9-more-on-defining-functions/4.9.7-documentation-strings/README.md",
+      "status": "task",
+      "task": "tutorial/04-more-control-flow-tools/4.9-more-on-defining-functions/4.9.7-documentation-strings/TASK.md",
+      "prerequisites": [
+        "t:4.8"
+      ],
+      "python": "3.11",
+      "sha256": "08494bff001ed3a0aa5c8c04398b0df1a8f1737c005fab5742241de8d135cd92"
+    },
+    {
+      "id": "t:4.9.8",
+      "source": "tutorial/04-more-control-flow-tools/4.9-more-on-defining-functions/4.9.8-function-annotations/README.md",
+      "status": "task",
+      "task": "tutorial/04-more-control-flow-tools/4.9-more-on-defining-functions/4.9.8-function-annotations/TASK.md",
+      "prerequisites": [
+        "t:4.9.7"
+      ],
+      "python": "3.11",
+      "sha256": "67d30611e8fd496f2a75ed0750c0ba5c7c4872647c519183548b124c597437b7"
+    },
+    {
+      "id": "t:4.10",
+      "source": "tutorial/04-more-control-flow-tools/4.10-intermezzo-coding-style/README.md",
+      "status": "task",
+      "task": "tutorial/04-more-control-flow-tools/4.10-intermezzo-coding-style/TASK.md",
+      "prerequisites": [
+        "t:4.9.8"
+      ],
+      "python": "3.11",
+      "sha256": "7376728c7dd48e9b8424b12f80fe648ad8f3d85fa8f2aac45dd04ba37e68ed32"
+    },
+    {
+      "id": "t:5",
+      "source": "tutorial/05-data-structures/README.md",
+      "status": "navigation",
+      "reason": "Bölüm haritası/önizleme/kaynakça; yeni uygulama davranışı burada öğretilmiyor.",
+      "sha256": "755dd9b7367454ccc1eb2842d7d503bbb876cfcb9425fbb7c28ed094cc399a34"
+    },
+    {
+      "id": "t:5.1",
+      "source": "tutorial/05-data-structures/5.1-more-on-lists/README.md",
+      "status": "task",
+      "task": "tutorial/05-data-structures/5.1-more-on-lists/TASK.md",
+      "prerequisites": [
+        "t:3.1.3",
+        "t:4.8"
+      ],
+      "python": "3.11",
+      "sha256": "6e2862745d303b9e593ee453c7539b99770c3b8742a14554ca2e1220c09e15ab"
+    },
+    {
+      "id": "t:5.1.1",
+      "source": "tutorial/05-data-structures/5.1-more-on-lists/5.1.1-using-lists-as-stacks/README.md",
+      "status": "task",
+      "task": "tutorial/05-data-structures/5.1-more-on-lists/5.1.1-using-lists-as-stacks/TASK.md",
+      "prerequisites": [
+        "t:5.1"
+      ],
+      "python": "3.11",
+      "sha256": "bd8b7386441e4595fcb5921e27cc60b2561ff4c59e9558013b2a04811769a0e1"
+    },
+    {
+      "id": "t:5.1.2",
+      "source": "tutorial/05-data-structures/5.1-more-on-lists/5.1.2-using-lists-as-queues/README.md",
+      "status": "task",
+      "task": "tutorial/05-data-structures/5.1-more-on-lists/5.1.2-using-lists-as-queues/TASK.md",
+      "prerequisites": [
+        "t:5.1.1"
+      ],
+      "python": "3.11",
+      "sha256": "27d3612af10dd5cf763d1a11bb3eedfafdd64a078cbe75f096f3f10df70c6807"
+    },
+    {
+      "id": "t:5.1.3",
+      "source": "tutorial/05-data-structures/5.1-more-on-lists/5.1.3-list-comprehensions/README.md",
+      "status": "task",
+      "task": "tutorial/05-data-structures/5.1-more-on-lists/5.1.3-list-comprehensions/TASK.md",
+      "prerequisites": [
+        "t:5.1",
+        "t:4.2"
+      ],
+      "python": "3.11",
+      "sha256": "c639358e839f48f6f8889d14c37d438c4e52196a43ae962f13be66c96c9ce107"
+    },
+    {
+      "id": "t:5.1.4",
+      "source": "tutorial/05-data-structures/5.1-more-on-lists/5.1.4-nested-list-comprehensions/README.md",
+      "status": "task",
+      "task": "tutorial/05-data-structures/5.1-more-on-lists/5.1.4-nested-list-comprehensions/TASK.md",
+      "prerequisites": [
+        "t:5.1.3",
+        "t:4.9.5"
+      ],
+      "python": "3.11",
+      "sha256": "6f36357162191f369967e28c513f4d49555c923532dcd6f572659c94d2742773"
+    },
+    {
+      "id": "t:5.1.5",
+      "source": "tutorial/05-data-structures/5.1-more-on-lists/5.1.5-unpacking-in-lists-and-list-comprehensions/README.md",
+      "status": "task",
+      "task": "tutorial/05-data-structures/5.1-more-on-lists/5.1.5-unpacking-in-lists-and-list-comprehensions/TASK.md",
+      "prerequisites": [
+        "t:5.1.4"
+      ],
+      "python": "3.15",
+      "sha256": "aef0e70f15930fbf105b001425a1caf4b2291e6099c733bc49b6ee1ee896df1e"
+    },
+    {
+      "id": "t:5.2",
+      "source": "tutorial/05-data-structures/5.2-the-del-statement/README.md",
+      "status": "task",
+      "task": "tutorial/05-data-structures/5.2-the-del-statement/TASK.md",
+      "prerequisites": [
+        "t:5.1"
+      ],
+      "python": "3.11",
+      "sha256": "491a3c2cc69b0a57ad1a95290c122deafd495b91b6805a03a416927c587d9968"
+    },
+    {
+      "id": "t:5.3",
+      "source": "tutorial/05-data-structures/5.3-tuples-and-sequences/README.md",
+      "status": "task",
+      "task": "tutorial/05-data-structures/5.3-tuples-and-sequences/TASK.md",
+      "prerequisites": [
+        "t:5.2",
+        "t:3.1.3"
+      ],
+      "python": "3.11",
+      "sha256": "4e3c9e85872142cf311df923bdc0ae5c5b29ec421cbe9ca8504fb1b88dd72ef0"
+    },
+    {
+      "id": "t:5.4",
+      "source": "tutorial/05-data-structures/5.4-sets/README.md",
+      "status": "task",
+      "task": "tutorial/05-data-structures/5.4-sets/TASK.md",
+      "prerequisites": [
+        "t:5.3",
+        "t:5.1.5"
+      ],
+      "python": "3.15",
+      "sha256": "b826d8186bb04ba536b67c4068991d6dceb0f7a091f209ea393da93b59b8337a"
+    },
+    {
+      "id": "t:5.5",
+      "source": "tutorial/05-data-structures/5.5-dictionaries/README.md",
+      "status": "task",
+      "task": "tutorial/05-data-structures/5.5-dictionaries/TASK.md",
+      "prerequisites": [
+        "t:5.4",
+        "t:5.2"
+      ],
+      "python": "3.15",
+      "sha256": "579ba8c6cf4a3830f255a4793e8ec68213381953983a84b78af6795350b4fce5"
+    },
+    {
+      "id": "t:5.6",
+      "source": "tutorial/05-data-structures/5.6-looping-techniques/README.md",
+      "status": "task",
+      "task": "tutorial/05-data-structures/5.6-looping-techniques/TASK.md",
+      "prerequisites": [
+        "t:5.5"
+      ],
+      "python": "3.11",
+      "sha256": "dba1b3148a3ae7068a0c39133a2c70af7e34c4c01e5f85fe0507c770ee3b8efd"
+    },
+    {
+      "id": "t:5.7",
+      "source": "tutorial/05-data-structures/5.7-more-on-conditions/README.md",
+      "status": "task",
+      "task": "tutorial/05-data-structures/5.7-more-on-conditions/TASK.md",
+      "prerequisites": [
+        "t:5.6",
+        "t:4.1"
+      ],
+      "python": "3.11",
+      "sha256": "7f4956a5353bcca83f65b989638183e833a35c0db8eb416ebe4514a661996104"
+    },
+    {
+      "id": "t:5.8",
+      "source": "tutorial/05-data-structures/5.8-comparing-sequences-and-other-types/README.md",
+      "status": "task",
+      "task": "tutorial/05-data-structures/5.8-comparing-sequences-and-other-types/TASK.md",
+      "prerequisites": [
+        "t:5.7"
+      ],
+      "python": "3.11",
+      "sha256": "116f413d8ab5c676c2b65dccd01a42a4ce6c44a9caef7340cb0e5507eb966a7b"
+    },
+    {
+      "id": "t:6",
+      "source": "tutorial/06-modules/README.md",
+      "status": "task",
+      "task": "tutorial/06-modules/TASK.md",
+      "prerequisites": [
+        "t:4.8"
+      ],
+      "python": "3.11",
+      "sha256": "0c8615baebb69eb56c37f3b2aa8c99925325ebd39730021c4febfcbce734e5f8"
+    },
+    {
+      "id": "t:6.1",
+      "source": "tutorial/06-modules/6.1-more-on-modules/README.md",
+      "status": "task",
+      "task": "tutorial/06-modules/6.1-more-on-modules/TASK.md",
+      "prerequisites": [
+        "t:6"
+      ],
+      "python": "3.11",
+      "sha256": "5fd42da3ad84e50e45bebb300231ce8d6bfe28b94ceab9e8a518d095dd530a3d"
+    },
+    {
+      "id": "t:6.1.1",
+      "source": "tutorial/06-modules/6.1-more-on-modules/6.1.1-executing-modules-as-scripts/README.md",
+      "status": "task",
+      "task": "tutorial/06-modules/6.1-more-on-modules/6.1.1-executing-modules-as-scripts/TASK.md",
+      "prerequisites": [
+        "t:6.1",
+        "t:2.1.1"
+      ],
+      "python": "3.11",
+      "sha256": "40f706c28022316ecc3efcd2a4b0c576464409c94c136ba616070373198883d9"
+    },
+    {
+      "id": "t:6.1.2",
+      "source": "tutorial/06-modules/6.1-more-on-modules/6.1.2-the-module-search-path/README.md",
+      "status": "task",
+      "task": "tutorial/06-modules/6.1-more-on-modules/6.1.2-the-module-search-path/TASK.md",
+      "prerequisites": [
+        "t:6.1.1"
+      ],
+      "python": "3.11",
+      "sha256": "ae3512faa1c2ec6f60b7a1bbf8f785f84af7a7e130e3035d2ffa09f65c2dbe59"
+    },
+    {
+      "id": "t:6.1.3",
+      "source": "tutorial/06-modules/6.1-more-on-modules/6.1.3-compiled-python-files/README.md",
+      "status": "task",
+      "task": "tutorial/06-modules/6.1-more-on-modules/6.1.3-compiled-python-files/TASK.md",
+      "prerequisites": [
+        "t:6.1.2"
+      ],
+      "python": "3.11",
+      "sha256": "d8e83743e9f6b3c0b7d82e7c23936008344ccf7bb64cb0eeceec5f2b72590e94"
+    },
+    {
+      "id": "t:6.2",
+      "source": "tutorial/06-modules/6.2-standard-modules/README.md",
+      "status": "task",
+      "task": "tutorial/06-modules/6.2-standard-modules/TASK.md",
+      "prerequisites": [
+        "t:6.1.2"
+      ],
+      "python": "3.11",
+      "sha256": "bfcb14214a2b8e8a1a51ff7040142fce12680631523c7408dd7db92b833abf45"
+    },
+    {
+      "id": "t:6.3",
+      "source": "tutorial/06-modules/6.3-the-dir-function/README.md",
+      "status": "task",
+      "task": "tutorial/06-modules/6.3-the-dir-function/TASK.md",
+      "prerequisites": [
+        "t:6.2"
+      ],
+      "python": "3.11",
+      "sha256": "5fda9857ee5f5f7282558c3481d93167813751e81e7cd29a9515e75ea03295cc"
+    },
+    {
+      "id": "t:6.4",
+      "source": "tutorial/06-modules/6.4-packages/README.md",
+      "status": "task",
+      "task": "tutorial/06-modules/6.4-packages/TASK.md",
+      "prerequisites": [
+        "t:6.3"
+      ],
+      "python": "3.11",
+      "sha256": "b33c9fb8685f4a217edc6b37d078050ef3f6f18edb2324ae81dcc65fa1d517d0"
+    },
+    {
+      "id": "t:6.4.1",
+      "source": "tutorial/06-modules/6.4-packages/6.4.1-importing-from-a-package/README.md",
+      "status": "task",
+      "task": "tutorial/06-modules/6.4-packages/6.4.1-importing-from-a-package/TASK.md",
+      "prerequisites": [
+        "t:6.4"
+      ],
+      "python": "3.11",
+      "sha256": "459f3ffb401f6f785e50f384963c47a18744ff8500908966839d9f081c2d1438"
+    },
+    {
+      "id": "t:6.4.2",
+      "source": "tutorial/06-modules/6.4-packages/6.4.2-intra-package-references/README.md",
+      "status": "task",
+      "task": "tutorial/06-modules/6.4-packages/6.4.2-intra-package-references/TASK.md",
+      "prerequisites": [
+        "t:6.4.1"
+      ],
+      "python": "3.11",
+      "sha256": "75484653a14355a6d683bc7979e0cc282921545cf28df3ee414643d9e74555cc"
+    },
+    {
+      "id": "t:7",
+      "source": "tutorial/07-input-and-output/README.md",
+      "status": "navigation",
+      "reason": "Bölüm haritası/önizleme/kaynakça; yeni uygulama davranışı burada öğretilmiyor.",
+      "sha256": "82fec2e92453aa7ea4e0837bd5d972b5a06c3bf7a00b6b3933a1701d4e2cef51"
+    },
+    {
+      "id": "t:7.1",
+      "source": "tutorial/07-input-and-output/7.1-fancier-output-formatting/README.md",
+      "status": "task",
+      "task": "tutorial/07-input-and-output/7.1-fancier-output-formatting/TASK.md",
+      "prerequisites": [
+        "t:5.5",
+        "t:6"
+      ],
+      "python": "3.11",
+      "sha256": "5179b9a0718e9dc474bfe0fffc5a820a40f80695c0756a2c1d4a16c76a8aa456"
+    },
+    {
+      "id": "t:7.1.1",
+      "source": "tutorial/07-input-and-output/7.1-fancier-output-formatting/7.1.1-formatted-string-literals/README.md",
+      "status": "task",
+      "task": "tutorial/07-input-and-output/7.1-fancier-output-formatting/7.1.1-formatted-string-literals/TASK.md",
+      "prerequisites": [
+        "t:7.1"
+      ],
+      "python": "3.11",
+      "sha256": "73c099b96d3a69a951f4939b0f600ed119478e3c520b1b9f4f57c98e9eef79a1"
+    },
+    {
+      "id": "t:7.1.2",
+      "source": "tutorial/07-input-and-output/7.1-fancier-output-formatting/7.1.2-the-string-format-method/README.md",
+      "status": "task",
+      "task": "tutorial/07-input-and-output/7.1-fancier-output-formatting/7.1.2-the-string-format-method/TASK.md",
+      "prerequisites": [
+        "t:7.1.1",
+        "t:4.9.5"
+      ],
+      "python": "3.11",
+      "sha256": "ce145997ee53b00e809fcc25f54db6da9b1fbddad1e4732b3bbd494095a30912"
+    },
+    {
+      "id": "t:7.1.3",
+      "source": "tutorial/07-input-and-output/7.1-fancier-output-formatting/7.1.3-manual-string-formatting/README.md",
+      "status": "task",
+      "task": "tutorial/07-input-and-output/7.1-fancier-output-formatting/7.1.3-manual-string-formatting/TASK.md",
+      "prerequisites": [
+        "t:7.1.2"
+      ],
+      "python": "3.11",
+      "sha256": "ec4adb3a613e344eb8537c5115357d9c3261816c2077e742a13f13d280466177"
+    },
+    {
+      "id": "t:7.1.4",
+      "source": "tutorial/07-input-and-output/7.1-fancier-output-formatting/7.1.4-old-string-formatting/README.md",
+      "status": "task",
+      "task": "tutorial/07-input-and-output/7.1-fancier-output-formatting/7.1.4-old-string-formatting/TASK.md",
+      "prerequisites": [
+        "t:7.1.3"
+      ],
+      "python": "3.11",
+      "sha256": "779c5c76a7311eb418ab3eafdc6f8fd7da1ca02662ce16033f2e5d985739e76b"
+    },
+    {
+      "id": "t:7.2",
+      "source": "tutorial/07-input-and-output/7.2-reading-and-writing-files/README.md",
+      "status": "task",
+      "task": "tutorial/07-input-and-output/7.2-reading-and-writing-files/TASK.md",
+      "prerequisites": [
+        "t:7.1",
+        "t:6"
+      ],
+      "python": "3.11",
+      "sha256": "7bbac3f133bca4d9b0de4291a78a9f60e246212268bb36052c6aae1b9812ad16"
+    },
+    {
+      "id": "t:7.2.1",
+      "source": "tutorial/07-input-and-output/7.2-reading-and-writing-files/7.2.1-methods-of-file-objects/README.md",
+      "status": "task",
+      "task": "tutorial/07-input-and-output/7.2-reading-and-writing-files/7.2.1-methods-of-file-objects/TASK.md",
+      "prerequisites": [
+        "t:7.2"
+      ],
+      "python": "3.11",
+      "sha256": "f0b4ead92c8ddcd9e66b4f462bf6dc7533a85d2836841fb2602cdba8ce771252"
+    },
+    {
+      "id": "t:7.2.2",
+      "source": "tutorial/07-input-and-output/7.2-reading-and-writing-files/7.2.2-saving-structured-data-with-json/README.md",
+      "status": "task",
+      "task": "tutorial/07-input-and-output/7.2-reading-and-writing-files/7.2.2-saving-structured-data-with-json/TASK.md",
+      "prerequisites": [
+        "t:7.2.1",
+        "t:5.5"
+      ],
+      "python": "3.11",
+      "sha256": "383d1ea48d86c50dcbfeafa97452a74458f605fbaa890d5c6166116e47b8882b"
+    },
+    {
+      "id": "t:8",
+      "source": "tutorial/08-errors-and-exceptions/README.md",
+      "status": "navigation",
+      "sha256": "bd273c4ee8e8de4bc8d24f991bb4c82dfa4be3b4841a8c41e05878c12497c4b1",
+      "reason": "Giriş yalnız hata türlerinin adlarını veriyor; ayrım ve teşhis 8.1 ve 8.2 anlatımlarından sonra sınanır."
+    },
+    {
+      "id": "t:8.1",
+      "source": "tutorial/08-errors-and-exceptions/8.1-syntax-errors/README.md",
+      "status": "task",
+      "task": "tutorial/08-errors-and-exceptions/8.1-syntax-errors/TASK.md",
+      "prerequisites": [
+        "t:7.2.2"
+      ],
+      "python": "3.11",
+      "sha256": "92d1ef6775743c515a2f0b50154c27c9b6f4c2e76479d5ba7127d144831fa0f0"
+    },
+    {
+      "id": "t:8.2",
+      "source": "tutorial/08-errors-and-exceptions/8.2-exceptions/README.md",
+      "status": "task",
+      "task": "tutorial/08-errors-and-exceptions/8.2-exceptions/TASK.md",
+      "prerequisites": [
+        "t:8.1"
+      ],
+      "python": "3.11",
+      "sha256": "6dc45be3c505b6cc80118dba874f520e4fd31065c9c301947ce9f4df91a5364b"
+    },
+    {
+      "id": "t:8.3",
+      "source": "tutorial/08-errors-and-exceptions/8.3-handling-exceptions/README.md",
+      "status": "task",
+      "task": "tutorial/08-errors-and-exceptions/8.3-handling-exceptions/TASK.md",
+      "prerequisites": [
+        "t:8.2",
+        "t:7.2.1"
+      ],
+      "python": "3.11",
+      "sha256": "bbb6e2a36145f154ef206ee698bc0a46cfb4841e8fda0e16a59f9455b95be34c"
+    },
+    {
+      "id": "t:8.4",
+      "source": "tutorial/08-errors-and-exceptions/8.4-raising-exceptions/README.md",
+      "status": "task",
+      "task": "tutorial/08-errors-and-exceptions/8.4-raising-exceptions/TASK.md",
+      "prerequisites": [
+        "t:8.3"
+      ],
+      "python": "3.11",
+      "sha256": "d04dbb61dc82ad1772343ac5b7a90f83e9706851b369fd437c5b2414ae83ef3b"
+    },
+    {
+      "id": "t:8.5",
+      "source": "tutorial/08-errors-and-exceptions/8.5-exception-chaining/README.md",
+      "status": "task",
+      "task": "tutorial/08-errors-and-exceptions/8.5-exception-chaining/TASK.md",
+      "prerequisites": [
+        "t:8.4"
+      ],
+      "python": "3.11",
+      "sha256": "1eb7cfb329b1e38672e9dda3ee74732ec8e1ea8452688c81aed277ac7ba5d8a5"
+    },
+    {
+      "id": "t:8.6",
+      "source": "tutorial/08-errors-and-exceptions/8.6-user-defined-exceptions/README.md",
+      "status": "task",
+      "task": "tutorial/08-errors-and-exceptions/8.6-user-defined-exceptions/TASK.md",
+      "prerequisites": [
+        "t:8.4",
+        "t:8.3"
+      ],
+      "python": "3.11",
+      "sha256": "53edf6aeb7fdf6d591303bb60c7d0dc75f2c4d42a4dfb24fc3724f748c419a57"
+    },
+    {
+      "id": "t:8.7",
+      "source": "tutorial/08-errors-and-exceptions/8.7-defining-clean-up-actions/README.md",
+      "status": "task",
+      "task": "tutorial/08-errors-and-exceptions/8.7-defining-clean-up-actions/TASK.md",
+      "prerequisites": [
+        "t:8.5"
+      ],
+      "python": "3.11",
+      "sha256": "779770a562571dae2a73b27e72c2874b3c1b15d8a65ffa89100cc53921efd438"
+    },
+    {
+      "id": "t:8.8",
+      "source": "tutorial/08-errors-and-exceptions/8.8-predefined-clean-up-actions/README.md",
+      "status": "task",
+      "task": "tutorial/08-errors-and-exceptions/8.8-predefined-clean-up-actions/TASK.md",
+      "prerequisites": [
+        "t:8.7",
+        "t:7.2"
+      ],
+      "python": "3.11",
+      "sha256": "c88aaf92a181e69628fd6113d9b0c484b329805796b972bc6e83fcf4673a6021"
+    },
+    {
+      "id": "t:8.9",
+      "source": "tutorial/08-errors-and-exceptions/8.9-raising-and-handling-multiple-unrelated-exceptions/README.md",
+      "status": "task",
+      "task": "tutorial/08-errors-and-exceptions/8.9-raising-and-handling-multiple-unrelated-exceptions/TASK.md",
+      "prerequisites": [
+        "t:8.8"
+      ],
+      "python": "3.11",
+      "sha256": "d51fe70337417e56313bb255dfb85685d91100bdec44b2797de841ccd6b89028"
+    },
+    {
+      "id": "t:8.10",
+      "source": "tutorial/08-errors-and-exceptions/8.10-enriching-exceptions-with-notes/README.md",
+      "status": "task",
+      "task": "tutorial/08-errors-and-exceptions/8.10-enriching-exceptions-with-notes/TASK.md",
+      "prerequisites": [
+        "t:8.9"
+      ],
+      "python": "3.11",
+      "sha256": "f09dbfec26c41248c38ac4b560422a3e1e03128aac7fafe3469124a6f9921e32"
+    },
+    {
+      "id": "t:9",
+      "source": "tutorial/09-classes/README.md",
+      "status": "task",
+      "task": "tutorial/09-classes/TASK.md",
+      "prerequisites": [
+        "t:4.8",
+        "t:8.6"
+      ],
+      "python": "3.11",
+      "sha256": "1f3353a702bd756e0eb6ed8383e83c078eac253efa9a5ebe7dacdc99b486aacd"
+    },
+    {
+      "id": "t:9.1",
+      "source": "tutorial/09-classes/9.1-a-word-about-names-and-objects/README.md",
+      "status": "task",
+      "task": "tutorial/09-classes/9.1-a-word-about-names-and-objects/TASK.md",
+      "prerequisites": [
+        "t:3.1.3",
+        "t:4.8"
+      ],
+      "python": "3.11",
+      "sha256": "703a77997cb3eaa886f3a74e1327409a5765f22a51a3906289f97c803aed4d41"
+    },
+    {
+      "id": "t:9.2",
+      "source": "tutorial/09-classes/9.2-python-scopes-and-namespaces/README.md",
+      "status": "task",
+      "task": "tutorial/09-classes/9.2-python-scopes-and-namespaces/TASK.md",
+      "prerequisites": [
+        "t:9.1",
+        "t:6.1"
+      ],
+      "python": "3.11",
+      "sha256": "587b850e84544c354d12639dd9e5bb6ea58e0e1a41627d2e94e931a339687893"
+    },
+    {
+      "id": "t:9.2.1",
+      "source": "tutorial/09-classes/9.2-python-scopes-and-namespaces/9.2.1-scopes-and-namespaces-example/README.md",
+      "status": "task",
+      "task": "tutorial/09-classes/9.2-python-scopes-and-namespaces/9.2.1-scopes-and-namespaces-example/TASK.md",
+      "prerequisites": [
+        "t:9.2"
+      ],
+      "python": "3.11",
+      "sha256": "66eaa52708e5e9ef5dadad6f57733bfe162d3df0f81052c0db7a2dd2c38efe79"
+    },
+    {
+      "id": "t:9.3",
+      "source": "tutorial/09-classes/9.3-a-first-look-at-classes/README.md",
+      "status": "navigation",
+      "reason": "Bölüm haritası/önizleme/kaynakça; yeni uygulama davranışı burada öğretilmiyor.",
+      "sha256": "6335a50e89928161e6584140b172642867d45fc882987dad5cfe3d04dc249356"
+    },
+    {
+      "id": "t:9.3.1",
+      "source": "tutorial/09-classes/9.3-a-first-look-at-classes/9.3.1-class-definition-syntax/README.md",
+      "status": "task",
+      "task": "tutorial/09-classes/9.3-a-first-look-at-classes/9.3.1-class-definition-syntax/TASK.md",
+      "prerequisites": [
+        "t:9.2.1"
+      ],
+      "python": "3.11",
+      "sha256": "aaaab2e374ee637430936e9c7f9ba12aac8b738685e5a7ac637fcac1ec388a6f"
+    },
+    {
+      "id": "t:9.3.2",
+      "source": "tutorial/09-classes/9.3-a-first-look-at-classes/9.3.2-class-objects/README.md",
+      "status": "task",
+      "task": "tutorial/09-classes/9.3-a-first-look-at-classes/9.3.2-class-objects/TASK.md",
+      "prerequisites": [
+        "t:9.3.1"
+      ],
+      "python": "3.11",
+      "sha256": "33d1635a9448221f183ab3a5c6f5bc1e13ce549cc00cce7c6bd9cda5ca1b18c8"
+    },
+    {
+      "id": "t:9.3.3",
+      "source": "tutorial/09-classes/9.3-a-first-look-at-classes/9.3.3-instance-objects/README.md",
+      "status": "task",
+      "task": "tutorial/09-classes/9.3-a-first-look-at-classes/9.3.3-instance-objects/TASK.md",
+      "prerequisites": [
+        "t:9.3.2"
+      ],
+      "python": "3.11",
+      "sha256": "b67a7c2cecce7f4a8c3f865f6108a3a35018beb3d05c95571e235296d5640f76"
+    },
+    {
+      "id": "t:9.3.4",
+      "source": "tutorial/09-classes/9.3-a-first-look-at-classes/9.3.4-method-objects/README.md",
+      "status": "task",
+      "task": "tutorial/09-classes/9.3-a-first-look-at-classes/9.3.4-method-objects/TASK.md",
+      "prerequisites": [
+        "t:9.3.3"
+      ],
+      "python": "3.11",
+      "sha256": "a270dd0086f75723140932ca03631dbba1997c573d0d4c95c5726c4db645b582"
+    },
+    {
+      "id": "t:9.3.5",
+      "source": "tutorial/09-classes/9.3-a-first-look-at-classes/9.3.5-class-and-instance-variables/README.md",
+      "status": "task",
+      "task": "tutorial/09-classes/9.3-a-first-look-at-classes/9.3.5-class-and-instance-variables/TASK.md",
+      "prerequisites": [
+        "t:9.3.4",
+        "t:4.9.1"
+      ],
+      "python": "3.11",
+      "sha256": "3f1c5a3b15fa5590f89bda87f87096fdd474a9ba8c89ddb38353720d54c8907c"
+    },
+    {
+      "id": "t:9.4",
+      "source": "tutorial/09-classes/9.4-random-remarks/README.md",
+      "status": "task",
+      "task": "tutorial/09-classes/9.4-random-remarks/TASK.md",
+      "prerequisites": [
+        "t:9.3.5",
+        "t:6"
+      ],
+      "python": "3.11",
+      "sha256": "e0f993b1ae4ff2a41aacd7489d2c6daffe1c52cf318b0430ad8d8e7f690c830f"
+    },
+    {
+      "id": "t:9.5",
+      "source": "tutorial/09-classes/9.5-inheritance/README.md",
+      "status": "task",
+      "task": "tutorial/09-classes/9.5-inheritance/TASK.md",
+      "prerequisites": [
+        "t:9.4"
+      ],
+      "python": "3.11",
+      "sha256": "83df19de9352079e6e250d673fa0394b7b8e641728e09ab8779235525ae8efa6"
+    },
+    {
+      "id": "t:9.5.1",
+      "source": "tutorial/09-classes/9.5-inheritance/9.5.1-multiple-inheritance/README.md",
+      "status": "task",
+      "task": "tutorial/09-classes/9.5-inheritance/9.5.1-multiple-inheritance/TASK.md",
+      "prerequisites": [
+        "t:9.5"
+      ],
+      "python": "3.11",
+      "sha256": "0554d17a7a790a89222f7474da71e8773f444f737bfc1ca0a0b702a9ce2465e1"
+    },
+    {
+      "id": "t:9.6",
+      "source": "tutorial/09-classes/9.6-private-variables/README.md",
+      "status": "task",
+      "task": "tutorial/09-classes/9.6-private-variables/TASK.md",
+      "prerequisites": [
+        "t:9.5.1"
+      ],
+      "python": "3.11",
+      "sha256": "77efb79776692e6ad524ba9028ac7fbcba492b43a1e7138f36d7273bd2197eaa"
+    },
+    {
+      "id": "t:9.7",
+      "source": "tutorial/09-classes/9.7-odds-and-ends/README.md",
+      "status": "task",
+      "task": "tutorial/09-classes/9.7-odds-and-ends/TASK.md",
+      "prerequisites": [
+        "t:9.6",
+        "t:4.9.8"
+      ],
+      "python": "3.11",
+      "sha256": "451a8a60ade959468108f65e078b3aa5080a0431a79e28b09d5e42b63226aa16"
+    },
+    {
+      "id": "t:9.8",
+      "source": "tutorial/09-classes/9.8-iterators/README.md",
+      "status": "task",
+      "task": "tutorial/09-classes/9.8-iterators/TASK.md",
+      "prerequisites": [
+        "t:9.7",
+        "t:8.4"
+      ],
+      "python": "3.11",
+      "sha256": "1f9f79b559b146ac1a28718218c275bb416e5eb4b7c5e46090a3cc730a304b3b"
+    },
+    {
+      "id": "t:9.9",
+      "source": "tutorial/09-classes/9.9-generators/README.md",
+      "status": "task",
+      "task": "tutorial/09-classes/9.9-generators/TASK.md",
+      "prerequisites": [
+        "t:9.8"
+      ],
+      "python": "3.11",
+      "sha256": "951f26971b9094787034e982ccece0f12fccaa0815cf2c2ba2d424ef83e74be1"
+    },
+    {
+      "id": "t:9.10",
+      "source": "tutorial/09-classes/9.10-generator-expressions/README.md",
+      "status": "task",
+      "task": "tutorial/09-classes/9.10-generator-expressions/TASK.md",
+      "prerequisites": [
+        "t:9.9",
+        "t:5.1.3"
+      ],
+      "python": "3.15",
+      "sha256": "7b581517acb4d0ea38f0fb0f7df25e54421819f7bd30e9c334bc6264f6d2bf21"
+    },
+    {
+      "id": "t:10",
+      "source": "tutorial/10-brief-tour-of-the-standard-library/README.md",
+      "status": "navigation",
+      "reason": "Bölüm haritası/önizleme/kaynakça; yeni uygulama davranışı burada öğretilmiyor.",
+      "sha256": "104f2b651a77fb01854957beee7cf41ce0707cd41d5aa97073a4edf430a0f4b7"
+    },
+    {
+      "id": "t:10.1",
+      "source": "tutorial/10-brief-tour-of-the-standard-library/10.1-operating-system-interface/README.md",
+      "status": "task",
+      "task": "tutorial/10-brief-tour-of-the-standard-library/10.1-operating-system-interface/TASK.md",
+      "prerequisites": [
+        "t:7.2",
+        "t:6.3"
+      ],
+      "python": "3.11",
+      "sha256": "4176a3c6186374db15ab00ac86eff35210b0fd15c32602071894960b38f09b93"
+    },
+    {
+      "id": "t:10.2",
+      "source": "tutorial/10-brief-tour-of-the-standard-library/10.2-file-wildcards/README.md",
+      "status": "task",
+      "task": "tutorial/10-brief-tour-of-the-standard-library/10.2-file-wildcards/TASK.md",
+      "prerequisites": [
+        "t:10.1"
+      ],
+      "python": "3.11",
+      "sha256": "7c84413c6737344570dc81b091e4f584adc6a1e580e66f92eb66daf9277da561"
+    },
+    {
+      "id": "t:10.3",
+      "source": "tutorial/10-brief-tour-of-the-standard-library/10.3-command-line-arguments/README.md",
+      "status": "task",
+      "task": "tutorial/10-brief-tour-of-the-standard-library/10.3-command-line-arguments/TASK.md",
+      "prerequisites": [
+        "t:10.2",
+        "t:2.1.1"
+      ],
+      "python": "3.11",
+      "sha256": "5feeb1935a35e9ec32b349ad6776dd5d45bc3148e95df3ee4040c8c5799b88a1"
+    },
+    {
+      "id": "t:10.4",
+      "source": "tutorial/10-brief-tour-of-the-standard-library/10.4-error-output-redirection-and-program-termination/README.md",
+      "status": "task",
+      "task": "tutorial/10-brief-tour-of-the-standard-library/10.4-error-output-redirection-and-program-termination/TASK.md",
+      "prerequisites": [
+        "t:10.3",
+        "t:8.4"
+      ],
+      "python": "3.11",
+      "sha256": "7ed94d9d4875271f70d751522a17bae44ef97079c5b8963ad7273add3ab8b6d7"
+    },
+    {
+      "id": "t:10.5",
+      "source": "tutorial/10-brief-tour-of-the-standard-library/10.5-string-pattern-matching/README.md",
+      "status": "task",
+      "task": "tutorial/10-brief-tour-of-the-standard-library/10.5-string-pattern-matching/TASK.md",
+      "prerequisites": [
+        "t:10.4"
+      ],
+      "python": "3.11",
+      "sha256": "183238d1414bc30187259d8bf1dc2dad7bc052f527e6e28f6bcca1c7fec2a2ab"
+    },
+    {
+      "id": "t:10.6",
+      "source": "tutorial/10-brief-tour-of-the-standard-library/10.6-mathematics/README.md",
+      "status": "task",
+      "task": "tutorial/10-brief-tour-of-the-standard-library/10.6-mathematics/TASK.md",
+      "prerequisites": [
+        "t:10.5"
+      ],
+      "python": "3.11",
+      "sha256": "d679ac8c2acf2800f78b68b3dcad48d0c2e6f6b7d6944cc20b7e26d4c70be6c5"
+    },
+    {
+      "id": "t:10.7",
+      "source": "tutorial/10-brief-tour-of-the-standard-library/10.7-internet-access/README.md",
+      "status": "task",
+      "task": "tutorial/10-brief-tour-of-the-standard-library/10.7-internet-access/TASK.md",
+      "prerequisites": [
+        "t:7.2.1",
+        "t:10.6"
+      ],
+      "python": "3.11",
+      "sha256": "e5d6b024fe80bfa0762239cd2f3b1e36a9d75b9a6cffb5574493e4948f8ccdf6"
+    },
+    {
+      "id": "t:10.8",
+      "source": "tutorial/10-brief-tour-of-the-standard-library/10.8-dates-and-times/README.md",
+      "status": "task",
+      "task": "tutorial/10-brief-tour-of-the-standard-library/10.8-dates-and-times/TASK.md",
+      "prerequisites": [
+        "t:10.7"
+      ],
+      "python": "3.11",
+      "sha256": "7eb972553801e03513e517698b6964f02ca8e8b4a5ca78aa588df907f97e7336"
+    },
+    {
+      "id": "t:10.9",
+      "source": "tutorial/10-brief-tour-of-the-standard-library/10.9-data-compression/README.md",
+      "status": "task",
+      "task": "tutorial/10-brief-tour-of-the-standard-library/10.9-data-compression/TASK.md",
+      "prerequisites": [
+        "t:10.8"
+      ],
+      "python": "3.11",
+      "sha256": "0fd4cb7f079f38270457b1f503f15f62330d7b2792bcd8c0ebf66d3b4372fe43"
+    },
+    {
+      "id": "t:10.10",
+      "source": "tutorial/10-brief-tour-of-the-standard-library/10.10-performance-measurement/README.md",
+      "status": "task",
+      "task": "tutorial/10-brief-tour-of-the-standard-library/10.10-performance-measurement/TASK.md",
+      "prerequisites": [
+        "t:10.9"
+      ],
+      "python": "3.11",
+      "sha256": "e8f800136e9a23378c80288b087e09e75aac00197247600794b39d52989cb9fb"
+    },
+    {
+      "id": "t:10.11",
+      "source": "tutorial/10-brief-tour-of-the-standard-library/10.11-quality-control/README.md",
+      "status": "task",
+      "task": "tutorial/10-brief-tour-of-the-standard-library/10.11-quality-control/TASK.md",
+      "prerequisites": [
+        "t:10.10",
+        "t:9.5"
+      ],
+      "python": "3.11",
+      "sha256": "8a0d5f7943874bfea6617c4dcb1c2aca55547c34c8768f2da932d5802932b348"
+    },
+    {
+      "id": "t:10.12",
+      "source": "tutorial/10-brief-tour-of-the-standard-library/10.12-batteries-included/README.md",
+      "status": "task",
+      "task": "tutorial/10-brief-tour-of-the-standard-library/10.12-batteries-included/TASK.md",
+      "prerequisites": [
+        "t:10.11"
+      ],
+      "python": "3.11",
+      "sha256": "98bb36e44a3d09b7fc1db90a617659bf33616d3c7b99ae9689dac814d8def5fd"
+    },
+    {
+      "id": "t:11",
+      "source": "tutorial/11-brief-tour-of-the-standard-library-part-ii/README.md",
+      "status": "navigation",
+      "reason": "Bölüm haritası/önizleme/kaynakça; yeni uygulama davranışı burada öğretilmiyor.",
+      "sha256": "58cff7879c0e9d1df8be73b58af22cbc8f502ab07387cdccf2e8b5484c6e2f59"
+    },
+    {
+      "id": "t:11.1",
+      "source": "tutorial/11-brief-tour-of-the-standard-library-part-ii/11.1-output-formatting/README.md",
+      "status": "task",
+      "task": "tutorial/11-brief-tour-of-the-standard-library-part-ii/11.1-output-formatting/TASK.md",
+      "prerequisites": [
+        "t:10.12",
+        "t:7.1.3"
+      ],
+      "python": "3.11",
+      "sha256": "86e0741e0798f87ac7bff93382288547a52e5bc34909c8c11e6d07c5712112de"
+    },
+    {
+      "id": "t:11.2",
+      "source": "tutorial/11-brief-tour-of-the-standard-library-part-ii/11.2-templating/README.md",
+      "status": "task",
+      "task": "tutorial/11-brief-tour-of-the-standard-library-part-ii/11.2-templating/TASK.md",
+      "prerequisites": [
+        "t:11.1",
+        "t:9.5"
+      ],
+      "python": "3.11",
+      "sha256": "f87df5cd1c8a6f5b79fb65f6b6e7f6dca45dfa74a8dd12882e0ee166d9a68082"
+    },
+    {
+      "id": "t:11.3",
+      "source": "tutorial/11-brief-tour-of-the-standard-library-part-ii/11.3-working-with-binary-data-record-layouts/README.md",
+      "status": "task",
+      "task": "tutorial/11-brief-tour-of-the-standard-library-part-ii/11.3-working-with-binary-data-record-layouts/TASK.md",
+      "prerequisites": [
+        "t:11.2",
+        "t:7.2.1"
+      ],
+      "python": "3.11",
+      "sha256": "bdf9acddd7b2917f3b7cba579cb46b793daa299c645622aa2d78962f1160af2e"
+    },
+    {
+      "id": "t:11.4",
+      "source": "tutorial/11-brief-tour-of-the-standard-library-part-ii/11.4-multi-threading/README.md",
+      "status": "task",
+      "task": "tutorial/11-brief-tour-of-the-standard-library-part-ii/11.4-multi-threading/TASK.md",
+      "prerequisites": [
+        "t:11.3",
+        "t:9.5"
+      ],
+      "python": "3.11",
+      "sha256": "bfe1fba959daea8e512da255519b77eec07fdfee481eca6b9924adb5423f2722"
+    },
+    {
+      "id": "t:11.5",
+      "source": "tutorial/11-brief-tour-of-the-standard-library-part-ii/11.5-logging/README.md",
+      "status": "task",
+      "task": "tutorial/11-brief-tour-of-the-standard-library-part-ii/11.5-logging/TASK.md",
+      "prerequisites": [
+        "t:11.4",
+        "t:10.4"
+      ],
+      "python": "3.11",
+      "sha256": "b4aa20b33b5fd7714e9209aad22d7ffc536f78568c1cbe712ecc189f0d2ce91e"
+    },
+    {
+      "id": "t:11.6",
+      "source": "tutorial/11-brief-tour-of-the-standard-library-part-ii/11.6-weak-references/README.md",
+      "status": "task",
+      "task": "tutorial/11-brief-tour-of-the-standard-library-part-ii/11.6-weak-references/TASK.md",
+      "prerequisites": [
+        "t:11.5",
+        "t:9.1"
+      ],
+      "python": "3.11",
+      "sha256": "bd88b268d37af4ee9f7c6d9ee27d197c04ee31e7a4b9be4b5e8e53b6d6000fb3"
+    },
+    {
+      "id": "t:11.7",
+      "source": "tutorial/11-brief-tour-of-the-standard-library-part-ii/11.7-tools-for-working-with-lists/README.md",
+      "status": "task",
+      "task": "tutorial/11-brief-tour-of-the-standard-library-part-ii/11.7-tools-for-working-with-lists/TASK.md",
+      "prerequisites": [
+        "t:11.6",
+        "t:5.1.2"
+      ],
+      "python": "3.11",
+      "sha256": "a937c69544e2edb3c15f5e195ee0ade33a87c1a6994c3377bc2cdf71d6c07213"
+    },
+    {
+      "id": "t:11.8",
+      "source": "tutorial/11-brief-tour-of-the-standard-library-part-ii/11.8-decimal-floating-point-arithmetic/README.md",
+      "status": "task",
+      "task": "tutorial/11-brief-tour-of-the-standard-library-part-ii/11.8-decimal-floating-point-arithmetic/TASK.md",
+      "prerequisites": [
+        "t:11.7"
+      ],
+      "python": "3.11",
+      "sha256": "8395c77bd049791b9634cd86fbf775ff1ab4d927ba2b9f81c61b859e76a04d91"
+    },
+    {
+      "id": "t:12",
+      "source": "tutorial/12-virtual-environments-and-packages/README.md",
+      "status": "navigation",
+      "reason": "Bölüm haritası/önizleme/kaynakça; yeni uygulama davranışı burada öğretilmiyor.",
+      "sha256": "cbf65bd72c981bf830a08dc5b3405519d4b6a1781b449fe4e941195fce0c7eaf"
+    },
+    {
+      "id": "t:12.1",
+      "source": "tutorial/12-virtual-environments-and-packages/12.1-introduction/README.md",
+      "status": "task",
+      "task": "tutorial/12-virtual-environments-and-packages/12.1-introduction/TASK.md",
+      "prerequisites": [
+        "t:10.12"
+      ],
+      "python": "3.11",
+      "sha256": "2f6f0552fd918867acc994e3c1dae30fa41d4564071c4cc9b934249cc83f264d"
+    },
+    {
+      "id": "t:12.2",
+      "source": "tutorial/12-virtual-environments-and-packages/12.2-creating-virtual-environments/README.md",
+      "status": "task",
+      "task": "tutorial/12-virtual-environments-and-packages/12.2-creating-virtual-environments/TASK.md",
+      "prerequisites": [
+        "t:12.1",
+        "t:6.2"
+      ],
+      "python": "3.11",
+      "sha256": "4c926ad773e551b19ab40095196a27eadf15bed5b678f38ec0c30eb2298c9131"
+    },
+    {
+      "id": "t:12.3",
+      "source": "tutorial/12-virtual-environments-and-packages/12.3-managing-packages-with-pip/README.md",
+      "status": "task",
+      "task": "tutorial/12-virtual-environments-and-packages/12.3-managing-packages-with-pip/TASK.md",
+      "prerequisites": [
+        "t:12.2"
+      ],
+      "python": "3.11",
+      "sha256": "82886108395a5fe13b244c7b3d09fc7bc75afb08af07476dc5ed71a8f0e1a81b"
+    },
+    {
+      "id": "t:13",
+      "source": "tutorial/13-what-now/README.md",
+      "status": "task",
+      "task": "tutorial/13-what-now/TASK.md",
+      "prerequisites": [
+        "t:12.3"
+      ],
+      "python": "3.11",
+      "sha256": "7b84dfa06d4a709fee60e975a16ab998a3c9c59280fb5d54f3718564be6ee695"
+    },
+    {
+      "id": "t:14",
+      "source": "tutorial/14-interactive-input-editing-and-history-substitution/README.md",
+      "status": "task",
+      "task": "tutorial/14-interactive-input-editing-and-history-substitution/TASK.md",
+      "prerequisites": [
+        "t:2.1",
+        "t:13"
+      ],
+      "python": "3.11",
+      "sha256": "c348c932c0767f3eb56891170e7cf8b95dbe9650455bcf8e2b1b2f3f7eba25a3"
+    },
+    {
+      "id": "t:14.1",
+      "source": "tutorial/14-interactive-input-editing-and-history-substitution/14.1-tab-completion-and-history-editing/README.md",
+      "status": "task",
+      "task": "tutorial/14-interactive-input-editing-and-history-substitution/14.1-tab-completion-and-history-editing/TASK.md",
+      "prerequisites": [
+        "t:14",
+        "t:6.3"
+      ],
+      "python": "3.11",
+      "sha256": "60d8cea6daecda0def9322cbc129876d1873ea65e55837b5d0c7ee3cd957fff6"
+    },
+    {
+      "id": "t:14.2",
+      "source": "tutorial/14-interactive-input-editing-and-history-substitution/14.2-alternatives-to-the-interactive-interpreter/README.md",
+      "status": "task",
+      "task": "tutorial/14-interactive-input-editing-and-history-substitution/14.2-alternatives-to-the-interactive-interpreter/TASK.md",
+      "prerequisites": [
+        "t:14.1"
+      ],
+      "python": "3.11",
+      "sha256": "03d0c67be93d94e0c938cf20de6c6319d170a7632700d62018a846bc03dd634d"
+    },
+    {
+      "id": "t:15",
+      "source": "tutorial/15-floating-point-arithmetic-issues-and-limitations/README.md",
+      "status": "task",
+      "task": "tutorial/15-floating-point-arithmetic-issues-and-limitations/TASK.md",
+      "prerequisites": [
+        "t:11.8",
+        "t:9.10"
+      ],
+      "python": "3.11",
+      "sha256": "f7ab28118114c4cda3acf4f6a6c3e1e6c4611620324eb97bc2fd8110d40a818b"
+    },
+    {
+      "id": "t:15.1",
+      "source": "tutorial/15-floating-point-arithmetic-issues-and-limitations/15.1-representation-error/README.md",
+      "status": "task",
+      "task": "tutorial/15-floating-point-arithmetic-issues-and-limitations/15.1-representation-error/TASK.md",
+      "prerequisites": [
+        "t:15"
+      ],
+      "python": "3.11",
+      "sha256": "e7d1dd1b705439959d21d2a65fcd7c356ea81790e91969539551fc1cac761751"
+    },
+    {
+      "id": "t:16",
+      "source": "tutorial/16-appendix/README.md",
+      "status": "navigation",
+      "reason": "Bölüm haritası/önizleme/kaynakça; yeni uygulama davranışı burada öğretilmiyor.",
+      "sha256": "d184906d5a16e90faacd31b727a102803128ce1367d5377088dd9c8fd1245e45"
+    },
+    {
+      "id": "t:16.1",
+      "source": "tutorial/16-appendix/16.1-interactive-mode/README.md",
+      "status": "task",
+      "task": "tutorial/16-appendix/16.1-interactive-mode/TASK.md",
+      "prerequisites": [
+        "t:14.2",
+        "t:15.1"
+      ],
+      "python": "3.11",
+      "sha256": "24cfcd7cf1f73a830b429ee78aa98955da9f1fe3688498383b03c4602bfe068c"
+    },
+    {
+      "id": "t:16.1.1",
+      "source": "tutorial/16-appendix/16.1-interactive-mode/16.1.1-error-handling/README.md",
+      "status": "task",
+      "task": "tutorial/16-appendix/16.1-interactive-mode/16.1.1-error-handling/TASK.md",
+      "prerequisites": [
+        "t:16.1",
+        "t:8.3"
+      ],
+      "python": "3.11",
+      "sha256": "e02779f000f8be7e6f7f39878a13ae86cbc7c8fbfeccc1700380071738821f0b"
+    },
+    {
+      "id": "t:16.1.2",
+      "source": "tutorial/16-appendix/16.1-interactive-mode/16.1.2-executable-python-scripts/README.md",
+      "status": "task",
+      "task": "tutorial/16-appendix/16.1-interactive-mode/16.1.2-executable-python-scripts/TASK.md",
+      "prerequisites": [
+        "t:16.1.1",
+        "t:2.2.1"
+      ],
+      "python": "3.11",
+      "sha256": "d28cfea0373194d78c5d1cbe8bec446f80c829edf60b1ff6c062d13cd3a3a981"
+    },
+    {
+      "id": "t:16.1.3",
+      "source": "tutorial/16-appendix/16.1-interactive-mode/16.1.3-the-interactive-startup-file/README.md",
+      "status": "task",
+      "task": "tutorial/16-appendix/16.1-interactive-mode/16.1.3-the-interactive-startup-file/TASK.md",
+      "prerequisites": [
+        "t:16.1.2",
+        "t:6.2"
+      ],
+      "python": "3.11",
+      "sha256": "ba94e4d8456fe8ecfe3323869ab2fecdf6cbf9728525e5a288d258f021fb96ba"
+    },
+    {
+      "id": "t:16.1.4",
+      "source": "tutorial/16-appendix/16.1-interactive-mode/16.1.4-the-customization-modules/README.md",
+      "status": "task",
+      "task": "tutorial/16-appendix/16.1-interactive-mode/16.1.4-the-customization-modules/TASK.md",
+      "prerequisites": [
+        "t:16.1.3"
+      ],
+      "python": "3.11",
+      "sha256": "3c52d747ad25ecbca2137c47efea8b21c44864ac4166524e6a1093387b8f4cac"
+    },
+    {
+      "id": "r:root",
+      "source": "language-reference/README.md",
+      "status": "navigation",
+      "reason": "Bölüm haritası/önizleme/kaynakça; yeni uygulama davranışı burada öğretilmiyor.",
+      "sha256": "5d575386003dbfbd6a31ab5019e9b1a41702e165b81398b8adc60a1efd710d70"
+    },
+    {
+      "id": "r:1",
+      "source": "language-reference/01-introduction/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "d23dd982971aa34303acfc491b6906f574196d65a88eae345f96758310be9280"
+    },
+    {
+      "id": "r:1.1",
+      "source": "language-reference/01-introduction/1.1-alternate-implementations/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "7560e497938cbb5725a1710570cbe3b84306c77acbce37759b1521b6efbc9660"
+    },
+    {
+      "id": "r:1.2",
+      "source": "language-reference/01-introduction/1.2-notation/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "7d8a086dbf0dc5b2f519a4dd1b6c008a4de5a5b4b4e252272046e3f5594f8500"
+    },
+    {
+      "id": "r:1.2.1",
+      "source": "language-reference/01-introduction/1.2-notation/1.2.1-lexical-and-syntactic-definitions/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "d024284d5f3656f9f269dcc56359f76b7df7c0ddc17865d301d9fe62f6c866d2"
+    },
+    {
+      "id": "r:2",
+      "source": "language-reference/02-lexical-analysis/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "2476f327cb97938c23a2751e1ad58e229ebb942a56f4c8cc14365ab4ec072e8e"
+    },
+    {
+      "id": "r:2.1",
+      "source": "language-reference/02-lexical-analysis/2.1-line-structure/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "8df6da2ec383635377b7fbdaab39ae0b38eed11181b394a5b969ebc458999575"
+    },
+    {
+      "id": "r:2.1.1",
+      "source": "language-reference/02-lexical-analysis/2.1-line-structure/2.1.1-logical-lines/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "d5f3460b146618705678cbacb54c9b424147c95753771b3d28ca90ad5329da05"
+    },
+    {
+      "id": "r:2.1.2",
+      "source": "language-reference/02-lexical-analysis/2.1-line-structure/2.1.2-physical-lines/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "66765ff3400c0afea3f42388ffd92ad486871846f8c8d18aadb1718e6d993335"
+    },
+    {
+      "id": "r:2.1.3",
+      "source": "language-reference/02-lexical-analysis/2.1-line-structure/2.1.3-comments/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "d0a4573c897e2108119522e5c1eb309c21f43ab8af2f9953e1ea43d28c9fb110"
+    },
+    {
+      "id": "r:2.1.4",
+      "source": "language-reference/02-lexical-analysis/2.1-line-structure/2.1.4-encoding-declarations/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "4212a5ed62b30e0cc93211a83835c81a592eafa127dab9f4c47d97b4e003a576"
+    },
+    {
+      "id": "r:2.1.5",
+      "source": "language-reference/02-lexical-analysis/2.1-line-structure/2.1.5-explicit-line-joining/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "bbe357f4482a16ba1d6ae4532adc21bbacbbceb843831b2577d03896d9503ab5"
+    },
+    {
+      "id": "r:2.1.6",
+      "source": "language-reference/02-lexical-analysis/2.1-line-structure/2.1.6-implicit-line-joining/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "853d8fd4507122959a3e6b4a6be31f6805fcb9775154f9ed4386427d6551160e"
+    },
+    {
+      "id": "r:2.1.7",
+      "source": "language-reference/02-lexical-analysis/2.1-line-structure/2.1.7-blank-lines/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "638ed9ae1ee7d5e6a2d2183e166ec87b5bcc2b1c82e8fda641d7cd546ac3156f"
+    },
+    {
+      "id": "r:2.1.8",
+      "source": "language-reference/02-lexical-analysis/2.1-line-structure/2.1.8-indentation/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "aed474393828f064aecb2a6627a38b0b278416eb83110c85094f7c80e07c36b8"
+    },
+    {
+      "id": "r:2.1.9",
+      "source": "language-reference/02-lexical-analysis/2.1-line-structure/2.1.9-whitespace-between-tokens/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "e73f451746518883619157c42902337c3684dcc6d20d7a896808612322d95ba0"
+    },
+    {
+      "id": "r:2.1.10",
+      "source": "language-reference/02-lexical-analysis/2.1-line-structure/2.1.10-end-marker/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "305d45d85354493b33b71654fe5aa4703fd1fd8322aceb508ada17c2d091c4d0"
+    },
+    {
+      "id": "r:2.2",
+      "source": "language-reference/02-lexical-analysis/2.2-other-tokens/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "1bd0c6012235254e9694ad28f571e65101398ce81b6e6b4ad1eca6c2cadb93c8"
+    },
+    {
+      "id": "r:2.3",
+      "source": "language-reference/02-lexical-analysis/2.3-names-identifiers-and-keywords/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "9f4a987e64f547d526ed7c8a1568631be179ac26150d94f2d3de953614d4dd90"
+    },
+    {
+      "id": "r:2.3.1",
+      "source": "language-reference/02-lexical-analysis/2.3-names-identifiers-and-keywords/2.3.1-keywords/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "6f3e8db21a7473f539e96a8cd509ff8fadc65d65a599d93ef4a9e8da4c257f57"
+    },
+    {
+      "id": "r:2.3.2",
+      "source": "language-reference/02-lexical-analysis/2.3-names-identifiers-and-keywords/2.3.2-soft-keywords/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "997e2220442bae652fb026343ab1d25f7249a2dda8b65baf1ad1da70fdef13f7"
+    },
+    {
+      "id": "r:2.3.3",
+      "source": "language-reference/02-lexical-analysis/2.3-names-identifiers-and-keywords/2.3.3-reserved-classes-of-identifiers/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "682e7a3113df3d361f4491e54f786ca6040eb83f0dc31e5b62b218eeab57bcd2"
+    },
+    {
+      "id": "r:2.3.4",
+      "source": "language-reference/02-lexical-analysis/2.3-names-identifiers-and-keywords/2.3.4-non-ascii-characters-in-names/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "59c4a7a94f2afa8587ca50ac6716baeee0d2d008e217f1b8e35cd19f62efeb0e"
+    },
+    {
+      "id": "r:2.4",
+      "source": "language-reference/02-lexical-analysis/2.4-literals/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "13548147116b1f0db1228194cc7d704f09478d2a220c80d9d397e90dbb355637"
+    },
+    {
+      "id": "r:2.5",
+      "source": "language-reference/02-lexical-analysis/2.5-string-and-bytes-literals/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "0879ae2b6d5d3cdb02b0d9c77d810429748482c7c6cb74fefaca94674a3c1755"
+    },
+    {
+      "id": "r:2.5.1",
+      "source": "language-reference/02-lexical-analysis/2.5-string-and-bytes-literals/2.5.1-triple-quoted-strings/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "3447551db179dd7fed60000a079e2d22eed1c84d66e2a0676e3bb2cf1c6983a5"
+    },
+    {
+      "id": "r:2.5.2",
+      "source": "language-reference/02-lexical-analysis/2.5-string-and-bytes-literals/2.5.2-string-prefixes/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "25184a703d6513e696636bfb47b899881da8c4df0d80570521a78710e97e3dc7"
+    },
+    {
+      "id": "r:2.5.3",
+      "source": "language-reference/02-lexical-analysis/2.5-string-and-bytes-literals/2.5.3-formal-grammar/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "20acc20a48bbfa9e1ccd8e6bc2a246608c134f0ba3390ff203906a09cdf38455"
+    },
+    {
+      "id": "r:2.5.4",
+      "source": "language-reference/02-lexical-analysis/2.5-string-and-bytes-literals/2.5.4-escape-sequences/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "a9163f97ff8f8be8477cf6976ec6e53b23092b2b74aff6174729ad8746a537d8"
+    },
+    {
+      "id": "r:2.5.4.1",
+      "source": "language-reference/02-lexical-analysis/2.5-string-and-bytes-literals/2.5.4-escape-sequences/2.5.4.1-ignored-end-of-line/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "3ef2fe2b346d24c034f950eb57a7998ecc9d5430e36bbc1e119ba0e97cf3c1e8"
+    },
+    {
+      "id": "r:2.5.4.2",
+      "source": "language-reference/02-lexical-analysis/2.5-string-and-bytes-literals/2.5.4-escape-sequences/2.5.4.2-escaped-characters/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "ab8437e29c365a226307e91da8dfc82a99c5811940f6846d850f12e76c7311a2"
+    },
+    {
+      "id": "r:2.5.4.3",
+      "source": "language-reference/02-lexical-analysis/2.5-string-and-bytes-literals/2.5.4-escape-sequences/2.5.4.3-octal-character/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "bc9801f4b1896d77766594691d1350b3e991b7f2dbb405f60a5ea6303149ff3e"
+    },
+    {
+      "id": "r:2.5.4.4",
+      "source": "language-reference/02-lexical-analysis/2.5-string-and-bytes-literals/2.5.4-escape-sequences/2.5.4.4-hexadecimal-character/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "3554283cd6b655b4b05a26127715545e31ccce07051eee0c30186501d133b443"
+    },
+    {
+      "id": "r:2.5.4.5",
+      "source": "language-reference/02-lexical-analysis/2.5-string-and-bytes-literals/2.5.4-escape-sequences/2.5.4.5-named-unicode-character/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "4c4f69c6fee80dee865ffabd45f47478dce0506305b5dfaec1a659ed6f70ffe2"
+    },
+    {
+      "id": "r:2.5.4.6",
+      "source": "language-reference/02-lexical-analysis/2.5-string-and-bytes-literals/2.5.4-escape-sequences/2.5.4.6-hexadecimal-unicode-characters/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "7f1425d7c46df70dc3f7dc141222760c96c8334b9f67401db78ab7f7cc808006"
+    },
+    {
+      "id": "r:2.5.4.7",
+      "source": "language-reference/02-lexical-analysis/2.5-string-and-bytes-literals/2.5.4-escape-sequences/2.5.4.7-unrecognized-escape-sequences/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "81301a8ed38a5363e7b3a7c2ac4f508248d45eac03bdada96851c94dc002a7d0"
+    },
+    {
+      "id": "r:2.5.5",
+      "source": "language-reference/02-lexical-analysis/2.5-string-and-bytes-literals/2.5.5-bytes-literals/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "3c5dfaf99585d2f8a1d872a5206fae56d9dac3c3122a31d64e033d922d833bd1"
+    },
+    {
+      "id": "r:2.5.6",
+      "source": "language-reference/02-lexical-analysis/2.5-string-and-bytes-literals/2.5.6-raw-string-literals/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "8779d9e3ad782fe56c049e8f615bbbd37ed0adf8539d5061adc12aeeb2590628"
+    },
+    {
+      "id": "r:2.5.7",
+      "source": "language-reference/02-lexical-analysis/2.5-string-and-bytes-literals/2.5.7-f-strings/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "b3c56c7e1e2138be53745b4bc927554fe236ac39fef319871df90c83d1de5ee6"
+    },
+    {
+      "id": "r:2.5.8",
+      "source": "language-reference/02-lexical-analysis/2.5-string-and-bytes-literals/2.5.8-t-strings/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "a8a69a1260030ae6b6dc1cd8fbd51ec05ff922980b41ed87ba2613f5a59cbb3e"
+    },
+    {
+      "id": "r:2.5.9",
+      "source": "language-reference/02-lexical-analysis/2.5-string-and-bytes-literals/2.5.9-formal-grammar-for-f-strings/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "7efcb85188a74a4dedd581278127073653f7fed49a4a04d695833c77ba35909c"
+    },
+    {
+      "id": "r:2.6",
+      "source": "language-reference/02-lexical-analysis/2.6-numeric-literals/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "c2c061246bd5c16638ea10a78de0650ee875f8de57aa0c28f186124bfcc203f0"
+    },
+    {
+      "id": "r:2.6.1",
+      "source": "language-reference/02-lexical-analysis/2.6-numeric-literals/2.6.1-integer-literals/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "255b9f747155af52286a20f19ccd587848914907f446808fd94e27fe98b50b70"
+    },
+    {
+      "id": "r:2.6.2",
+      "source": "language-reference/02-lexical-analysis/2.6-numeric-literals/2.6.2-floating-point-literals/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "0e0704a5441dc751204d3693a3705b7cd0e0a97b2f7b94035eafa141e6289c53"
+    },
+    {
+      "id": "r:2.6.3",
+      "source": "language-reference/02-lexical-analysis/2.6-numeric-literals/2.6.3-imaginary-literals/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "21a83cc67f2b934973fc1fdd83cbed0a68721ce95a1b72e7431082b5f6985037"
+    },
+    {
+      "id": "r:2.7",
+      "source": "language-reference/02-lexical-analysis/2.7-operators-and-delimiters/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "845a5a4b1e2e3fce4183c49ae416db23e836d70242e70408815178a67fceadf4"
+    },
+    {
+      "id": "r:3",
+      "source": "language-reference/03-data-model/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "a8b795e23bca85b84ed894b542d52af91a954f81c6b259623ac4f92e3d8bbece"
+    },
+    {
+      "id": "r:3.1",
+      "source": "language-reference/03-data-model/3.1-objects-values-and-types/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "fe3dcf6de40b5bbf85e1c9bd7299c6fbabe2bc97f5113c22f6319874c67c1ede"
+    },
+    {
+      "id": "r:3.2",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "caea03ba1d92bfa1c8accd6150c548f37ff229784946d5dcc9fdf92acdfd5c60"
+    },
+    {
+      "id": "r:3.2.1",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.1-none/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "9e72edd287423c1f86a34d92852c41a1be8c3013b62890766e92f5bc6acf6b8a"
+    },
+    {
+      "id": "r:3.2.2",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.2-notimplemented/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "73edcc3de1ba01ad1c39c6ead570e39d2619dd1fa5c60f9f8ef8c08bc7671453"
+    },
+    {
+      "id": "r:3.2.3",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.3-ellipsis/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "be3e7ec4b67d0beb10b43b558f49fd2aedf03b00c55f44a75e728d2ce10018f1"
+    },
+    {
+      "id": "r:3.2.4",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.4-numbers-number/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "95a9bf37481c112798753427f2bae46b33c074867565a7dea052c5b390a95137"
+    },
+    {
+      "id": "r:3.2.4.1",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.4-numbers-number/3.2.4.1-numbers-integral/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "c13140131e395151681c29068e1e557925cb198410c590cbd6fc223a9fdf4b37"
+    },
+    {
+      "id": "r:3.2.4.2",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.4-numbers-number/3.2.4.2-numbers-real-float/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "1300e3527668cce2af5d81a76bba746ac6948af138868948c28b4265427cc364"
+    },
+    {
+      "id": "r:3.2.4.3",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.4-numbers-number/3.2.4.3-numbers-complex-complex/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "57aa9275dabc0eb0d2073fc0612069e98577f41978bd9db68c50d4175dce5aa6"
+    },
+    {
+      "id": "r:3.2.5",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.5-sequences/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "8b854dda74eaeb18b60b15f49b80bb3e3956dfc9c02e82e30bdcb0ce4f6d32aa"
+    },
+    {
+      "id": "r:3.2.5.1",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.5-sequences/3.2.5.1-immutable-sequences/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "4d9c831a66e9043ff5587b80a614481f43495180599bc5df32eb57f6983fbd86"
+    },
+    {
+      "id": "r:3.2.5.2",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.5-sequences/3.2.5.2-mutable-sequences/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "2b4eed9566f2ca8153699ab78fc8c23e6760ebd8423276ec9c2db4a4e82cc216"
+    },
+    {
+      "id": "r:3.2.6",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.6-set-types/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "4f1536b966dd10891d1635e87ff718322724624dcdec14eea42f0dcf83cd5524"
+    },
+    {
+      "id": "r:3.2.7",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.7-mappings/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "77e549c78c969b95538a33c4918285c7d42f32d0bb89c03544e372170fb1df7a"
+    },
+    {
+      "id": "r:3.2.7.1",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.7-mappings/3.2.7.1-dictionaries/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "c4a056d37152928f5dc4ac53ef8921f63664578292f202782e4c9b8c18abe3cb"
+    },
+    {
+      "id": "r:3.2.7.2",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.7-mappings/3.2.7.2-frozen-dictionaries/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "227fcfa437de127e85f1427fd0b7784cf1fc93f8632d58ad14b6b5ba6b7017df"
+    },
+    {
+      "id": "r:3.2.8",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.8-callable-types/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "1baf147faf05cae19c955f0655d54d81621e597f359169fd885024b916a2b137"
+    },
+    {
+      "id": "r:3.2.8.1",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.8-callable-types/3.2.8.1-user-defined-functions/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "39b2535287db41fb007cf8572114a1c00a583e1d2bd84fbeeb011cd0cde9b819"
+    },
+    {
+      "id": "r:3.2.8.1.1",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.8-callable-types/3.2.8.1-user-defined-functions/3.2.8.1.1-special-read-only-attributes/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "c7c46970547dca13f11487d30cd49fa19272aebede4a2a1cf61f13b6088c13c7"
+    },
+    {
+      "id": "r:3.2.8.1.2",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.8-callable-types/3.2.8.1-user-defined-functions/3.2.8.1.2-special-writable-attributes/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "8e7020b51abf55fa76cf132e7512d5d458b1d2556173b4f515933e0b59a82fb2"
+    },
+    {
+      "id": "r:3.2.8.2",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.8-callable-types/3.2.8.2-instance-methods/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "14bb8cac2717aafae9c7a1532b944b8bad073edcfec64441ea087235933741ff"
+    },
+    {
+      "id": "r:3.2.8.3",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.8-callable-types/3.2.8.3-generator-functions/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "49d29f9400cfa68e102cbd619c1faa358f23606725285f4c24d04486b7d21085"
+    },
+    {
+      "id": "r:3.2.8.4",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.8-callable-types/3.2.8.4-coroutine-functions/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "f0787708e43606d2fb82fc425470299685b96f909d704fb81bfbd832ad48564c"
+    },
+    {
+      "id": "r:3.2.8.5",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.8-callable-types/3.2.8.5-asynchronous-generator-functions/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "4f07e7bea5255501e7084fc0d4b068c56d335e90c3c77383c5ec6d580420c70f"
+    },
+    {
+      "id": "r:3.2.8.6",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.8-callable-types/3.2.8.6-built-in-functions/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "ccee2ebc0d0ccac2655e235a06644eda646c8157aa5c50d7d43d6e5f823ecab4"
+    },
+    {
+      "id": "r:3.2.8.7",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.8-callable-types/3.2.8.7-built-in-methods/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "3b592f9e24e9762e21eebb7985ff0d563dd0469160f77128f874e1437a8905f3"
+    },
+    {
+      "id": "r:3.2.8.8",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.8-callable-types/3.2.8.8-classes/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "48fa24e4671690e511e3fee82bb5bf3efe2fff941e0799d21823a7560dba964b"
+    },
+    {
+      "id": "r:3.2.8.9",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.8-callable-types/3.2.8.9-class-instances/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "57b87d83709bc0af8442a0b2d444b1349b5c5a6fe39cb719be70b1106479db5f"
+    },
+    {
+      "id": "r:3.2.9",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.9-modules/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "dd0730e8ff3cdbe0c8214adf9632c14bd96965f13ac870979ebe3514c1d1e379"
+    },
+    {
+      "id": "r:3.2.9.1",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.9-modules/3.2.9.1-import-related-attributes-on-module-objects/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "5ce9782dc638b1f6b7b110d26281d146519aefe45ef1d9dc0e4db8c87d7f84c8"
+    },
+    {
+      "id": "r:3.2.9.2",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.9-modules/3.2.9.2-other-writable-attributes-on-module-objects/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "f85fd87b60d908b45bf4089ceda6d42105568ae797d303436ca6e870f4fb6a0f"
+    },
+    {
+      "id": "r:3.2.9.3",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.9-modules/3.2.9.3-module-dictionaries/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "59e00f49eca8cd749f9dd36830e1879f9368dfa30fb2ab0395114c011570013a"
+    },
+    {
+      "id": "r:3.2.10",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.10-custom-classes/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "6eff9bcdaf3155ef3adb79a06240ca5353991ef4ecc9038575391306409b87a8"
+    },
+    {
+      "id": "r:3.2.10.1",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.10-custom-classes/3.2.10.1-special-attributes/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "1c6a8947236ca4f631cb38290306c15984e35398d594bb094175bbd1f7bf63e7"
+    },
+    {
+      "id": "r:3.2.10.2",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.10-custom-classes/3.2.10.2-special-methods/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "e970705846bf40d022e0499cb633f0c20b3e86f89ceaad5dea2b18a3ce425fa0"
+    },
+    {
+      "id": "r:3.2.11",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.11-class-instances/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "e7c24bd86ca9b53506d196b7e64f8894f4f0d26125b6ed67845ea4e1dd59560d"
+    },
+    {
+      "id": "r:3.2.11.1",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.11-class-instances/3.2.11.1-special-attributes/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "7157efce031627fb101e0222cb9266b1e46afe9ecbc31b813aae7e7c01e64c4e"
+    },
+    {
+      "id": "r:3.2.12",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.12-i-o-objects-also-known-as-file-objects/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "a14c510c91183318f1bbe1c73840cec4325a2ed5da608b34519d689f5655f3a2"
+    },
+    {
+      "id": "r:3.2.13",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.13-internal-types/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "f76d937d6ba7e5b70691f6bfd780f2605be440025ab9a7ebb9faf50a1dad791a"
+    },
+    {
+      "id": "r:3.2.13.1",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.13-internal-types/3.2.13.1-code-objects/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "d9bcc1fc441186a9c10842f0ad2816ab243e2d798f5a39e24567c0e15564d4e8"
+    },
+    {
+      "id": "r:3.2.13.1.1",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.13-internal-types/3.2.13.1-code-objects/3.2.13.1.1-special-read-only-attributes/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "1bedc9ba503c5c26c2fc02a6413ee7bb3a0e6b7812cca90a898e1c605d3bbfe1"
+    },
+    {
+      "id": "r:3.2.13.1.2",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.13-internal-types/3.2.13.1-code-objects/3.2.13.1.2-methods-on-code-objects/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "86460a258271aec76c7cc6e58cee8873092446fd5201c617cd162c082f9883e3"
+    },
+    {
+      "id": "r:3.2.13.2",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.13-internal-types/3.2.13.2-frame-objects/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "8e2866aab0310b2471d84cb314a3da8923b7ac3f1edac1b0173b30988d644768"
+    },
+    {
+      "id": "r:3.2.13.2.1",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.13-internal-types/3.2.13.2-frame-objects/3.2.13.2.1-special-read-only-attributes/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "b00646e27536fcbaa39ea62ff374f5d897f15ecc16fe022f88ecd3e629ee4442"
+    },
+    {
+      "id": "r:3.2.13.2.2",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.13-internal-types/3.2.13.2-frame-objects/3.2.13.2.2-special-writable-attributes/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "9d23a4fafbb40907ea61875aa673ef85695355654a19d49e8552534488dfd6fc"
+    },
+    {
+      "id": "r:3.2.13.2.3",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.13-internal-types/3.2.13.2-frame-objects/3.2.13.2.3-frame-object-methods/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "1a7416e1afc0fc3c3c56f844fb5d2c5ff433e0e5f6918989c786fc1effca4e3f"
+    },
+    {
+      "id": "r:3.2.13.3",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.13-internal-types/3.2.13.3-traceback-objects/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "ef19bfb30d5b515e091132e3dafe6a194c67c0c1f6e2919cb22aea94b4ef2fee"
+    },
+    {
+      "id": "r:3.2.13.4",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.13-internal-types/3.2.13.4-slice-objects/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "399c46d9a76e9370dd521606c458e8440c3ddfd3e2dfc311d1c12bafe515b301"
+    },
+    {
+      "id": "r:3.2.13.5",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.13-internal-types/3.2.13.5-static-method-objects/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "eed22a0ae98185cf682fb4b5a7073e7b895c57dd241dbfb0f2d3eec2869d710d"
+    },
+    {
+      "id": "r:3.2.13.6",
+      "source": "language-reference/03-data-model/3.2-the-standard-type-hierarchy/3.2.13-internal-types/3.2.13.6-class-method-objects/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "82ac827edf22191c570136643b15ffa9c26ccde05eb4cc45697ac7709449a839"
+    },
+    {
+      "id": "r:3.3",
+      "source": "language-reference/03-data-model/3.3-special-method-names/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "08d5d29af48f527133091ad86dc50062b45d2810db181359f4be4040d23191f4"
+    },
+    {
+      "id": "r:3.3.1",
+      "source": "language-reference/03-data-model/3.3-special-method-names/3.3.1-basic-customization/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "cdc5a86861917914b764ad42e701d01ba1101c282d8bfc0acee54752c3ab6d4c"
+    },
+    {
+      "id": "r:3.3.2",
+      "source": "language-reference/03-data-model/3.3-special-method-names/3.3.2-customizing-attribute-access/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "f5545c9cad067b96a55413482895b90e2874ce27e607be4fcc6c167e55c11ac7"
+    },
+    {
+      "id": "r:3.3.2.1",
+      "source": "language-reference/03-data-model/3.3-special-method-names/3.3.2-customizing-attribute-access/3.3.2.1-customizing-module-attribute-access/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "ddd33ac2b19f6ea423360c346077793e936e3aa76ccda21be4145cd0d381085e"
+    },
+    {
+      "id": "r:3.3.2.2",
+      "source": "language-reference/03-data-model/3.3-special-method-names/3.3.2-customizing-attribute-access/3.3.2.2-implementing-descriptors/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "2bad9fa41e518e8ae7600713ea0a86907a47919b7f33f7e840f2ed23013c4f22"
+    },
+    {
+      "id": "r:3.3.2.3",
+      "source": "language-reference/03-data-model/3.3-special-method-names/3.3.2-customizing-attribute-access/3.3.2.3-invoking-descriptors/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "bfcb94240bd789316bb60624e3ba9d60e8628069559fc707c8dfe05d62673ef9"
+    },
+    {
+      "id": "r:3.3.2.4",
+      "source": "language-reference/03-data-model/3.3-special-method-names/3.3.2-customizing-attribute-access/3.3.2.4-slots/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "2928ac2dcd7d3e15f1c95d1845176f826f61897f6f96fb3303aba721fb1f3a9f"
+    },
+    {
+      "id": "r:3.3.3",
+      "source": "language-reference/03-data-model/3.3-special-method-names/3.3.3-customizing-class-creation/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "7561163aadd13ae952db78aa6a0257abda4136b7f15d25cb2ac35edd01cd6dfc"
+    },
+    {
+      "id": "r:3.3.3.1",
+      "source": "language-reference/03-data-model/3.3-special-method-names/3.3.3-customizing-class-creation/3.3.3.1-metaclasses/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "886bab1b6af835913ba3a49b7b5abdabd874a7c3e9ef60b2691b61411508bb7e"
+    },
+    {
+      "id": "r:3.3.3.2",
+      "source": "language-reference/03-data-model/3.3-special-method-names/3.3.3-customizing-class-creation/3.3.3.2-resolving-mro-entries/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "8335d7ceca68476f06bcea235a35e339712665a463da28fa5c871126a08478e1"
+    },
+    {
+      "id": "r:3.3.3.3",
+      "source": "language-reference/03-data-model/3.3-special-method-names/3.3.3-customizing-class-creation/3.3.3.3-determining-the-appropriate-metaclass/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "c18c2e834ea2a4af3775b5b4365dd57fd7b272e276f25c409fd68dc8dba6bf8d"
+    },
+    {
+      "id": "r:3.3.3.4",
+      "source": "language-reference/03-data-model/3.3-special-method-names/3.3.3-customizing-class-creation/3.3.3.4-preparing-the-class-namespace/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "bf13156396630f1d9265cfc00f278af2b214674c3230475b892b261d54125190"
+    },
+    {
+      "id": "r:3.3.3.5",
+      "source": "language-reference/03-data-model/3.3-special-method-names/3.3.3-customizing-class-creation/3.3.3.5-executing-the-class-body/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "18f6c21d567b56e9bca408219801eb57ec3e7e8f39d4fbb7746d4d810e874e19"
+    },
+    {
+      "id": "r:3.3.3.6",
+      "source": "language-reference/03-data-model/3.3-special-method-names/3.3.3-customizing-class-creation/3.3.3.6-creating-the-class-object/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "877cb8bd38930ab4da4e24a8103e673535b899b8a3686da39539c3f8f0fecb5e"
+    },
+    {
+      "id": "r:3.3.3.7",
+      "source": "language-reference/03-data-model/3.3-special-method-names/3.3.3-customizing-class-creation/3.3.3.7-uses-for-metaclasses/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "08b24feca319de281d8f2ce882f18528b87126175a2e15889b7316e2ebf11e0f"
+    },
+    {
+      "id": "r:3.3.4",
+      "source": "language-reference/03-data-model/3.3-special-method-names/3.3.4-customizing-instance-and-subclass-checks/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "7018fe23084557215c38d6884d23cb1b6e644a188b5840d43c004d9cc58e0257"
+    },
+    {
+      "id": "r:3.3.5",
+      "source": "language-reference/03-data-model/3.3-special-method-names/3.3.5-emulating-generic-types/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "7f616dd59995e103c6356f18ad3d9b7fc12381774a9b0f3b7f6863d758745bb2"
+    },
+    {
+      "id": "r:3.3.5.1",
+      "source": "language-reference/03-data-model/3.3-special-method-names/3.3.5-emulating-generic-types/3.3.5.1-the-purpose-of-class-getitem/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "c9c06af68cff9bb5e824f0ec13c6369596a99ab2bd46a50260fda01033fff9f9"
+    },
+    {
+      "id": "r:3.3.5.2",
+      "source": "language-reference/03-data-model/3.3-special-method-names/3.3.5-emulating-generic-types/3.3.5.2-class-getitem-versus-getitem/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "30b66284ee002ff63a15a61ab12841c0b03914a3bc3bf398dc1d83c5c35c0a4d"
+    },
+    {
+      "id": "r:3.3.6",
+      "source": "language-reference/03-data-model/3.3-special-method-names/3.3.6-emulating-callable-objects/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "65bf4955595ba16d338b5b9b543d8a59fa55313df1f11a0afd9c791fe6b2f772"
+    },
+    {
+      "id": "r:3.3.7",
+      "source": "language-reference/03-data-model/3.3-special-method-names/3.3.7-emulating-container-types/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "dab377405fac9c7d5ecb8fa834b08c2805b3875ff9b21467ceb75e058d0c373f"
+    },
+    {
+      "id": "r:3.3.8",
+      "source": "language-reference/03-data-model/3.3-special-method-names/3.3.8-emulating-numeric-types/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "b4fca706cc639b6e0d433ed6f8339cfaf500cb22e5155d61db3577daaae74e99"
+    },
+    {
+      "id": "r:3.3.9",
+      "source": "language-reference/03-data-model/3.3-special-method-names/3.3.9-with-statement-context-managers/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "376d47a74c292aa310b566e43dc71016cebbee59017fbaa13da20af530a3fa93"
+    },
+    {
+      "id": "r:3.3.10",
+      "source": "language-reference/03-data-model/3.3-special-method-names/3.3.10-customizing-positional-arguments-in-class-pattern-matching/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "6c08a0220776d4b14d1eac81f879319cbaa483a055078be6059117c88d366774"
+    },
+    {
+      "id": "r:3.3.11",
+      "source": "language-reference/03-data-model/3.3-special-method-names/3.3.11-emulating-buffer-types/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "7c21d38b756350342b5305cb2c715a49221683b83989bdb843f698f886849fc1"
+    },
+    {
+      "id": "r:3.3.12",
+      "source": "language-reference/03-data-model/3.3-special-method-names/3.3.12-annotations/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "936900a62508c71e73673fd70704e19265ce5b0f37219a8ccac5edc9bd4cde12"
+    },
+    {
+      "id": "r:3.3.13",
+      "source": "language-reference/03-data-model/3.3-special-method-names/3.3.13-special-method-lookup/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "d6d2b4daef503d1245bcb7f5f8c0b3acb71108780b03a351425bafdab55aae63"
+    },
+    {
+      "id": "r:3.4",
+      "source": "language-reference/03-data-model/3.4-coroutines/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "af7ab343f37903f273aabd73da33bedf5f355c98aaf8a32d280b356002a0f2dc"
+    },
+    {
+      "id": "r:3.4.1",
+      "source": "language-reference/03-data-model/3.4-coroutines/3.4.1-awaitable-objects/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "1b8e7d0a39e657b0662a8b7294e81a4213311cbfe29c00a9b97aa7b3db69d9ee"
+    },
+    {
+      "id": "r:3.4.2",
+      "source": "language-reference/03-data-model/3.4-coroutines/3.4.2-coroutine-objects/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "0b03d47f591c9692f57733e07cef7f29472e7a7929cbf0b62eef832566410348"
+    },
+    {
+      "id": "r:3.4.3",
+      "source": "language-reference/03-data-model/3.4-coroutines/3.4.3-asynchronous-iterators/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "9fa1a51523b7b38e728342c9f75643ffda46b462beb3fd0f583f779867f51518"
+    },
+    {
+      "id": "r:3.4.4",
+      "source": "language-reference/03-data-model/3.4-coroutines/3.4.4-asynchronous-context-managers/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "91f4a2c630d9065e3d9564b1efa1f92fbe821776a62e23c81529464e75475bb6"
+    },
+    {
+      "id": "r:4",
+      "source": "language-reference/04-execution-model/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "50779575e34a638ae02aad38e522354cac3672af9a7494fb2343e6fe6982177f"
+    },
+    {
+      "id": "r:4.1",
+      "source": "language-reference/04-execution-model/4.1-structure-of-a-program/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "c4c45f90945340f6a9c5024ee94d7e5871b36f77f7e962fd86b44bf9e745f81d"
+    },
+    {
+      "id": "r:4.2",
+      "source": "language-reference/04-execution-model/4.2-naming-and-binding/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "2abbffffd96d25f9eb306976e10c2e059bda8c7e25478611ee3145024a399e1e"
+    },
+    {
+      "id": "r:4.2.1",
+      "source": "language-reference/04-execution-model/4.2-naming-and-binding/4.2.1-binding-of-names/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "8d5a7e6927a9fe4a28f0e2e2b77733b6f426619374bd5defc91f838a34f637af"
+    },
+    {
+      "id": "r:4.2.2",
+      "source": "language-reference/04-execution-model/4.2-naming-and-binding/4.2.2-resolution-of-names/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "f3473817ffc002ee8ae40cbef3a7a162c55454e6f32bf9a88df58314cf6abd1d"
+    },
+    {
+      "id": "r:4.2.3",
+      "source": "language-reference/04-execution-model/4.2-naming-and-binding/4.2.3-annotation-scopes/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "2f24ce6c7429a5a5f318e5fe6b05f823b45188edb7f0a8d03cfae3b904d83890"
+    },
+    {
+      "id": "r:4.2.4",
+      "source": "language-reference/04-execution-model/4.2-naming-and-binding/4.2.4-lazy-evaluation/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "88569817bb85597ce7dfe037f0f2e996a51d2f11182945606e87b5a310af8ca6"
+    },
+    {
+      "id": "r:4.2.5",
+      "source": "language-reference/04-execution-model/4.2-naming-and-binding/4.2.5-builtins-and-restricted-execution/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "55fac1386503f767a7e88964338b1941df74503f270b6d799e637ee22ee92934"
+    },
+    {
+      "id": "r:4.2.6",
+      "source": "language-reference/04-execution-model/4.2-naming-and-binding/4.2.6-interaction-with-dynamic-features/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "7cdf3153511ce23e5611588116cc3e9965f2e47d5449edcced6459152f33b99c"
+    },
+    {
+      "id": "r:4.3",
+      "source": "language-reference/04-execution-model/4.3-exceptions/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "5ccdf74ea9a9bc53218c012cb65e64ca3a091229c313fff80702c4f7aa9bb1a5"
+    },
+    {
+      "id": "r:4.4",
+      "source": "language-reference/04-execution-model/4.4-runtime-components/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "b0a6120e9ad7522f358fabb3e7147a2a0f51fe3b374fa938c273848f1996c62e"
+    },
+    {
+      "id": "r:4.4.1",
+      "source": "language-reference/04-execution-model/4.4-runtime-components/4.4.1-general-computing-model/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "691ec62662d305168618f06b7318c19e87c2413bd09c47a70018838143f12dfb"
+    },
+    {
+      "id": "r:4.4.2",
+      "source": "language-reference/04-execution-model/4.4-runtime-components/4.4.2-python-runtime-model/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "5f2bec12c4bfd333ff25bf5954df5a5d7f4c99d44a1a833f1b1afda58dbbe542"
+    },
+    {
+      "id": "r:5",
+      "source": "language-reference/05-the-import-system/README.md",
+      "status": "task",
+      "task": "language-reference/05-the-import-system/TASK.md",
+      "prerequisites": [
+        "t:6.4.2"
+      ],
+      "python": "3.11",
+      "sha256": "641e490019ad3ef43eae0bbad86e5768fb08a20efed7dbdd7c524a63cf903547"
+    },
+    {
+      "id": "r:5.1",
+      "source": "language-reference/05-the-import-system/5.1-importlib/README.md",
+      "status": "task",
+      "task": "language-reference/05-the-import-system/5.1-importlib/TASK.md",
+      "prerequisites": [
+        "r:5"
+      ],
+      "python": "3.11",
+      "sha256": "4d0637f8c039369b3f8b5c4625c6d94005e835588ab49723d753a9a9934e9892"
+    },
+    {
+      "id": "r:5.2",
+      "source": "language-reference/05-the-import-system/5.2-packages/README.md",
+      "status": "task",
+      "task": "language-reference/05-the-import-system/5.2-packages/TASK.md",
+      "prerequisites": [
+        "r:5.1",
+        "t:6.4"
+      ],
+      "python": "3.11",
+      "sha256": "0ab6630072f2100146f5ac76c4800068f7518d121d86e864f9fa4dcebbca5164"
+    },
+    {
+      "id": "r:5.2.1",
+      "source": "language-reference/05-the-import-system/5.2-packages/5.2.1-regular-packages/README.md",
+      "status": "task",
+      "task": "language-reference/05-the-import-system/5.2-packages/5.2.1-regular-packages/TASK.md",
+      "prerequisites": [
+        "r:5.2"
+      ],
+      "python": "3.11",
+      "sha256": "9c5386d33b080fec5805b11d4c16a2e720935fffea041327981c163831169cbb"
+    },
+    {
+      "id": "r:5.2.2",
+      "source": "language-reference/05-the-import-system/5.2-packages/5.2.2-namespace-packages/README.md",
+      "status": "task",
+      "task": "language-reference/05-the-import-system/5.2-packages/5.2.2-namespace-packages/TASK.md",
+      "prerequisites": [
+        "r:5.2.1"
+      ],
+      "python": "3.11",
+      "sha256": "5017c58f49794f2d2f826e6e559fb6e7200dc067e748c9e83d87626404f803ae"
+    },
+    {
+      "id": "r:5.3",
+      "source": "language-reference/05-the-import-system/5.3-searching/README.md",
+      "status": "task",
+      "task": "language-reference/05-the-import-system/5.3-searching/TASK.md",
+      "prerequisites": [
+        "r:5.2.2"
+      ],
+      "python": "3.11",
+      "sha256": "eef5ee4f259d1ffc3074f1ce5dbd7ea538cad199666990bc0786e0a30c3dc4af"
+    },
+    {
+      "id": "r:5.3.1",
+      "source": "language-reference/05-the-import-system/5.3-searching/5.3.1-the-module-cache/README.md",
+      "status": "task",
+      "task": "language-reference/05-the-import-system/5.3-searching/5.3.1-the-module-cache/TASK.md",
+      "prerequisites": [
+        "r:5.3",
+        "t:9.1"
+      ],
+      "python": "3.11",
+      "sha256": "7b16634befc2d51ef50a0bbea55b2ff59b75f0cd8b33cc5b48b74f5193025f48"
+    },
+    {
+      "id": "r:5.3.2",
+      "source": "language-reference/05-the-import-system/5.3-searching/5.3.2-finders-and-loaders/README.md",
+      "status": "task",
+      "task": "language-reference/05-the-import-system/5.3-searching/5.3.2-finders-and-loaders/TASK.md",
+      "prerequisites": [
+        "r:5.3.1"
+      ],
+      "python": "3.11",
+      "sha256": "d5e624f5be98468e96ce3f185ae6a23f44c99429c25a608272487a32138f1716"
+    },
+    {
+      "id": "r:5.3.3",
+      "source": "language-reference/05-the-import-system/5.3-searching/5.3.3-import-hooks/README.md",
+      "status": "task",
+      "task": "language-reference/05-the-import-system/5.3-searching/5.3.3-import-hooks/TASK.md",
+      "prerequisites": [
+        "r:5.3.2"
+      ],
+      "python": "3.11",
+      "sha256": "0babdbdd7f78ea59ee701f6737e82093672b3d2a747a0533704d768fb33836ea"
+    },
+    {
+      "id": "r:5.3.4",
+      "source": "language-reference/05-the-import-system/5.3-searching/5.3.4-the-meta-path/README.md",
+      "status": "task",
+      "task": "language-reference/05-the-import-system/5.3-searching/5.3.4-the-meta-path/TASK.md",
+      "prerequisites": [
+        "r:5.3.3"
+      ],
+      "python": "3.11",
+      "sha256": "ebc525f8b255b147bf5fac5b0ff7b8eef6a0f21bd27ecee39f6cc360cee57b26"
+    },
+    {
+      "id": "r:5.4",
+      "source": "language-reference/05-the-import-system/5.4-loading/README.md",
+      "status": "task",
+      "task": "language-reference/05-the-import-system/5.4-loading/TASK.md",
+      "prerequisites": [
+        "r:5.3.4"
+      ],
+      "python": "3.11",
+      "sha256": "82699f69ce9863d1ef1f9cbb3039004a06a692410293fa3d1e63d33a9eb79543"
+    },
+    {
+      "id": "r:5.4.1",
+      "source": "language-reference/05-the-import-system/5.4-loading/5.4.1-loaders/README.md",
+      "status": "task",
+      "task": "language-reference/05-the-import-system/5.4-loading/5.4.1-loaders/TASK.md",
+      "prerequisites": [
+        "r:5.4"
+      ],
+      "python": "3.11",
+      "sha256": "d7ba5fd57f6851bb6d3ea7d9439a2a551ed9377c54e187300cfa15178fdf8716"
+    },
+    {
+      "id": "r:5.4.2",
+      "source": "language-reference/05-the-import-system/5.4-loading/5.4.2-submodules/README.md",
+      "status": "task",
+      "task": "language-reference/05-the-import-system/5.4-loading/5.4.2-submodules/TASK.md",
+      "prerequisites": [
+        "r:5.4.1"
+      ],
+      "python": "3.11",
+      "sha256": "73485133d60e73dfc583f36dfa2882d12beda72c68ad9797f8ad4bddc1cff9e6"
+    },
+    {
+      "id": "r:5.4.3",
+      "source": "language-reference/05-the-import-system/5.4-loading/5.4.3-module-specs/README.md",
+      "status": "task",
+      "task": "language-reference/05-the-import-system/5.4-loading/5.4.3-module-specs/TASK.md",
+      "prerequisites": [
+        "r:5.4.2"
+      ],
+      "python": "3.11",
+      "sha256": "1a7b9d5dc84b467fe9c96ef46659c5d9a3ea989d945d1e2d31c0841370858694"
+    },
+    {
+      "id": "r:5.4.4",
+      "source": "language-reference/05-the-import-system/5.4-loading/5.4.4-path-attributes-on-modules/README.md",
+      "status": "task",
+      "task": "language-reference/05-the-import-system/5.4-loading/5.4.4-path-attributes-on-modules/TASK.md",
+      "prerequisites": [
+        "r:5.4.3"
+      ],
+      "python": "3.11",
+      "sha256": "cd2b12294fec8a22f05014400165054476e2802e5773063dfb98b0f1c30883bc"
+    },
+    {
+      "id": "r:5.4.5",
+      "source": "language-reference/05-the-import-system/5.4-loading/5.4.5-module-reprs/README.md",
+      "status": "task",
+      "task": "language-reference/05-the-import-system/5.4-loading/5.4.5-module-reprs/TASK.md",
+      "prerequisites": [
+        "r:5.4.4"
+      ],
+      "python": "3.11",
+      "sha256": "ffc9ee94e70d574d733bd4335f8f6e9f3d32ec4c7cfe14f65e340b8f91a4fd9e"
+    },
+    {
+      "id": "r:5.4.6",
+      "source": "language-reference/05-the-import-system/5.4-loading/5.4.6-cached-bytecode-invalidation/README.md",
+      "status": "task",
+      "task": "language-reference/05-the-import-system/5.4-loading/5.4.6-cached-bytecode-invalidation/TASK.md",
+      "prerequisites": [
+        "r:5.4.5",
+        "t:6.1.3"
+      ],
+      "python": "3.11",
+      "sha256": "78f0622ad5282cf69e1c7a5376577ff2aee225fc981f944f147183a7a75c29e6"
+    },
+    {
+      "id": "r:5.5",
+      "source": "language-reference/05-the-import-system/5.5-the-path-based-finder/README.md",
+      "status": "task",
+      "task": "language-reference/05-the-import-system/5.5-the-path-based-finder/TASK.md",
+      "prerequisites": [
+        "r:5.4.6"
+      ],
+      "python": "3.11",
+      "sha256": "64bffe485ca2d2f7215e35356f247ae4da97472d72aa620a2c14de77d5dc48d2"
+    },
+    {
+      "id": "r:5.5.1",
+      "source": "language-reference/05-the-import-system/5.5-the-path-based-finder/5.5.1-path-entry-finders/README.md",
+      "status": "task",
+      "task": "language-reference/05-the-import-system/5.5-the-path-based-finder/5.5.1-path-entry-finders/TASK.md",
+      "prerequisites": [
+        "r:5.5",
+        "r:5.3.1"
+      ],
+      "python": "3.11",
+      "sha256": "118a904b4be15b802099d46a892e98f207c7b2359796c0eecb038c888f563e28"
+    },
+    {
+      "id": "r:5.5.2",
+      "source": "language-reference/05-the-import-system/5.5-the-path-based-finder/5.5.2-path-entry-finder-protocol/README.md",
+      "status": "task",
+      "task": "language-reference/05-the-import-system/5.5-the-path-based-finder/5.5.2-path-entry-finder-protocol/TASK.md",
+      "prerequisites": [
+        "r:5.5.1"
+      ],
+      "python": "3.11",
+      "sha256": "8ac1dcca4fa3aa285132c5c6e38a993d0ad7ee98dc1c19d6327ba50215b9f704"
+    },
+    {
+      "id": "r:5.6",
+      "source": "language-reference/05-the-import-system/5.6-replacing-the-standard-import-system/README.md",
+      "status": "task",
+      "task": "language-reference/05-the-import-system/5.6-replacing-the-standard-import-system/TASK.md",
+      "prerequisites": [
+        "r:5.5.2"
+      ],
+      "python": "3.11",
+      "sha256": "99f2896c0431de1cf06ef2f48909d7772cb29a6ef89210f3a7f3382a6e13b6f5"
+    },
+    {
+      "id": "r:5.7",
+      "source": "language-reference/05-the-import-system/5.7-package-relative-imports/README.md",
+      "status": "task",
+      "task": "language-reference/05-the-import-system/5.7-package-relative-imports/TASK.md",
+      "prerequisites": [
+        "r:5.6",
+        "t:6.4.2"
+      ],
+      "python": "3.11",
+      "sha256": "39c40e9680adfb2d1a94d10c104d767e3108ac5f372c3d00e7bc57f4b9bd8b74"
+    },
+    {
+      "id": "r:5.8",
+      "source": "language-reference/05-the-import-system/5.8-special-considerations-for-main/README.md",
+      "status": "task",
+      "task": "language-reference/05-the-import-system/5.8-special-considerations-for-main/TASK.md",
+      "prerequisites": [
+        "r:5.7",
+        "t:6.1.1"
+      ],
+      "python": "3.11",
+      "sha256": "8e2f5dc52c7d7387adedebe188c5e7e5f2781fa2a0af978d5eac29900fab6020"
+    },
+    {
+      "id": "r:5.8.1",
+      "source": "language-reference/05-the-import-system/5.8-special-considerations-for-main/5.8.1-main-spec/README.md",
+      "status": "task",
+      "task": "language-reference/05-the-import-system/5.8-special-considerations-for-main/5.8.1-main-spec/TASK.md",
+      "prerequisites": [
+        "r:5.8",
+        "r:5.4.3"
+      ],
+      "python": "3.11",
+      "sha256": "4fb313920b5e4731c701989b8391f5765238b7491c130d38a3b196e740e18f24"
+    },
+    {
+      "id": "r:5.9",
+      "source": "language-reference/05-the-import-system/5.9-references/README.md",
+      "status": "navigation",
+      "reason": "Bölüm haritası/önizleme/kaynakça; yeni uygulama davranışı burada öğretilmiyor.",
+      "sha256": "a91db8e19214c2df48c5c58392617aadf72cf484a3237bc783a58b25acb29dba"
+    },
+    {
+      "id": "r:6",
+      "source": "language-reference/06-expressions/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "e8db04eb180ff2e89dfe72729d3157bc41cf7e5219f7f3d99f0749469cce5420"
+    },
+    {
+      "id": "r:6.1",
+      "source": "language-reference/06-expressions/6.1-arithmetic-conversions/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "6f387e7411370856b1d7a851a2e9586caf3996502092c5b4b13cf2ed8873b35a"
+    },
+    {
+      "id": "r:6.2",
+      "source": "language-reference/06-expressions/6.2-atoms/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "f16026e34a67336f90a6cbb4ee968b5740fd1929ea9e7e93632b2fea75e12f70"
+    },
+    {
+      "id": "r:6.2.1",
+      "source": "language-reference/06-expressions/6.2-atoms/6.2.1-built-in-constants/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "29d552d4106cb858e48b2fceef5088084c2f00e42f7fc3a3c90d89c02a64dadf"
+    },
+    {
+      "id": "r:6.2.2",
+      "source": "language-reference/06-expressions/6.2-atoms/6.2.2-identifiers-names/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "60bf865dd9c12227b7055ad3e5e65275acff7032133bc5376956df22f20179cb"
+    },
+    {
+      "id": "r:6.2.2.1",
+      "source": "language-reference/06-expressions/6.2-atoms/6.2.2-identifiers-names/6.2.2.1-private-name-mangling/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "d0874b37330ec7d8816db78a35a6fba7849bac4b4493fbd9cf317744750d5bea"
+    },
+    {
+      "id": "r:6.2.3",
+      "source": "language-reference/06-expressions/6.2-atoms/6.2.3-literals/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "c9d8722c530c8b541ee200abddd1b2db223b087ac21d1fb0a97a2a55b7a07729"
+    },
+    {
+      "id": "r:6.2.3.1",
+      "source": "language-reference/06-expressions/6.2-atoms/6.2.3-literals/6.2.3.1-literals-and-object-identity/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "095858d45ed651fed72c291996b377b15740e72eaff351eb07764adfee809b72"
+    },
+    {
+      "id": "r:6.2.3.2",
+      "source": "language-reference/06-expressions/6.2-atoms/6.2.3-literals/6.2.3.2-string-literal-concatenation/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "b08e7cfde29da83fdff4edf8f24663d44424597cae87b7c0b131ecdb6087d354"
+    },
+    {
+      "id": "r:6.2.4",
+      "source": "language-reference/06-expressions/6.2-atoms/6.2.4-parenthesized-groups/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "7af508abf38ec329c0a42847575c351bcbf5d6a9863de812479559beffd3d830"
+    },
+    {
+      "id": "r:6.2.5",
+      "source": "language-reference/06-expressions/6.2-atoms/6.2.5-container-displays/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "5349b0bb475f6608c6d06be2ad071a09c39b71d06e9fb5bb7405577fd0233812"
+    },
+    {
+      "id": "r:6.2.5.1",
+      "source": "language-reference/06-expressions/6.2-atoms/6.2.5-container-displays/6.2.5.1-list-displays/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "389dd77e51bc050b6b56ca016287631b5d6675f95ae931d8e5a351f97086aee0"
+    },
+    {
+      "id": "r:6.2.5.2",
+      "source": "language-reference/06-expressions/6.2-atoms/6.2.5-container-displays/6.2.5.2-set-displays/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "0333fd374d45d86de485352eb14eb1eb3e57eb5df795d96e7baf445ca6e0d56b"
+    },
+    {
+      "id": "r:6.2.5.3",
+      "source": "language-reference/06-expressions/6.2-atoms/6.2.5-container-displays/6.2.5.3-tuple-displays/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "f321bd7fedf8cb8088c0103751b485bc7e9e25c2fef7797b45b3a2edf640b439"
+    },
+    {
+      "id": "r:6.2.5.4",
+      "source": "language-reference/06-expressions/6.2-atoms/6.2.5-container-displays/6.2.5.4-dictionary-displays/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "353be4d96b1580462687dacff4d33501089762bba5971dd86ce3fe940bee9448"
+    },
+    {
+      "id": "r:6.2.6",
+      "source": "language-reference/06-expressions/6.2-atoms/6.2.6-comprehensions/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "48bb5a8e1a403c0aa1e79235b473c2094e77ffc84c486683121b27c4b0645e08"
+    },
+    {
+      "id": "r:6.2.6.1",
+      "source": "language-reference/06-expressions/6.2-atoms/6.2.6-comprehensions/6.2.6.1-filtering-in-comprehensions/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "8c9a7e763adbe9984ceaf7fd21428a02ae3b763dc2f785641ee3cc1ee2305bcc"
+    },
+    {
+      "id": "r:6.2.6.2",
+      "source": "language-reference/06-expressions/6.2-atoms/6.2.6-comprehensions/6.2.6.2-complex-comprehensions/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "aa667590ae8694f90ae257c429e183b1a3dd3624008cf9ec8b00ccb70e086d42"
+    },
+    {
+      "id": "r:6.2.6.3",
+      "source": "language-reference/06-expressions/6.2-atoms/6.2.6-comprehensions/6.2.6.3-unpacking-in-comprehensions/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "f7c5421c38875a4357a3143b8e8c02f7250ea061c7a6db91b41da6c12af81402"
+    },
+    {
+      "id": "r:6.2.6.4",
+      "source": "language-reference/06-expressions/6.2-atoms/6.2.6-comprehensions/6.2.6.4-asynchronous-comprehensions/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "07c0abc1f347ebe5f5c3ca0000763b7d530048563e5bf8c08e4186df027847ba"
+    },
+    {
+      "id": "r:6.2.6.5",
+      "source": "language-reference/06-expressions/6.2-atoms/6.2.6-comprehensions/6.2.6.5-formal-grammar-for-comprehensions/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "9fd7cdcea91a0dbfca8524a9a47ec252cf034a05caaefcbc211fc20c62cf8e7f"
+    },
+    {
+      "id": "r:6.2.7",
+      "source": "language-reference/06-expressions/6.2-atoms/6.2.7-generator-expressions/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "4c145360d68b4cfd2396643e4076938f1d9c92df7da91beecf625958012e0cd1"
+    },
+    {
+      "id": "r:6.2.8",
+      "source": "language-reference/06-expressions/6.2-atoms/6.2.8-yield-expressions/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "eaaa1c9eca01321c4c469d50c6daaac0334cd67f8c0a4263e7edbde97f96ddab"
+    },
+    {
+      "id": "r:6.2.8.1",
+      "source": "language-reference/06-expressions/6.2-atoms/6.2.8-yield-expressions/6.2.8.1-examples/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "89651fc7246aabcd25dfa1dcf49fd7ebc5fe2793ba9c8d6d6288a25669983532"
+    },
+    {
+      "id": "r:6.2.8.2",
+      "source": "language-reference/06-expressions/6.2-atoms/6.2.8-yield-expressions/6.2.8.2-asynchronous-generator-functions/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "b910afc66678bc281ba193c124372684006196a013829988f8eba898b8417b36"
+    },
+    {
+      "id": "r:6.3",
+      "source": "language-reference/06-expressions/6.3-primaries/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "95d21c19290deb5c4202b1c8ff9614c72ecbe8fef4cbb669bfc1512412b3bf76"
+    },
+    {
+      "id": "r:6.3.1",
+      "source": "language-reference/06-expressions/6.3-primaries/6.3.1-attribute-references/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "55b24a9db44e6cc0b7b7844b610101c4130d5f63fcf3ff4c74d613ac9c08dd95"
+    },
+    {
+      "id": "r:6.3.2",
+      "source": "language-reference/06-expressions/6.3-primaries/6.3.2-subscriptions-and-slicings/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "5d4852121db76bd384738e1224e1d4c46049f935a62dc0172d329c39d9ffb6c2"
+    },
+    {
+      "id": "r:6.3.2.1",
+      "source": "language-reference/06-expressions/6.3-primaries/6.3.2-subscriptions-and-slicings/6.3.2.1-slicings/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "8e81abe48c2123025bd54b6a650cb29761618076927e5ad8b226591d5c2e4229"
+    },
+    {
+      "id": "r:6.3.2.2",
+      "source": "language-reference/06-expressions/6.3-primaries/6.3.2-subscriptions-and-slicings/6.3.2.2-comma-separated-subscripts/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "ee7c9cbf875f050b3f7e1eeab55074ab5bf44ac5d91f55bec8d15b75eb9bdabc"
+    },
+    {
+      "id": "r:6.3.2.3",
+      "source": "language-reference/06-expressions/6.3-primaries/6.3.2-subscriptions-and-slicings/6.3.2.3-starred-subscriptions/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "84612a7f793ed4f7fea69e79c16c236987ba76b31a957fba79467f185258392a"
+    },
+    {
+      "id": "r:6.3.2.4",
+      "source": "language-reference/06-expressions/6.3-primaries/6.3.2-subscriptions-and-slicings/6.3.2.4-formal-subscription-grammar/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "4d10cdfccf6b8c1f45a199b283b86094a8a9c1759f89ad0cfe23b623a9d07c6a"
+    },
+    {
+      "id": "r:6.3.3",
+      "source": "language-reference/06-expressions/6.3-primaries/6.3.3-calls/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "d185d88e5b4c2b271da29c7050d9f361efb45bfb8fb58c139c239aa7506bc874"
+    },
+    {
+      "id": "r:6.4",
+      "source": "language-reference/06-expressions/6.4-await-expression/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "4bea91052ed2271943d80eca6ac1e0c69f2af10b5ee99f3184b7fcee5d82dc36"
+    },
+    {
+      "id": "r:6.5",
+      "source": "language-reference/06-expressions/6.5-the-power-operator/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "668c8783c4038ebbc15152ac4d62108e94c8503b99b7fd5b23e7052e66b886dd"
+    },
+    {
+      "id": "r:6.6",
+      "source": "language-reference/06-expressions/6.6-unary-arithmetic-and-bitwise-operations/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "1084390ba79e24f0f6ef17d2bb95380d287a1849ceed41b03754c44dbde5c736"
+    },
+    {
+      "id": "r:6.7",
+      "source": "language-reference/06-expressions/6.7-binary-arithmetic-operations/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "84887c558d31c69b11031ff12beea47d25e40e8f3d34f7d6433e82f3e58c874b"
+    },
+    {
+      "id": "r:6.8",
+      "source": "language-reference/06-expressions/6.8-shifting-operations/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "613c7c3f613a247e81216d71d55eadc6260bf723f8a58ee40ce82c3e41d704ea"
+    },
+    {
+      "id": "r:6.9",
+      "source": "language-reference/06-expressions/6.9-binary-bitwise-operations/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "88df0895eafb02d544789e4799fa1d5c44b81892ff3d4c8f8581c8c490ea6508"
+    },
+    {
+      "id": "r:6.10",
+      "source": "language-reference/06-expressions/6.10-comparisons/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "648e8b65a5f13a7e3adfc230866e519a5694c8e34d7679580bd091cd89b39b99"
+    },
+    {
+      "id": "r:6.10.1",
+      "source": "language-reference/06-expressions/6.10-comparisons/6.10.1-value-comparisons/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "9ef9fb51af500638fedf59bb16f74a72c22b683aed8286bbf8112b3c1c04ffd2"
+    },
+    {
+      "id": "r:6.10.2",
+      "source": "language-reference/06-expressions/6.10-comparisons/6.10.2-membership-test-operations/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "7630c8a78771fb5f160613af6fdd67cfdcb21d8a89bc5a5d14e5ccc4cafca099"
+    },
+    {
+      "id": "r:6.10.3",
+      "source": "language-reference/06-expressions/6.10-comparisons/6.10.3-identity-comparisons/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "33ad2589e1ae7e5a06ae4c0c8c5ae8f308b82a854e1d054bde69bb38cd1d40aa"
+    },
+    {
+      "id": "r:6.11",
+      "source": "language-reference/06-expressions/6.11-boolean-operations/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "ddc3ee525e59b3962426609e0457c2268a3fd579a7003b16eef086634c972ece"
+    },
+    {
+      "id": "r:6.12",
+      "source": "language-reference/06-expressions/6.12-assignment-expressions/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "19276844243d95a28fc59213ec6ca8c0d122b1d310d2a68c19d2c1c059de261a"
+    },
+    {
+      "id": "r:6.13",
+      "source": "language-reference/06-expressions/6.13-conditional-expressions/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "a6149198912ef8bafd512fadaad741553e96867a9968743c0c25f9c91bca1077"
+    },
+    {
+      "id": "r:6.14",
+      "source": "language-reference/06-expressions/6.14-lambdas/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "dcd113cde3d02e137c709f0269d9779d52adfca067b6702031485b7b672b91c2"
+    },
+    {
+      "id": "r:6.15",
+      "source": "language-reference/06-expressions/6.15-expression-lists/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "e496356483a26fb7d6802cc1837ed3cc439351c8df30e6a30b2df03d145b5670"
+    },
+    {
+      "id": "r:6.15.1",
+      "source": "language-reference/06-expressions/6.15-expression-lists/6.15.1-iterable-unpacking/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "6eff34bbcaba413bcad7cc085516183cf69ee41ea88b570e95c5a0a79b93d597"
+    },
+    {
+      "id": "r:6.16",
+      "source": "language-reference/06-expressions/6.16-evaluation-order/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "f5ebe4711dbc1c75f28d7d49f0bfdbd1bc2e56d91e27d322b6d6ba26bf686a15"
+    },
+    {
+      "id": "r:6.17",
+      "source": "language-reference/06-expressions/6.17-operator-precedence/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "74e958f9499641594ca6854a78fa0a212a096df801000e76e37214ca8e8a628f"
+    },
+    {
+      "id": "r:7",
+      "source": "language-reference/07-simple-statements/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "93b60678656489c0f85db917f8b17f79caf38dec2d5b568e24574c2388b62c72"
+    },
+    {
+      "id": "r:7.1",
+      "source": "language-reference/07-simple-statements/7.1-expression-statements/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "ee8d3903362e83f1f597047e9a652386afd5d303566dc07f6101c03c04fe26e2"
+    },
+    {
+      "id": "r:7.2",
+      "source": "language-reference/07-simple-statements/7.2-assignment-statements/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "77c2da435410beecf822f03cdd8f88822d088c205c4667b9da702850cec57492"
+    },
+    {
+      "id": "r:7.2.1",
+      "source": "language-reference/07-simple-statements/7.2-assignment-statements/7.2.1-augmented-assignment-statements/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "5c4513cea0944bd0a91792a5c0238ce2a9d87814dfd5313962edde92ea0193c6"
+    },
+    {
+      "id": "r:7.2.2",
+      "source": "language-reference/07-simple-statements/7.2-assignment-statements/7.2.2-annotated-assignment-statements/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "1acb866f83f591e86e9a58821a857dbb68edf6118ef27731d92d84ffbb77c213"
+    },
+    {
+      "id": "r:7.3",
+      "source": "language-reference/07-simple-statements/7.3-the-assert-statement/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "18975f0c042fde35c51b8c2f0ea6493676864d7ec2605aadc80d400e416f2a05"
+    },
+    {
+      "id": "r:7.4",
+      "source": "language-reference/07-simple-statements/7.4-the-pass-statement/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "fc260b876ff83cc55a2945007489e132e12104e7b522efa0126370eeddd8a75a"
+    },
+    {
+      "id": "r:7.5",
+      "source": "language-reference/07-simple-statements/7.5-the-del-statement/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "31e4d68a1ad757ffcdcd7d3cb282e985cc52c5efbbc059bcc461813dbda1a9a7"
+    },
+    {
+      "id": "r:7.6",
+      "source": "language-reference/07-simple-statements/7.6-the-return-statement/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "2fc1354f88645b004d3f64d5fc3a159ff7e31f5b136015d609e4e1b26d6af073"
+    },
+    {
+      "id": "r:7.7",
+      "source": "language-reference/07-simple-statements/7.7-the-yield-statement/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "f67637c49a6e4203974f7ebbc37050e4e9004eeb0295aa604498b16dd63355af"
+    },
+    {
+      "id": "r:7.8",
+      "source": "language-reference/07-simple-statements/7.8-the-raise-statement/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "05bd5de1f378fb313dd58822a99f86968f99a40c3fc4633a05c0880f844f8552"
+    },
+    {
+      "id": "r:7.9",
+      "source": "language-reference/07-simple-statements/7.9-the-break-statement/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "a8e0537ed94779f7ce4e5571d6a027683429308ed9f4c1426d8e3df1375a07ac"
+    },
+    {
+      "id": "r:7.10",
+      "source": "language-reference/07-simple-statements/7.10-the-continue-statement/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "9898fdec24931dc6ea9ff6c979b5dca3d380bfc3db1e0cf5bb251d62511af1ab"
+    },
+    {
+      "id": "r:7.11",
+      "source": "language-reference/07-simple-statements/7.11-the-import-statement/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "9fa9b2d5a209dd55f8adb5fcb7ae76691367c1eb6a0b79a7f49da08d3ac09687"
+    },
+    {
+      "id": "r:7.11.1",
+      "source": "language-reference/07-simple-statements/7.11-the-import-statement/7.11.1-lazy-imports/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "dfd6758cbb0cac250d762077964cb9d605eec4f17ac6a561625ab891627fa9c8"
+    },
+    {
+      "id": "r:7.11.1.1",
+      "source": "language-reference/07-simple-statements/7.11-the-import-statement/7.11.1-lazy-imports/7.11.1.1-compatibility-via-lazy-modules/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "a965fdcfdbc34218024664ab6b5e84fbfe3e4d9dd6c6cff47a5321997e52b28b"
+    },
+    {
+      "id": "r:7.11.2",
+      "source": "language-reference/07-simple-statements/7.11-the-import-statement/7.11.2-future-statements/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "0bab51feb7fbb57ba972cb65f5d854ce9a2179e16dac410256b2431c5e4a6694"
+    },
+    {
+      "id": "r:7.12",
+      "source": "language-reference/07-simple-statements/7.12-the-global-statement/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "1e55790e4da0dfa6ceb93688be03117638582d349a0b16bf48c3a8c6adb937e2"
+    },
+    {
+      "id": "r:7.13",
+      "source": "language-reference/07-simple-statements/7.13-the-nonlocal-statement/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "8f9ba8bf8fa933550007b80d81d494bd40bb9241072f238ecaecc096baf418e9"
+    },
+    {
+      "id": "r:7.14",
+      "source": "language-reference/07-simple-statements/7.14-the-type-statement/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "c943cbb14154fcd474ef11c635582e358750f090c7822222f8daec4081e2166d"
+    },
+    {
+      "id": "r:8",
+      "source": "language-reference/08-compound-statements/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "804fa52577bab9e1c6d9e35d0cc0daf5a9635949ee3cedc50e89f70f19b6eeb6"
+    },
+    {
+      "id": "r:8.1",
+      "source": "language-reference/08-compound-statements/8.1-the-if-statement/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "a84fb683863bbc39d4b83363e2b736d83af8b625ae906ecad8094001342e08ec"
+    },
+    {
+      "id": "r:8.2",
+      "source": "language-reference/08-compound-statements/8.2-the-while-statement/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "2f449d9035932572c316f2a108d9c02cc1ff0e57457060a316631d07452c0862"
+    },
+    {
+      "id": "r:8.3",
+      "source": "language-reference/08-compound-statements/8.3-the-for-statement/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "c4463bb09b4559c4ad2cb09058c2d3492ce18bdd0ab418ceee719d1a47b1040d"
+    },
+    {
+      "id": "r:8.4",
+      "source": "language-reference/08-compound-statements/8.4-the-try-statement/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "4d2863231a25aa5fc335358df2afc46c01412069c55fb4a6cb40dcc70b22eafd"
+    },
+    {
+      "id": "r:8.4.1",
+      "source": "language-reference/08-compound-statements/8.4-the-try-statement/8.4.1-except-clause/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "e0cd951596fb8bc6338a74157f8c46d7361e518ce0b388d0ca99302e47e30f73"
+    },
+    {
+      "id": "r:8.4.2",
+      "source": "language-reference/08-compound-statements/8.4-the-try-statement/8.4.2-except-clause/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "957608eaa2a4876426424286c405b623ae97d553e50b8eb2ae84bf09365fc25f"
+    },
+    {
+      "id": "r:8.4.3",
+      "source": "language-reference/08-compound-statements/8.4-the-try-statement/8.4.3-else-clause/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "472ea6d7160c1d255a0abf7f3db689508a89aea0cfe34efdaccb244ecdc9dbfc"
+    },
+    {
+      "id": "r:8.4.4",
+      "source": "language-reference/08-compound-statements/8.4-the-try-statement/8.4.4-finally-clause/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "4a9c8f2a70b261db103886db595d3ea65a97006d42201cf93b4cb2462e7435ab"
+    },
+    {
+      "id": "r:8.5",
+      "source": "language-reference/08-compound-statements/8.5-the-with-statement/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "15be97813f48b5f2aa20061596fc409ce23b82bc3c26ff30a3068d7d2c149fbd"
+    },
+    {
+      "id": "r:8.6",
+      "source": "language-reference/08-compound-statements/8.6-the-match-statement/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "344020a688e6bfb2d3a2e888ce6fbabeacf5aff3726f2a40764cf48886363654"
+    },
+    {
+      "id": "r:8.6.1",
+      "source": "language-reference/08-compound-statements/8.6-the-match-statement/8.6.1-overview/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "b82ee37fcbcf968da880aa3f39f52923593f2f5358f4d422c4831aa7eb287681"
+    },
+    {
+      "id": "r:8.6.2",
+      "source": "language-reference/08-compound-statements/8.6-the-match-statement/8.6.2-guards/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "f254fd57fd59902587648375cf2711fffd115bde8e407a61851ac4eb3242c0c9"
+    },
+    {
+      "id": "r:8.6.3",
+      "source": "language-reference/08-compound-statements/8.6-the-match-statement/8.6.3-irrefutable-case-blocks/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "6acfe04237d84b051ee5469fe89e70e2c5ff68bd805c7490343328e2551505e9"
+    },
+    {
+      "id": "r:8.6.4",
+      "source": "language-reference/08-compound-statements/8.6-the-match-statement/8.6.4-patterns/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "7dc595729115c737173c8ac45130189633ba56f7baa2d2f666b0cef9ca8a41e7"
+    },
+    {
+      "id": "r:8.6.4.1",
+      "source": "language-reference/08-compound-statements/8.6-the-match-statement/8.6.4-patterns/8.6.4.1-or-patterns/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "770fd0af0c63b1125dd8cdfe6789f27ea2ee54b0994fe97806d6618e16261455"
+    },
+    {
+      "id": "r:8.6.4.2",
+      "source": "language-reference/08-compound-statements/8.6-the-match-statement/8.6.4-patterns/8.6.4.2-as-patterns/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "4658c871eed5f5b2e8ffe2fa6e7920ee07c3cf52fe7f3ac9b5a7c3323539a34b"
+    },
+    {
+      "id": "r:8.6.4.3",
+      "source": "language-reference/08-compound-statements/8.6-the-match-statement/8.6.4-patterns/8.6.4.3-literal-patterns/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "8fcacaf2dc5dc5e20dee2d7f3de6a92cf77ae2197009d34cea18de279d045bbe"
+    },
+    {
+      "id": "r:8.6.4.4",
+      "source": "language-reference/08-compound-statements/8.6-the-match-statement/8.6.4-patterns/8.6.4.4-capture-patterns/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "81d0b8f15e89574a47315257005cac43f42dbc07e906a2f05d6bb5a8ed90496f"
+    },
+    {
+      "id": "r:8.6.4.5",
+      "source": "language-reference/08-compound-statements/8.6-the-match-statement/8.6.4-patterns/8.6.4.5-wildcard-patterns/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "7ab02bb8b60273285969c5b6760b551d0f27ee89b13df46926a6d61a7e18a38c"
+    },
+    {
+      "id": "r:8.6.4.6",
+      "source": "language-reference/08-compound-statements/8.6-the-match-statement/8.6.4-patterns/8.6.4.6-value-patterns/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "f8fb048810a4f4e6c87e06d6aaaf291e436211299d1a2b4a863e7c1f49b3b9bf"
+    },
+    {
+      "id": "r:8.6.4.7",
+      "source": "language-reference/08-compound-statements/8.6-the-match-statement/8.6.4-patterns/8.6.4.7-group-patterns/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "9ad9b6f62a24cfacecd1760e978e18be33192053d74c8db9ca2ce48423290dfb"
+    },
+    {
+      "id": "r:8.6.4.8",
+      "source": "language-reference/08-compound-statements/8.6-the-match-statement/8.6.4-patterns/8.6.4.8-sequence-patterns/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "10de571ac10e83bcd7ca16971ed76391d194977cd606d148ee6fc65b1dc1df18"
+    },
+    {
+      "id": "r:8.6.4.9",
+      "source": "language-reference/08-compound-statements/8.6-the-match-statement/8.6.4-patterns/8.6.4.9-mapping-patterns/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "fb9eca006b7af4b69b75c2e0021487937dcb1ec179ff84c55c42a3c59b27ee59"
+    },
+    {
+      "id": "r:8.6.4.10",
+      "source": "language-reference/08-compound-statements/8.6-the-match-statement/8.6.4-patterns/8.6.4.10-class-patterns/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "f282cd99257a52cc9361bbde1199051da364e6d13cd0e67b74180a0d8e3123fd"
+    },
+    {
+      "id": "r:8.7",
+      "source": "language-reference/08-compound-statements/8.7-function-definitions/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "94a61085f4b3845795f05d36badc3aa2a3a449ea33b244a347931b29c19e58d0"
+    },
+    {
+      "id": "r:8.8",
+      "source": "language-reference/08-compound-statements/8.8-class-definitions/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "9d077024b1808e53e9879ba92ab990d6db9c8f7fedf5dc018026c51547820d98"
+    },
+    {
+      "id": "r:8.8.1",
+      "source": "language-reference/08-compound-statements/8.8-class-definitions/8.8.1-multiple-inheritance/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "9b0645e9eb4ea0eb113ceb8e6cf96910d08864ff42dc0b25056c18305de33029"
+    },
+    {
+      "id": "r:8.9",
+      "source": "language-reference/08-compound-statements/8.9-coroutines/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "23c52af9f283f6e0d229dda45a11f3362e46d14319ecd02b2105f92b35ac2ae8"
+    },
+    {
+      "id": "r:8.9.1",
+      "source": "language-reference/08-compound-statements/8.9-coroutines/8.9.1-coroutine-function-definition/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "9e6c1a163888fd84405241d705656014dd9acad7da9e82640b9d8b4cf14e8fb4"
+    },
+    {
+      "id": "r:8.9.2",
+      "source": "language-reference/08-compound-statements/8.9-coroutines/8.9.2-the-async-for-statement/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "2160c919dede9f88f8de6d39ebf16dad0f47ca0ed22342127a4923d7f1509379"
+    },
+    {
+      "id": "r:8.9.3",
+      "source": "language-reference/08-compound-statements/8.9-coroutines/8.9.3-the-async-with-statement/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "500a1b3a52d934c4891334970814f8e4326cd95d50cf51761ea4735847b80d3f"
+    },
+    {
+      "id": "r:8.10",
+      "source": "language-reference/08-compound-statements/8.10-type-parameter-lists/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "a167912c3c07baf63e680d5ce4661fa30b0a2e67d3b8b0dbbefb117d1b8901a9"
+    },
+    {
+      "id": "r:8.10.1",
+      "source": "language-reference/08-compound-statements/8.10-type-parameter-lists/8.10.1-generic-functions/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "3c1f7d0de349f7bd4fc62cf9e8155df94e6d35127219e57b96fdf50f6c44b567"
+    },
+    {
+      "id": "r:8.10.2",
+      "source": "language-reference/08-compound-statements/8.10-type-parameter-lists/8.10.2-generic-classes/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "fddf7cf449d4702c2ca8db5a8866d49f85a8b5c1cdf8f6b72ed4a7d2effcdd07"
+    },
+    {
+      "id": "r:8.10.3",
+      "source": "language-reference/08-compound-statements/8.10-type-parameter-lists/8.10.3-generic-type-aliases/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "a1bf03e1c71ff2ed564efe055adb40d5c68034709066d05928cd66b9176a4ff7"
+    },
+    {
+      "id": "r:8.11",
+      "source": "language-reference/08-compound-statements/8.11-annotations/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "9bcd3a3ca57eb08426721515cdd1a52d1d3ba9e24e9fd2c54bbebfd630b03ea0"
+    },
+    {
+      "id": "r:9",
+      "source": "language-reference/09-top-level-components/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "ff90beca31af51323e8d73c1e80671bf6e7128b258a18fcd697ca6fff1fea557"
+    },
+    {
+      "id": "r:9.1",
+      "source": "language-reference/09-top-level-components/9.1-complete-python-programs/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "e2be2061decde5568bf5da88ef9e95a5c5bc7a086765851eab7ab583f28e5ecd"
+    },
+    {
+      "id": "r:9.2",
+      "source": "language-reference/09-top-level-components/9.2-file-input/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "b9dc91333be13a3891d8e132b2d4cd9b8f627ad363df00ef5a8f350dc085a707"
+    },
+    {
+      "id": "r:9.3",
+      "source": "language-reference/09-top-level-components/9.3-interactive-input/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "0178fe3ca090ec71c6565fe49fc81a444ede1d62f3259c795a2d19e27c61297b"
+    },
+    {
+      "id": "r:9.4",
+      "source": "language-reference/09-top-level-components/9.4-expression-input/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "e1b997a4655b5c4d61186915527b3754226e974da1ce1dd2d0ef55207da48a32"
+    },
+    {
+      "id": "r:10",
+      "source": "language-reference/10-full-grammar-specification/README.md",
+      "status": "empty",
+      "reason": "Başlık veya alt bölüm bağlantıları var; anlatım ve örnek olmadan görev atanmaz.",
+      "sha256": "ed5908cdcfd66c15f1a3f47ca769d275e66f4bed01e6b0097baaf886673261c1"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "milestone:t:root",
+      "section": "t:root",
+      "task": "tutorial/MILESTONE.md",
+      "after": [
+        "t:2.1",
+        "t:2.1.1",
+        "t:2.1.2",
+        "t:2.2.1",
+        "t:3",
+        "t:3.1.1",
+        "t:3.1.2",
+        "t:3.1.3",
+        "t:3.2",
+        "t:4.1",
+        "t:4.2",
+        "t:4.3",
+        "t:4.4",
+        "t:4.5",
+        "t:4.6",
+        "t:4.7",
+        "t:4.8",
+        "t:4.9.1",
+        "t:4.9.2",
+        "t:4.9.3",
+        "t:4.9.3.1",
+        "t:4.9.3.2",
+        "t:4.9.3.3",
+        "t:4.9.3.4",
+        "t:4.9.3.5",
+        "t:4.9.4",
+        "t:4.9.5",
+        "t:4.9.6",
+        "t:4.9.7",
+        "t:4.9.8",
+        "t:4.10",
+        "t:5.1",
+        "t:5.1.1",
+        "t:5.1.2",
+        "t:5.1.3",
+        "t:5.1.4",
+        "t:5.1.5",
+        "t:5.2",
+        "t:5.3",
+        "t:5.4",
+        "t:5.5",
+        "t:5.6",
+        "t:5.7",
+        "t:5.8",
+        "t:6",
+        "t:6.1",
+        "t:6.1.1",
+        "t:6.1.2",
+        "t:6.1.3",
+        "t:6.2",
+        "t:6.3",
+        "t:6.4",
+        "t:6.4.1",
+        "t:6.4.2",
+        "t:7.1",
+        "t:7.1.1",
+        "t:7.1.2",
+        "t:7.1.3",
+        "t:7.1.4",
+        "t:7.2",
+        "t:7.2.1",
+        "t:7.2.2",
+        "t:8.1",
+        "t:8.2",
+        "t:8.3",
+        "t:8.4",
+        "t:8.5",
+        "t:8.6",
+        "t:8.7",
+        "t:8.8",
+        "t:8.9",
+        "t:8.10",
+        "t:9",
+        "t:9.1",
+        "t:9.2",
+        "t:9.2.1",
+        "t:9.3.1",
+        "t:9.3.2",
+        "t:9.3.3",
+        "t:9.3.4",
+        "t:9.3.5",
+        "t:9.4",
+        "t:9.5",
+        "t:9.5.1",
+        "t:9.6",
+        "t:9.7",
+        "t:9.8",
+        "t:9.9",
+        "t:9.10",
+        "t:10.1",
+        "t:10.2",
+        "t:10.3",
+        "t:10.4",
+        "t:10.5",
+        "t:10.6",
+        "t:10.7",
+        "t:10.8",
+        "t:10.9",
+        "t:10.10",
+        "t:10.11",
+        "t:10.12",
+        "t:11.1",
+        "t:11.2",
+        "t:11.3",
+        "t:11.4",
+        "t:11.5",
+        "t:11.6",
+        "t:11.7",
+        "t:11.8",
+        "t:12.1",
+        "t:12.2",
+        "t:12.3",
+        "t:13",
+        "t:14",
+        "t:14.1",
+        "t:14.2",
+        "t:15",
+        "t:15.1",
+        "t:16.1",
+        "t:16.1.1",
+        "t:16.1.2",
+        "t:16.1.3",
+        "t:16.1.4",
+        "milestone:t:2.1",
+        "milestone:t:2.2",
+        "milestone:t:2",
+        "milestone:t:3.1",
+        "milestone:t:3",
+        "milestone:t:4.9.3",
+        "milestone:t:4.9",
+        "milestone:t:4",
+        "milestone:t:5.1",
+        "milestone:t:5",
+        "milestone:t:6.1",
+        "milestone:t:6.4",
+        "milestone:t:6",
+        "milestone:t:7.1",
+        "milestone:t:7.2",
+        "milestone:t:7",
+        "milestone:t:8",
+        "milestone:t:9.2",
+        "milestone:t:9.3",
+        "milestone:t:9.5",
+        "milestone:t:9",
+        "milestone:t:10",
+        "milestone:t:11",
+        "milestone:t:12",
+        "milestone:t:14",
+        "milestone:t:15",
+        "milestone:t:16.1",
+        "milestone:t:16"
+      ],
+      "reuse": null
+    },
+    {
+      "id": "milestone:t:2",
+      "section": "t:2",
+      "task": "tutorial/02-using-the-python-interpreter/MILESTONE.md",
+      "after": [
+        "t:2.1",
+        "t:2.1.1",
+        "t:2.1.2",
+        "t:2.2.1",
+        "milestone:t:2.1",
+        "milestone:t:2.2"
+      ],
+      "reuse": null
+    },
+    {
+      "id": "milestone:t:2.1",
+      "section": "t:2.1",
+      "task": "tutorial/02-using-the-python-interpreter/2.1-invoking-the-interpreter/MILESTONE.md",
+      "after": [
+        "t:2.1",
+        "t:2.1.1",
+        "t:2.1.2"
+      ],
+      "reuse": null
+    },
+    {
+      "id": "milestone:t:2.2",
+      "section": "t:2.2",
+      "task": "tutorial/02-using-the-python-interpreter/2.2-the-interpreter-and-its-environment/MILESTONE.md",
+      "after": [
+        "t:2.2.1"
+      ],
+      "reuse": "t:2.2.1"
+    },
+    {
+      "id": "milestone:t:3",
+      "section": "t:3",
+      "task": "tutorial/03-an-informal-introduction-to-python/MILESTONE.md",
+      "after": [
+        "t:3",
+        "t:3.1.1",
+        "t:3.1.2",
+        "t:3.1.3",
+        "t:3.2",
+        "milestone:t:3.1"
+      ],
+      "reuse": null
+    },
+    {
+      "id": "milestone:t:3.1",
+      "section": "t:3.1",
+      "task": "tutorial/03-an-informal-introduction-to-python/3.1-using-python-as-a-calculator/MILESTONE.md",
+      "after": [
+        "t:3.1.1",
+        "t:3.1.2",
+        "t:3.1.3"
+      ],
+      "reuse": null
+    },
+    {
+      "id": "milestone:t:4",
+      "section": "t:4",
+      "task": "tutorial/04-more-control-flow-tools/MILESTONE.md",
+      "after": [
+        "t:4.1",
+        "t:4.2",
+        "t:4.3",
+        "t:4.4",
+        "t:4.5",
+        "t:4.6",
+        "t:4.7",
+        "t:4.8",
+        "t:4.9.1",
+        "t:4.9.2",
+        "t:4.9.3",
+        "t:4.9.3.1",
+        "t:4.9.3.2",
+        "t:4.9.3.3",
+        "t:4.9.3.4",
+        "t:4.9.3.5",
+        "t:4.9.4",
+        "t:4.9.5",
+        "t:4.9.6",
+        "t:4.9.7",
+        "t:4.9.8",
+        "t:4.10",
+        "milestone:t:4.9.3",
+        "milestone:t:4.9"
+      ],
+      "reuse": null
+    },
+    {
+      "id": "milestone:t:4.9",
+      "section": "t:4.9",
+      "task": "tutorial/04-more-control-flow-tools/4.9-more-on-defining-functions/MILESTONE.md",
+      "after": [
+        "t:4.9.1",
+        "t:4.9.2",
+        "t:4.9.3",
+        "t:4.9.3.1",
+        "t:4.9.3.2",
+        "t:4.9.3.3",
+        "t:4.9.3.4",
+        "t:4.9.3.5",
+        "t:4.9.4",
+        "t:4.9.5",
+        "t:4.9.6",
+        "t:4.9.7",
+        "t:4.9.8",
+        "milestone:t:4.9.3"
+      ],
+      "reuse": null
+    },
+    {
+      "id": "milestone:t:4.9.3",
+      "section": "t:4.9.3",
+      "task": "tutorial/04-more-control-flow-tools/4.9-more-on-defining-functions/4.9.3-special-parameters/MILESTONE.md",
+      "after": [
+        "t:4.9.3",
+        "t:4.9.3.1",
+        "t:4.9.3.2",
+        "t:4.9.3.3",
+        "t:4.9.3.4",
+        "t:4.9.3.5"
+      ],
+      "reuse": "t:4.9.3.5"
+    },
+    {
+      "id": "milestone:t:5",
+      "section": "t:5",
+      "task": "tutorial/05-data-structures/MILESTONE.md",
+      "after": [
+        "t:5.1",
+        "t:5.1.1",
+        "t:5.1.2",
+        "t:5.1.3",
+        "t:5.1.4",
+        "t:5.1.5",
+        "t:5.2",
+        "t:5.3",
+        "t:5.4",
+        "t:5.5",
+        "t:5.6",
+        "t:5.7",
+        "t:5.8",
+        "milestone:t:5.1"
+      ],
+      "reuse": null
+    },
+    {
+      "id": "milestone:t:5.1",
+      "section": "t:5.1",
+      "task": "tutorial/05-data-structures/5.1-more-on-lists/MILESTONE.md",
+      "after": [
+        "t:5.1",
+        "t:5.1.1",
+        "t:5.1.2",
+        "t:5.1.3",
+        "t:5.1.4",
+        "t:5.1.5"
+      ],
+      "reuse": null
+    },
+    {
+      "id": "milestone:t:6",
+      "section": "t:6",
+      "task": "tutorial/06-modules/MILESTONE.md",
+      "after": [
+        "t:6",
+        "t:6.1",
+        "t:6.1.1",
+        "t:6.1.2",
+        "t:6.1.3",
+        "t:6.2",
+        "t:6.3",
+        "t:6.4",
+        "t:6.4.1",
+        "t:6.4.2",
+        "milestone:t:6.1",
+        "milestone:t:6.4"
+      ],
+      "reuse": null
+    },
+    {
+      "id": "milestone:t:6.1",
+      "section": "t:6.1",
+      "task": "tutorial/06-modules/6.1-more-on-modules/MILESTONE.md",
+      "after": [
+        "t:6.1",
+        "t:6.1.1",
+        "t:6.1.2",
+        "t:6.1.3"
+      ],
+      "reuse": null
+    },
+    {
+      "id": "milestone:t:6.4",
+      "section": "t:6.4",
+      "task": "tutorial/06-modules/6.4-packages/MILESTONE.md",
+      "after": [
+        "t:6.4",
+        "t:6.4.1",
+        "t:6.4.2"
+      ],
+      "reuse": null
+    },
+    {
+      "id": "milestone:t:7",
+      "section": "t:7",
+      "task": "tutorial/07-input-and-output/MILESTONE.md",
+      "after": [
+        "t:7.1",
+        "t:7.1.1",
+        "t:7.1.2",
+        "t:7.1.3",
+        "t:7.1.4",
+        "t:7.2",
+        "t:7.2.1",
+        "t:7.2.2",
+        "milestone:t:7.1",
+        "milestone:t:7.2"
+      ],
+      "reuse": null
+    },
+    {
+      "id": "milestone:t:7.1",
+      "section": "t:7.1",
+      "task": "tutorial/07-input-and-output/7.1-fancier-output-formatting/MILESTONE.md",
+      "after": [
+        "t:7.1",
+        "t:7.1.1",
+        "t:7.1.2",
+        "t:7.1.3",
+        "t:7.1.4"
+      ],
+      "reuse": null
+    },
+    {
+      "id": "milestone:t:7.2",
+      "section": "t:7.2",
+      "task": "tutorial/07-input-and-output/7.2-reading-and-writing-files/MILESTONE.md",
+      "after": [
+        "t:7.2",
+        "t:7.2.1",
+        "t:7.2.2"
+      ],
+      "reuse": null
+    },
+    {
+      "id": "milestone:t:8",
+      "section": "t:8",
+      "task": "tutorial/08-errors-and-exceptions/MILESTONE.md",
+      "after": [
+        "t:8.1",
+        "t:8.2",
+        "t:8.3",
+        "t:8.4",
+        "t:8.5",
+        "t:8.6",
+        "t:8.7",
+        "t:8.8",
+        "t:8.9",
+        "t:8.10"
+      ],
+      "reuse": null
+    },
+    {
+      "id": "milestone:t:9",
+      "section": "t:9",
+      "task": "tutorial/09-classes/MILESTONE.md",
+      "after": [
+        "t:9",
+        "t:9.1",
+        "t:9.2",
+        "t:9.2.1",
+        "t:9.3.1",
+        "t:9.3.2",
+        "t:9.3.3",
+        "t:9.3.4",
+        "t:9.3.5",
+        "t:9.4",
+        "t:9.5",
+        "t:9.5.1",
+        "t:9.6",
+        "t:9.7",
+        "t:9.8",
+        "t:9.9",
+        "t:9.10",
+        "milestone:t:9.2",
+        "milestone:t:9.3",
+        "milestone:t:9.5"
+      ],
+      "reuse": null
+    },
+    {
+      "id": "milestone:t:9.2",
+      "section": "t:9.2",
+      "task": "tutorial/09-classes/9.2-python-scopes-and-namespaces/MILESTONE.md",
+      "after": [
+        "t:9.2",
+        "t:9.2.1"
+      ],
+      "reuse": "t:9.2.1"
+    },
+    {
+      "id": "milestone:t:9.3",
+      "section": "t:9.3",
+      "task": "tutorial/09-classes/9.3-a-first-look-at-classes/MILESTONE.md",
+      "after": [
+        "t:9.3.1",
+        "t:9.3.2",
+        "t:9.3.3",
+        "t:9.3.4",
+        "t:9.3.5"
+      ],
+      "reuse": null
+    },
+    {
+      "id": "milestone:t:9.5",
+      "section": "t:9.5",
+      "task": "tutorial/09-classes/9.5-inheritance/MILESTONE.md",
+      "after": [
+        "t:9.5",
+        "t:9.5.1"
+      ],
+      "reuse": null
+    },
+    {
+      "id": "milestone:t:10",
+      "section": "t:10",
+      "task": "tutorial/10-brief-tour-of-the-standard-library/MILESTONE.md",
+      "after": [
+        "t:10.1",
+        "t:10.2",
+        "t:10.3",
+        "t:10.4",
+        "t:10.5",
+        "t:10.6",
+        "t:10.7",
+        "t:10.8",
+        "t:10.9",
+        "t:10.10",
+        "t:10.11",
+        "t:10.12"
+      ],
+      "reuse": null
+    },
+    {
+      "id": "milestone:t:11",
+      "section": "t:11",
+      "task": "tutorial/11-brief-tour-of-the-standard-library-part-ii/MILESTONE.md",
+      "after": [
+        "t:11.1",
+        "t:11.2",
+        "t:11.3",
+        "t:11.4",
+        "t:11.5",
+        "t:11.6",
+        "t:11.7",
+        "t:11.8"
+      ],
+      "reuse": null
+    },
+    {
+      "id": "milestone:t:12",
+      "section": "t:12",
+      "task": "tutorial/12-virtual-environments-and-packages/MILESTONE.md",
+      "after": [
+        "t:12.1",
+        "t:12.2",
+        "t:12.3"
+      ],
+      "reuse": null
+    },
+    {
+      "id": "milestone:t:14",
+      "section": "t:14",
+      "task": "tutorial/14-interactive-input-editing-and-history-substitution/MILESTONE.md",
+      "after": [
+        "t:14",
+        "t:14.1",
+        "t:14.2"
+      ],
+      "reuse": "t:14.2"
+    },
+    {
+      "id": "milestone:t:15",
+      "section": "t:15",
+      "task": "tutorial/15-floating-point-arithmetic-issues-and-limitations/MILESTONE.md",
+      "after": [
+        "t:15",
+        "t:15.1"
+      ],
+      "reuse": null
+    },
+    {
+      "id": "milestone:t:16",
+      "section": "t:16",
+      "task": "tutorial/16-appendix/MILESTONE.md",
+      "after": [
+        "t:16.1",
+        "t:16.1.1",
+        "t:16.1.2",
+        "t:16.1.3",
+        "t:16.1.4",
+        "milestone:t:16.1"
+      ],
+      "reuse": "milestone:t:16.1"
+    },
+    {
+      "id": "milestone:t:16.1",
+      "section": "t:16.1",
+      "task": "tutorial/16-appendix/16.1-interactive-mode/MILESTONE.md",
+      "after": [
+        "t:16.1",
+        "t:16.1.1",
+        "t:16.1.2",
+        "t:16.1.3",
+        "t:16.1.4"
+      ],
+      "reuse": null
+    },
+    {
+      "id": "milestone:r:5",
+      "section": "r:5",
+      "task": "language-reference/05-the-import-system/MILESTONE.md",
+      "after": [
+        "r:5",
+        "r:5.1",
+        "r:5.2",
+        "r:5.2.1",
+        "r:5.2.2",
+        "r:5.3",
+        "r:5.3.1",
+        "r:5.3.2",
+        "r:5.3.3",
+        "r:5.3.4",
+        "r:5.4",
+        "r:5.4.1",
+        "r:5.4.2",
+        "r:5.4.3",
+        "r:5.4.4",
+        "r:5.4.5",
+        "r:5.4.6",
+        "r:5.5",
+        "r:5.5.1",
+        "r:5.5.2",
+        "r:5.6",
+        "r:5.7",
+        "r:5.8",
+        "r:5.8.1",
+        "milestone:r:5.2",
+        "milestone:r:5.3",
+        "milestone:r:5.4",
+        "milestone:r:5.5",
+        "milestone:r:5.8"
+      ],
+      "reuse": null
+    },
+    {
+      "id": "milestone:r:5.2",
+      "section": "r:5.2",
+      "task": "language-reference/05-the-import-system/5.2-packages/MILESTONE.md",
+      "after": [
+        "r:5.2",
+        "r:5.2.1",
+        "r:5.2.2"
+      ],
+      "reuse": null
+    },
+    {
+      "id": "milestone:r:5.3",
+      "section": "r:5.3",
+      "task": "language-reference/05-the-import-system/5.3-searching/MILESTONE.md",
+      "after": [
+        "r:5.3",
+        "r:5.3.1",
+        "r:5.3.2",
+        "r:5.3.3",
+        "r:5.3.4"
+      ],
+      "reuse": null
+    },
+    {
+      "id": "milestone:r:5.4",
+      "section": "r:5.4",
+      "task": "language-reference/05-the-import-system/5.4-loading/MILESTONE.md",
+      "after": [
+        "r:5.4",
+        "r:5.4.1",
+        "r:5.4.2",
+        "r:5.4.3",
+        "r:5.4.4",
+        "r:5.4.5",
+        "r:5.4.6"
+      ],
+      "reuse": null
+    },
+    {
+      "id": "milestone:r:5.5",
+      "section": "r:5.5",
+      "task": "language-reference/05-the-import-system/5.5-the-path-based-finder/MILESTONE.md",
+      "after": [
+        "r:5.5",
+        "r:5.5.1",
+        "r:5.5.2"
+      ],
+      "reuse": null
+    },
+    {
+      "id": "milestone:r:5.8",
+      "section": "r:5.8",
+      "task": "language-reference/05-the-import-system/5.8-special-considerations-for-main/MILESTONE.md",
+      "after": [
+        "r:5.8",
+        "r:5.8.1"
+      ],
+      "reuse": "r:5.8.1"
+    }
+  ],
+  "empty_builtin_folders": [
+    "builtins/built-in-constants",
+    "builtins/built-in-constants/constants-added-by-the-site-module",
+    "builtins/built-in-exceptions",
+    "builtins/built-in-exceptions/base-classes",
+    "builtins/built-in-exceptions/concrete-exceptions",
+    "builtins/built-in-exceptions/exception-context",
+    "builtins/built-in-exceptions/exception-groups",
+    "builtins/built-in-exceptions/exception-hierarchy",
+    "builtins/built-in-exceptions/inheriting-from-built-in-exceptions",
+    "builtins/built-in-exceptions/warnings",
+    "builtins/built-in-functions",
+    "builtins/built-in-types",
+    "builtins/built-in-types/binary-sequence-types-bytes-bytearray-memoryview",
+    "builtins/built-in-types/boolean-operations-and-or-not",
+    "builtins/built-in-types/boolean-type-bool",
+    "builtins/built-in-types/comparisons",
+    "builtins/built-in-types/context-manager-types",
+    "builtins/built-in-types/integer-string-conversion-length-limitation",
+    "builtins/built-in-types/iteration-related-types",
+    "builtins/built-in-types/mapping-types-dict-frozendict",
+    "builtins/built-in-types/numeric-types-int-float-complex",
+    "builtins/built-in-types/other-built-in-types",
+    "builtins/built-in-types/sequence-types-list-tuple-range",
+    "builtins/built-in-types/set-types-set-frozenset",
+    "builtins/built-in-types/special-attributes",
+    "builtins/built-in-types/text-and-binary-sequence-type-methods-summary",
+    "builtins/built-in-types/text-sequence-type-str",
+    "builtins/built-in-types/truth-value-testing",
+    "builtins/built-in-types/type-annotation-types-generic-alias-union",
+    "builtins/thread-safety-guarantees",
+    "builtins/thread-safety-guarantees/thread-safety-for-bytearray-objects",
+    "builtins/thread-safety-guarantees/thread-safety-for-dict-objects",
+    "builtins/thread-safety-guarantees/thread-safety-for-list-objects",
+    "builtins/thread-safety-guarantees/thread-safety-for-memoryview-objects",
+    "builtins/thread-safety-guarantees/thread-safety-for-set-objects",
+    "builtins/thread-safety-guarantees/thread-safety-levels",
+    "builtins/time-complexity-of-operations-on-built-in-types",
+    "builtins/time-complexity-of-operations-on-built-in-types/dict-frozendict",
+    "builtins/time-complexity-of-operations-on-built-in-types/list",
+    "builtins/time-complexity-of-operations-on-built-in-types/memoryview",
+    "builtins/time-complexity-of-operations-on-built-in-types/notes",
+    "builtins/time-complexity-of-operations-on-built-in-types/range",
+    "builtins/time-complexity-of-operations-on-built-in-types/set-frozenset",
+    "builtins/time-complexity-of-operations-on-built-in-types/str-bytes-bytearray",
+    "builtins/time-complexity-of-operations-on-built-in-types/tuple"
+  ]
+}

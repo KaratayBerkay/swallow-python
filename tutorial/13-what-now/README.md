@@ -29,3 +29,37 @@ More Python resources:
 For Python-related questions and problem reports, you can post to the newsgroup *comp.lang.python*, or send them to the mailing list at [python-list@python.org](mailto:python-list%40python.org). The newsgroup and mailing list are gatewayed, so messages posted to one will automatically be forwarded to the other. There are hundreds of postings a day, asking (and answering) questions, suggesting new features, and announcing new modules. Mailing list archives are available at [https://mail.python.org/pipermail/](https://mail.python.org/pipermail/).
 
 Before posting, be sure to check the list of Frequently Asked Questions (also called the FAQ). The FAQ answers many of the questions that come up again and again, and may already contain the solution for your problem.
+
+<!-- learning-task:start -->
+## Bölüm görevi
+
+**Görev 13: Soruyu doğru belgeye yönlendir**
+
+**Odak:** Built-ins, standart kitaplık, dil referansı ve kurulum kaynaklarının kapsamı.
+
+### Önce
+
+- Bu bölümün [anlatımını ve içindeki örnekleri](README.md) tamamla.
+- Ön bilgi: [t:12.3](../12-virtual-environments-and-packages/12.3-managing-packages-with-pip/README.md).
+
+### Tek görev
+
+1. Şu dört soruya araştırma yönlendirme notu yaz: list metotlarının tam sözleşmesi; json modülünün seçenekleri; dilin import sözdizimi; üçüncü taraf paket yükleme.
+
+2. Her biri için bu bölümde tanıtılan belge ailesini seç ve neden diğerinden başlamadığını söyle.
+
+3. Reponun yalnız başlıktan oluşan referans sayfasıyla tam anlatımı ayır.
+
+### Geçiş ölçütleri
+
+- [ ] Sırasıyla built-ins, standart kitaplık, dil referansı ve installing modules kaynağı.
+- [ ] PyPI paket dizini belge ailesinin yerine geçirilmemiş.
+- [ ] Kaynak seçimi sorunun türüyle gerekçeli; dış sayfa okumayı gerektirmiyor.
+- [ ] İleti gönderme, üyelik veya paket yayınlama görevin parçası değil.
+
+[Değerlendirme yöntemi](../../DEGERLENDIRME.md) · [Sıra](../../TASKS.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../14-interactive-input-editing-and-history-substitution/README.md)
+<!-- learning-task:end -->

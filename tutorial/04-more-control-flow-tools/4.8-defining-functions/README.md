@@ -68,3 +68,41 @@ This example, as usual, demonstrates some new Python features:
 - The `return` statement returns with a value from a function. `return` without an expression argument returns `None`. Falling off the end of a function also returns `None`.
 
 - The statement `result.append(a)` calls a *method* of the list object `result`. A method is a function that 'belongs' to an object and is named `obj.methodname`, where `obj` is some object (this may be an expression), and `methodname` is the name of a method that is defined by the object's type. Different types define different methods. Methods of different types may have the same name without causing ambiguity. (It is possible to define your own object types and methods, using *classes*, see Classes) The method `append()` shown in the example is defined for list objects; it adds a new element at the end of the list. In this example it is equivalent to `result = result + [a]`, but more efficient.
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev 4.8: Yazdırılan sonuçla dönen sonucu ayır**
+
+**Odak:** def/çağrı, parametre, yerel adlar, return/None, fonksiyon alias ve listeye append.
+
+#### Önce
+
+- Bu bölümün [anlatımını ve içindeki örnekleri](README.md) tamamla.
+- Ön bilgi: [t:3.2](../../03-an-informal-introduction-to-python/3.2-first-steps-towards-programming/README.md).
+- Ön bilgi: [t:4.6](../4.6-pass-statements/README.md).
+
+#### Tek görev
+
+1. limit altındaki çift sayıları liste olarak döndüren even_numbers(limit) yaz; 0 ile başlatıp while içinde 2 ekleyebilirsin.
+
+2. Kısa bir docstring ekle. f = even_numbers ile ikinci bir ad ver. 0, 1 ve 7 için sonuçları al.
+
+3. Ardından yalnızca aynı sayıları yazdıran, return kullanmayan bir sürüm yaz ve print ile dönüşünü göster.
+
+4. Dışarıda limit = 100 varken fonksiyon parametresinin neden onu değiştirmediğini açıkla.
+
+#### Geçiş ölçütleri
+
+- [ ] Sonuçlar [], [0], [0, 2, 4, 6]; sınır dışarıda kalıyor.
+- [ ] f aynı fonksiyonu çağırıyor; f ile çağrının sonucu birbirinden ayrılmış.
+- [ ] Yazdıran sürümün dönüşü None; return ifadesiz kullanıldığında da aynı.
+- [ ] Parametre ve gövde içindeki atamalar yerel; fonksiyonun gövdesi tanımda değil çağrıda yürütülüyor.
+- [ ] Her çağrıda sonuç listesinin yeniden oluştuğu ve append ile biriktiği açıklanmış.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md) · [Sıra](../../../TASKS.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../4.9-more-on-defining-functions/4.9.1-default-argument-values/README.md)
+<!-- learning-task:end -->

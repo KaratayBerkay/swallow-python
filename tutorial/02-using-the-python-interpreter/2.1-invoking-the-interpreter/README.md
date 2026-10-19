@@ -24,7 +24,74 @@ When a script file is used, it is sometimes useful to be able to run the script 
 
 All command line options are described in Command line and environment.
 
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev 2.1: Python oturumunu doğru başlat**
+
+**Odak:** Etkileşimli oturum, dosyadan çalıştırma, -c, -m, -i ve oturumdan çıkış.
+
+#### Önce
+
+- Bu bölümün [anlatımını ve içindeki örnekleri](README.md) tamamla.
+
+#### Tek görev
+
+1. Bir çalışma notunda şu beş ihtiyaca uygun başlatma biçimini yaz: komutları tek tek denemek; hazır demo.py dosyasını çalıştırmak; tek bir hazır Python komutunu çalıştırmak; adı verilen bir modülü program gibi çalıştırmak; demo.py bittikten sonra değişkenlerini oturumda incelemek.
+
+2. Sonra bilgisayarındaki Python komutuyla etkileşimli oturumu aç, sol okla satır düzenlemeyi kontrol et ve bölümdeki çıkış yöntemlerinden biriyle kapat.
+
+3. Python kodu üretmen gerekmiyor.
+
+#### Geçiş ölçütleri
+
+- [ ] Beş ihtiyaç sırasıyla etkileşimli başlangıç, dosya adı, -c, -m ve -i ile eşleştirilmiş.
+- [ ] Python komutu ile >>> istemi birbirinden ayrılmış; komutun sistemindeki adı kaydedilmiş.
+- [ ] EOF ile quit() yöntemlerinin amacı ve sol ok denemesinin sonucu açıklanmış.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md) · [Sıra](../../../TASKS.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](2.1.1-argument-passing/README.md)
+<!-- learning-task:end -->
 ### Sections
 
 - [2.1.1. Argument Passing](2.1.1-argument-passing/README.md)
 - [2.1.2. Interactive Mode](2.1.2-interactive-mode/README.md)
+
+<!-- learning-milestone:start -->
+### Klasör milestone görevi
+
+**Milestone: Bir çalıştırma kaydını yeniden kur**
+
+**Zamanı:** Bu klasörün kendi anlatımı, bütün alt bölümleri ve onların görevleri bittikten sonra.
+
+**Odak:** Başlatma biçimini, programa kalan argümanları ve REPL istemlerini birlikte yorumlama.
+
+#### Önce
+
+[Klasör anlatımı](README.md) ve [sayısal sıradaki alt görevler](../../../TASKS.md) tamamlanmış olmalı. Bu klasörün dışından yalnız daha önce işlenmiş bölüm bilgileri kullanılabilir.
+
+#### Tek görev
+
+1. demo.py için şu isteğe bir çalıştırma taslağı hazırla: red ve 7 programa verilsin, betik bitince oturumda kalınsın.
+
+2. Komutu, sys.argv içeriğini ve betik sonrası birincil/devam istemlerinin görevini yaz.
+
+3. Aynı betiği etkileşimli kalmadan çalıştıracak tek değişikliği göster.
+
+#### Geçiş ölçütleri
+
+- [ ] -i doğru yerde ve dosya adı/iki argüman korunmuş.
+- [ ] Argümanlar metin, yorumlayıcı seçeneği argv içine katılmamış.
+- [ ] Betik yürütmesiyle sonraki REPL evresi ayrılmış.
+- [ ] İstemler kodun veya program çıktısının parçası yapılmamış.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md) · [Sıra](../../../TASKS.md)
+
+Ayrı dosya: [klasör milestone görevi](MILESTONE.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../2.2-the-interpreter-and-its-environment/2.2.1-source-code-encoding/README.md)
+<!-- learning-milestone:end -->

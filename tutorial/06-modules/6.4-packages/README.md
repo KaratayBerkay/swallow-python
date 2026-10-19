@@ -80,7 +80,74 @@ Note that when using `from package import item`, the item can be either a submod
 
 Contrarily, when using syntax like `import item.subitem.subsubitem`, each item except for the last must be a package; the last item can be a module or a package but can't be a class or function or variable defined in the previous item.
 
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev 6.4: Paket yolunu çağrı biçimiyle eşleştir**
+
+**Odak:** Paket ağacı, `__init__`.py, noktalı adlar ve üç import biçiminin ad bağlaması.
+
+#### Önce
+
+- Bu bölümün [anlatımını ve içindeki örnekleri](README.md) tamamla.
+- Ön bilgi: [t:6.3](../6.3-the-dir-function/README.md).
+
+#### Tek görev
+
+1. Çalışma klasöründe lessonpack/ ve lessonpack/tools/ paketlerini boş `__init__`.py dosyalarıyla kur. tools/counts.py içinde count_items(items) olsun.
+
+2. Ayrı oturumlarda import lessonpack.tools.counts, from lessonpack.tools import counts, from lessonpack.tools.counts import count_items biçimlerini kullanıp aynı iki öğenin sayısını al.
+
+3. Her çağrıda kullanılabilir adı yaz ve README içindeki sound ağacına eşleştir.
+
+#### Geçiş ölçütleri
+
+- [ ] Üç çağrı da 2 veriyor; tam yol, modül adı ve doğrudan işlev adı doğru kullanılmış.
+- [ ] Her ara bileşen paket; son bileşen modül olabiliyor.
+- [ ] `__init__`.py regular paket başlatma dosyası olarak tanımlanmış.
+- [ ] from package import item ile import package.item arasındaki son öğe kuralları açıklanmış; namespace paket uygulaması istenmemiş.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md) · [Sıra](../../../TASKS.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](6.4.1-importing-from-a-package/README.md)
+<!-- learning-task:end -->
 ### Sections
 
 - [6.4.1. Importing \* From a Package](6.4.1-importing-from-a-package/README.md)
 - [6.4.2. Intra-package References](6.4.2-intra-package-references/README.md)
+
+<!-- learning-milestone:start -->
+### Klasör milestone görevi
+
+**Milestone: Paketin dışarı açtığı adları tasarla**
+
+**Zamanı:** Bu klasörün kendi anlatımı, bütün alt bölümleri ve onların görevleri bittikten sonra.
+
+**Odak:** Paket ağacı, mutlak/göreli import ve `__all__` sözleşmesi.
+
+#### Önce
+
+[Klasör anlatımı](README.md) ve [sayısal sıradaki alt görevler](../../../TASKS.md) tamamlanmış olmalı. Bu klasörün dışından yalnız daha önce işlenmiş bölüm bilgileri kullanılabilir.
+
+#### Tek görev
+
+1. studytools paketinde core/counts.py ve reports/summary.py oluştur; ara paketlerin `__init__`.py dosyaları olsun. counts bir liste uzunluğu işlevi versin; summary bu işlevi göreli importla kullanıp metin değil sayısal özet döndürsün. reports/`__init__`.py için `__all__` ile yalnız summary modülünü dışarı aç.
+
+2. Üç import biçimiyle kullanıcıya hangi adın bağlandığını ayrı oturumlarda göster.
+
+#### Geçiş ölçütleri
+
+- [ ] Göreli import ..core üzerinden doğru hedefe gidiyor.
+- [ ] Kullanıcı paketinden çağrı gerçek sayısal sonuç veriyor.
+- [ ] `__all__` yalnız belirlenen modülü dışarı açıyor; disk otomatik tarama varsayımı yok.
+- [ ] Paket bağlamıyla doğrudan dosya çalıştırması karıştırılmamış; kaynak örneklerdeki boş stub çıktısı gerçek işlev diye sunulmamış.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md) · [Sıra](../../../TASKS.md)
+
+Ayrı dosya: [klasör milestone görevi](MILESTONE.md).
+
+**Sonraki adım:** [Klasörün bütün alt görevleri bittiyse milestone kontrolüne geç.](../README.md#klasör-milestone-görevi)
+<!-- learning-milestone:end -->

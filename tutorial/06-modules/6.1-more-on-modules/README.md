@@ -58,8 +58,79 @@ It can also be used when utilising `from` with similar effects:
 >
 > For efficiency reasons, each module is only imported once per interpreter session. Therefore, if you change your modules, you must restart the interpreter -- or, if it's just one module you want to test interactively, use `importlib.reload()`, e.g. `import importlib; importlib.reload(modulename)`.
 
+
+<!-- learning-task:start -->
+### Bölüm görevi
+
+**Görev 6.1: İçe aktarmanın adlara ve başlangıca etkisini izle**
+
+**Odak:** İlk importta yürütme, modül kapsamı, from/as/* ve reload.
+
+#### Önce
+
+- Bu bölümün [anlatımını ve içindeki örnekleri](README.md) tamamla.
+- Ön bilgi: [t:6](../README.md).
+
+#### Tek görev
+
+1. counts.py kopyasına üst düzeyde print("loaded"), public_value = 1 ve _internal = 2 ekle.
+
+2. Yeni oturumda iki kez import et.
+
+3. Ayrı yeni oturumlarda from counts import count_items, import counts as c ve from counts import * deneyerek hangi adların kullanılabildiğini not et.
+
+4. Dosyadaki public_value değerini değiştirip yeniden import ile importlib.reload farkını göster.
+
+#### Geçiş ölçütleri
+
+- [ ] Aynı oturumda iki import başlangıç mesajını yalnız bir kez basıyor; reload yeniden yürütüyor.
+- [ ] from biçimi işlevi, as biçimi c adını bağlıyor.
+- [ ] Yıldızlı aktarım _internal adını getirmiyor; isim gizleme riski somut bir adla açıklanmış.
+- [ ] Modülün kendi global adları çağıranın aynı adlı değişkenlerinden ayrılmış.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md) · [Sıra](../../../TASKS.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](6.1.1-executing-modules-as-scripts/README.md)
+<!-- learning-task:end -->
 ### Sections
 
 - [6.1.1. Executing modules as scripts](6.1.1-executing-modules-as-scripts/README.md)
 - [6.1.2. The Module Search Path](6.1.2-the-module-search-path/README.md)
 - [6.1.3. "Compiled" Python files](6.1.3-compiled-python-files/README.md)
+
+<!-- learning-milestone:start -->
+### Klasör milestone görevi
+
+**Milestone: Hem içe aktarılan hem çalıştırılan modülü izle**
+
+**Zamanı:** Bu klasörün kendi anlatımı, bütün alt bölümleri ve onların görevleri bittikten sonra.
+
+**Odak:** Modül başlangıcı, main koruması, ad bağlama, yol ve bytecode cache ilişkisi.
+
+#### Önce
+
+[Klasör anlatımı](README.md) ve [sayısal sıradaki alt görevler](../../../TASKS.md) tamamlanmış olmalı. Bu klasörün dışından yalnız daha önce işlenmiş bölüm bilgileri kullanılabilir.
+
+#### Tek görev
+
+1. numbers_tool.py içinde listeden toplam döndüren işlev ve yalnız ana çalıştırmada iki sabit sayı için sonuç yazdıran koruma kur.
+
+2. Yeni oturumdan iki import, işlev çağrısı ve doğrudan dosya çalıştırmasını karşılaştır.
+
+3. Aynı adlı başka dosya betik klasöründe olsaydı arama seçimini, kaynak değişseydi yeni süreçte .pyc kontrolünü not et.
+
+#### Geçiş ölçütleri
+
+- [ ] Importta ana rapor basılmıyor, doğrudan betikte basılıyor.
+- [ ] İki import aynı modül nesnesine gidiyor; işlev açıkça çağrılabiliyor.
+- [ ] İsim bağlama, modül arama ve bytecode cache üç ayrı olay olarak açıklanmış.
+- [ ] .pyc çalışma algoritmasını hızlandırma garantisi sayılmamış.
+
+[Değerlendirme yöntemi](../../../DEGERLENDIRME.md) · [Sıra](../../../TASKS.md)
+
+Ayrı dosya: [klasör milestone görevi](MILESTONE.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../6.2-standard-modules/README.md)
+<!-- learning-milestone:end -->

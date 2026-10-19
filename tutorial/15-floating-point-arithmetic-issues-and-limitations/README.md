@@ -179,6 +179,83 @@ The `math.fsum()` goes further and tracks all of the "lost digits" as values are
 ```
 > Code: [arr.py](arr.py)
 
+
+<!-- learning-task:start -->
+## Bölüm görevi
+
+**Görev 15: Gösterimi gerçek sayı değeriyle karıştırma**
+
+**Odak:** Binary yaklaşım, gösterim yuvarlaması, isclose, tam geri kurma ve toplama hassasiyeti.
+
+### Önce
+
+- Bu bölümün [anlatımını ve içindeki örnekleri](README.md) tamamla.
+- Ön bilgi: [t:11.8](../11-brief-tour-of-the-standard-library-part-ii/11.8-decimal-floating-point-arithmetic/README.md).
+- Ön bilgi: [t:9.10](../09-classes/9.10-generator-expressions/README.md).
+
+**Kaynak/ortam notu:** Kaynak yeni Python sürümündeki sum iyileştirmelerini anlatıyor. Python 3.11 üzerinde sum([0.1] * 10) == 1.0 yanlış çıkabilir; sonucu sürümüyle değerlendir.
+
+### Tek görev
+
+1. Tek bir sayı inceleme notu hazırla. 0.1 + 0.1 + 0.1 ile 0.3 için ==, math.isclose ve format(..., ".2f") sonuçlarını karşılaştır; round ile her girdiyi önceden yuvarlamanın neden aynı sorunu çözmediğini dene. x=0.1 için as_integer_ratio ve hex/fromhex ile değeri geri kur.
+
+2. Ardından on adet 0.1 için açık toplama, sum ve math.fsum sonuçlarını mevcut Python sürümüyle birlikte kaydet.
+
+3. README içindeki büyük değerlerin birbirini götürdüğü arr örneğini, gerekli math/Fraction importlarını ekleyerek aynı ölçütle incele.
+
+### Geçiş ölçütleri
+
+- [ ] Doğrudan eşitlik yanlış, isclose doğru; aynı görünen iki biçimlenmiş metnin altında farklı değerler bulunabiliyor.
+- [ ] Ön yuvarlama temsil sorununu ortadan kaldırmıyor.
+- [ ] Kesirden ve hex metninden geri kurulan float, ilk float ile tam eşit; gerçek 1/10 ile eşit olduğu iddia edilmemiş.
+- [ ] sum davranışının 3.11 ve 3.12+ arasında farklılaşabileceği belirtilmiş; math.fsum ile açık toplama ayrılmış.
+- [ ] arr için hangi yöntemin kayıp basamakları daha iyi koruduğu gözlemle açıklanmış; sürüme bağlı son basamaklar ezber ölçütü yapılmamış.
+- [ ] Decimal metin girdisi ile Fraction tam kesir amaçları, gösterim biçimlemeyle karıştırılmamış.
+
+[Değerlendirme yöntemi](../../DEGERLENDIRME.md) · [Sıra](../../TASKS.md)
+
+Ayrı dosya: [bölüm görevi](TASK.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](15.1-representation-error/README.md)
+<!-- learning-task:end -->
 ## Sections
 
 - [15.1. Representation Error](15.1-representation-error/README.md)
+
+<!-- learning-milestone:start -->
+## Klasör milestone görevi
+
+**Milestone: Yaklaşık değer için doğrulama ölçütünü seç**
+
+**Zamanı:** Bu klasörün kendi anlatımı, bütün alt bölümleri ve onların görevleri bittikten sonra.
+
+**Odak:** Yeni sayılarda tam geri kurma, yaklaşık hesap ve gösterim için ayrı doğrulama ölçütü seçme.
+
+### Önce
+
+[Klasör anlatımı](README.md) ve [sayısal sıradaki alt görevler](../../TASKS.md) tamamlanmış olmalı. Bu klasörün dışından yalnız daha önce işlenmiş bölüm bilgileri kullanılabilir.
+
+### Tek görev
+
+1. Bir ölçüm kaydı için exact = 0.125 ve measured = 0.2 + 0.4 oluştur. Matematiksel hedefler sırasıyla 1/8 ve 3/5 olsun. Önceki 0.1 hesabını yeniden yapmadan iki floatın as_integer_ratio sonuçlarını incele.
+
+2. İlk kesirde numerator * 8 - denominator, ikincide numerator * 5 - 3 * denominator tamsayı hesaplarıyla hedefe tam eşitlik veya farkın yönünü belirle. İki kaydın .3f metin gösterimini al; ayrıca measured ile hedef 0.6 değerinin aynı .3f metnini vermesinin tam sayısal eşitlik kanıtı olup olmadığını açıkla.
+
+3. measured değerini 0.6 ile == ve math.isclose kullanarak karşılaştır. Ayrıca Decimal("0.2") + Decimal("0.4") sonucunu Decimal("0.6") ile karşılaştır; seçtiğin sayı modelinin neyi değiştirdiğini açıkla.
+
+4. İki floatı da hex/fromhex ile geri kur. Tam kesir hesabı, yaklaşık ölçüm karşılaştırması ve aynı floatın kayıpsız geri kurulması için neden farklı kanıtlar kullandığını tek kısa karar notunda birleştir.
+
+### Geçiş ölçütleri
+
+- [ ] exact kesri 1/8; ilk çapraz çarpım 0. measured kesri hedef 3/5'in biraz üzerinde; ikinci çapraz çarpım pozitif.
+- [ ] .3f gösterimleri 0.125 ve 0.600; ikinci görünüm temsil farkını ortadan kaldırmıyor.
+- [ ] measured == 0.6 yanlış, math.isclose sonucu doğru; Decimal metin girdileriyle toplam Decimal("0.6") değerine eşit.
+- [ ] Her iki hex geri kurmasında tam eşitlik doğru; bunun bağımsız bir yaklaşık hesabı hedefle karşılaştırmaktan farkı açıklanmış.
+- [ ] Sayı modeli, gösterim ve karşılaştırma yöntemi gerekçeyle seçilmiş; tek bir yöntemin bütün denetimlere uygun olduğu varsayılmamış.
+
+[Değerlendirme yöntemi](../../DEGERLENDIRME.md) · [Sıra](../../TASKS.md)
+
+Ayrı dosya: [klasör milestone görevi](MILESTONE.md).
+
+**Sonraki adım:** [Görev geçiş ölçütlerini sağladıktan sonra sıradaki anlatımı oku.](../16-appendix/16.1-interactive-mode/README.md)
+<!-- learning-milestone:end -->
