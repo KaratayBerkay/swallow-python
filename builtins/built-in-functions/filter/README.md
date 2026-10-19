@@ -1,0 +1,19 @@
+## `filter()`
+
+```
+filter(function, iterable, /)
+```
+
+Construct an iterator from those elements of *iterable* for which *function*
+is true.  *iterable* may be either a sequence, a container which
+supports iteration, or an iterator.  If *function* is `None`, the identity
+function is assumed, that is, all elements of *iterable* that are false are
+removed.
+
+Note that `filter(function, iterable)` is equivalent to the generator
+expression `(item for item in iterable if function(item))` if function is
+not `None` and `(item for item in iterable if item)` if function is
+`None`.
+
+See [itertools.filterfalse()](https://docs.python.org/3.15/library/itertools.html#itertools.filterfalse) for the complementary function that returns
+elements of *iterable* for which *function* is false.

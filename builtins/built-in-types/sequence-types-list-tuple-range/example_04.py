@@ -1,0 +1,8 @@
+r = range(0, 20, 2)
+print(repr(r))
+print(repr(11 in r))
+print(repr(10 in r))
+print(repr(r.index(10)))
+print(repr(r[5]))
+print(repr(r[:5]))
+print(repr(r[-1]))

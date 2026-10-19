@@ -1,0 +1,21 @@
+## `contextmanager.__enter__`
+
+```
+contextmanager.__enter__()
+```
+
+Enter the runtime context and return either this object or another object
+related to the runtime context. The value returned by this method is bound to
+the identifier in the `as` clause of `with` statements using
+this context manager.
+
+An example of a context manager that returns itself is a [file object](https://docs.python.org/3.15/glossary.html#term-file-object).
+File objects return themselves from __enter__() to allow [open()](../../../built-in-functions/open/README.md) to be
+used as the context expression in a `with` statement.
+
+An example of a context manager that returns a related object is the one
+returned by [decimal.localcontext()](https://docs.python.org/3.15/library/decimal.html#decimal.localcontext). These managers set the active
+decimal context to a copy of the original decimal context and then return the
+copy. This allows changes to be made to the current decimal context in the body
+of the `with` statement without affecting code outside the
+`with` statement.

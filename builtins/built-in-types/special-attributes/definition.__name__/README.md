@@ -1,0 +1,8 @@
+## `definition.__name__`
+
+```
+definition.__name__
+```
+
+The name of the class, function, method, descriptor, or
+generator instance.

@@ -1,0 +1,7 @@
+print(repr(list(range(10))))
+print(repr(list(range(1, 11))))
+print(repr(list(range(0, 30, 5))))
+print(repr(list(range(0, 10, 3))))
+print(repr(list(range(0, -10, -1))))
+print(repr(list(range(0))))
+print(repr(list(range(1, 0))))

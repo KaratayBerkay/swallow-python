@@ -1,0 +1,5 @@
+v = memoryview(b'abcefg')
+print(repr(v[1]))
+print(repr(v[-1]))
+print(repr(v[1:4]))
+print(repr(bytes(v[1:4])))

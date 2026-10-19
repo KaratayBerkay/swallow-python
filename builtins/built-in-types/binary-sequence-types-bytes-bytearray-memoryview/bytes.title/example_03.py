@@ -1,0 +1,7 @@
+import re
+def titlecase(s):
+    return re.sub(rb"[A-Za-z]+('[A-Za-z]+)?",
+                  lambda mo: mo.group(0)[0:1].upper() +
+                             mo.group(0)[1:].lower(),
+                  s)
+print(repr(titlecase(b"they're bill's friends.")))

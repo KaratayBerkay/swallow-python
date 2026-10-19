@@ -1,0 +1,9 @@
+import sys
+if hasattr(sys, "set_int_max_str_digits"):
+    upper_bound = 68000
+    lower_bound = 4004
+    current_limit = sys.get_int_max_str_digits()
+    if current_limit == 0 or current_limit > upper_bound:
+        sys.set_int_max_str_digits(upper_bound)
+    elif current_limit < lower_bound:
+        sys.set_int_max_str_digits(lower_bound)

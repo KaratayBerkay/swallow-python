@@ -1,0 +1,22 @@
+## `bytes.isalnum`
+
+```
+bytes.isalnum()
+bytearray.isalnum()
+```
+
+Return `True` if all bytes in the sequence are alphabetical ASCII characters
+or ASCII decimal digits and the sequence is not empty, `False` otherwise.
+Alphabetic ASCII characters are those byte values in the sequence
+`b'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'`. ASCII decimal
+digits are those byte values in the sequence `b'0123456789'`.
+
+For example:
+
+``` python
+>>> b'ABCabc1'.isalnum()
+True
+>>> b'ABC abc1'.isalnum()
+False
+```
+> Code: [example_01.py](example_01.py)

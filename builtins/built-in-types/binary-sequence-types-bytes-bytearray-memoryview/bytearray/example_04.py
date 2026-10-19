@@ -1,0 +1,6 @@
+shrink = bytearray(b'abc')
+shrink.resize(1)
+print(repr(((shrink, len(shrink)))))
+grow = bytearray(b'abc')
+grow.resize(5)
+print(repr(((grow, len(grow)))))

@@ -1,0 +1,12 @@
+## `int.as_integer_ratio`
+
+```
+int.as_integer_ratio()
+```
+
+Return a pair of integers whose ratio is equal to the original
+integer and has a positive denominator.  The integer ratio of integers
+(whole numbers) is always the integer as the numerator and `1` as the
+denominator.
+
+> *Added in version 3.8.*

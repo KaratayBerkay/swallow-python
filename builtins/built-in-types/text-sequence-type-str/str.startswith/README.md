@@ -1,0 +1,24 @@
+## `str.startswith`
+
+```
+str.startswith(prefix[, start[, end]])
+```
+
+Return `True` if string starts with the *prefix*, otherwise return `False`.
+*prefix* can also be a tuple of prefixes to look for.  With optional *start*,
+test string beginning at that position.  With optional *end*, stop comparing
+string at that position.
+
+For example:
+
+``` python
+>>> 'Python'.startswith('Py')
+True
+>>> 'a tuple of prefixes'.startswith(('at', 'a'))
+True
+>>> 'Python is amazing'.startswith('is', 7)
+True
+```
+> Code: [example_01.py](example_01.py)
+
+See also `endswith()` and `removeprefix()`.

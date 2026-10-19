@@ -1,0 +1,5 @@
+## `EnvironmentError`
+
+```
+EnvironmentError
+```

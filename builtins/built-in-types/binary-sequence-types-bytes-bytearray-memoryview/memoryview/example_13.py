@@ -1,0 +1,12 @@
+import array
+a = array.array('l', [1,2,3])
+x = memoryview(a)
+print(repr(x.format))
+print(repr(x.itemsize))
+print(repr(len(x)))
+print(repr(x.nbytes))
+y = x.cast('B')
+print(repr(y.format))
+print(repr(y.itemsize))
+print(repr(len(y)))
+print(repr(y.nbytes))

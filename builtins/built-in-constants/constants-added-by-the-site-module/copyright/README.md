@@ -1,0 +1,9 @@
+## `copyright`
+
+```
+copyright
+credits
+```
+
+Objects that when printed or called, print the text of copyright or
+credits, respectively.

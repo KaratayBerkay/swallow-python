@@ -1,0 +1,20 @@
+## `KeyboardInterrupt`
+
+```
+KeyboardInterrupt
+```
+
+Raised when the user hits the interrupt key (normally `Control-C` or
+`Delete`).  During execution, a check for interrupts is made
+regularly. The exception inherits from [BaseException](../../base-classes/BaseException/README.md) so as to not be
+accidentally caught by code that catches [Exception](../../base-classes/Exception/README.md) and thus prevent
+the interpreter from exiting.
+
+> **Note**
+>
+> Catching a KeyboardInterrupt requires special consideration.
+> Because it can be raised at unpredictable points, it may, in some
+> circumstances, leave the running program in an inconsistent state. It is
+> generally best to allow KeyboardInterrupt to end the program as
+> quickly as possible or avoid raising it entirely. (See
+> [Note on Signal Handlers and Exceptions](https://docs.python.org/3.15/library/signal.html#handlers-and-exceptions).)

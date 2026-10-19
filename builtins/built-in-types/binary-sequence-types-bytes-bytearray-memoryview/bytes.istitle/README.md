@@ -1,0 +1,20 @@
+## `bytes.istitle`
+
+```
+bytes.istitle()
+bytearray.istitle()
+```
+
+Return `True` if the sequence is ASCII titlecase and the sequence is not
+empty, `False` otherwise. See [bytes.title()](../bytes.title/README.md) for more details on the
+definition of "titlecase".
+
+For example:
+
+``` python
+>>> b'Hello World'.istitle()
+True
+>>> b'Hello world'.istitle()
+False
+```
+> Code: [example_01.py](example_01.py)

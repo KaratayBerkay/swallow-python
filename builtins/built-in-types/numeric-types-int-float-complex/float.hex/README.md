@@ -1,0 +1,10 @@
+## `float.hex`
+
+```
+float.hex()
+```
+
+Return a representation of a floating-point number as a hexadecimal
+string.  For finite floating-point numbers, this representation
+will always include a leading `0x` and a trailing `p` and
+exponent.

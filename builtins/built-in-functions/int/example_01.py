@@ -1,0 +1,6 @@
+print(repr(int(123.45)))
+print(repr(int('123')))
+print(repr(int('   -12_345\n')))
+print(repr(int('FACE', 16)))
+print(repr(int('0xface', 0)))
+print(repr(int('01110011', base=2)))

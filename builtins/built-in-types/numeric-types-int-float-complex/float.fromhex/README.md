@@ -1,0 +1,9 @@
+## `float.fromhex`
+
+```
+float.fromhex(s)
+```
+
+Class method to return the float represented by a hexadecimal
+string *s*.  The string *s* may have leading and trailing
+whitespace.

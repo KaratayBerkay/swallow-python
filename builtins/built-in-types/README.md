@@ -1,0 +1,268 @@
+# Built-in Types
+
+### Built-in Types
+
+The following sections describe the standard types that are built into the
+interpreter.
+
+The principal built-in types are numerics, sequences, mappings, classes,
+instances and exceptions.
+
+Some collection classes are mutable.  The methods that add, subtract, or
+rearrange their members in place, and don't return a specific item, never return
+the collection instance itself but `None`.
+
+Some operations are supported by several object types; in particular,
+practically all objects can be compared for equality, tested for truth
+value, and converted to a string (with the [repr()](../built-in-functions/repr/README.md) function or the
+slightly different [str()](../built-in-functions/str/README.md) function).  The latter function is implicitly
+used when an object is written by the [print()](../built-in-functions/print/README.md) function.
+
+## Contents
+
+- [Truth Value Testing](truth-value-testing/README.md) — Any object can be tested for truth value, for use in an if or while condition or as operand of the Boolean operations below.
+- [Boolean Operations — and, or, not](boolean-operations-and-or-not/README.md) — These are the Boolean operations, ordered by ascending priority:
+- [Comparisons](comparisons/README.md) — There are eight comparison operations in Python.
+- [Numeric Types — int, float, complex](numeric-types-int-float-complex/README.md) — There are three distinct numeric types: integers, floating-point numbers, and complex numbers.
+  - [`int.bit_length`](numeric-types-int-float-complex/int.bit_length/README.md) — Return the number of bits necessary to represent an integer in binary, excluding the sign and leading zeros:
+  - [`int.bit_count`](numeric-types-int-float-complex/int.bit_count/README.md) — Return the number of ones in the binary representation of the absolute value of the integer.
+  - [`int.to_bytes`](numeric-types-int-float-complex/int.to_bytes/README.md) — Return an array of bytes representing an integer.
+  - [`int.from_bytes`](numeric-types-int-float-complex/int.from_bytes/README.md) — Return the integer represented by the given array of bytes.
+  - [`int.as_integer_ratio`](numeric-types-int-float-complex/int.as_integer_ratio/README.md) — Return a pair of integers whose ratio is equal to the original integer and has a positive denominator.
+  - [`int.is_integer`](numeric-types-int-float-complex/int.is_integer/README.md) — Returns True.
+  - [`float.from_number`](numeric-types-int-float-complex/float.from_number/README.md) — Class method to return a floating-point number constructed from a number *x*.
+  - [`float.as_integer_ratio`](numeric-types-int-float-complex/float.as_integer_ratio/README.md) — Return a pair of integers whose ratio is exactly equal to the original float.
+  - [`float.is_integer`](numeric-types-int-float-complex/float.is_integer/README.md) — Return True if the float instance is finite with integral value, and False otherwise:
+  - [`float.hex`](numeric-types-int-float-complex/float.hex/README.md) — Return a representation of a floating-point number as a hexadecimal string.
+  - [`float.fromhex`](numeric-types-int-float-complex/float.fromhex/README.md) — Class method to return the float represented by a hexadecimal string *s*.
+  - [`complex.from_number`](numeric-types-int-float-complex/complex.from_number/README.md) — Class method to convert a number to a complex number.
+- [Boolean Type - bool](boolean-type-bool/README.md) — Booleans represent truth values.
+- [Iteration-related types](iteration-related-types/README.md) — Python supports a concept of iteration over containers.
+  - [`container.__iter__`](iteration-related-types/container.__iter__/README.md) — Return an iterator object.
+  - [`iterator.__iter__`](iteration-related-types/iterator.__iter__/README.md) — Return the iterator object itself.
+  - [`iterator.__next__`](iteration-related-types/iterator.__next__/README.md) — Return the next item from the iterator.
+  - [`generator.__next__`](iteration-related-types/generator.__next__/README.md) — Starts the execution of a generator function or resumes it at the yield expression where the function is currently suspended.
+  - [`generator.send`](iteration-related-types/generator.send/README.md) — "Sends" a value into the generator function: the *value* argument becomes the result of the current yield expression.
+  - [`generator.throw`](iteration-related-types/generator.throw/README.md) — Raises an exception at the point where the generator is currently suspended.
+  - [`generator.close`](iteration-related-types/generator.close/README.md) — Raises a GeneratorExit exception at the point where the generator function is currently suspended (equivalent to calling throw(GeneratorExit)).
+  - [`agen.__anext__`](iteration-related-types/agen.__anext__/README.md) — Returns an awaitable which when run starts to execute the asynchronous generator function or resumes it at the yield expression where the function…
+  - [`agen.asend`](iteration-related-types/agen.asend/README.md) — Returns an awaitable which, when run, "sends" a value into the underlying asynchronous generator function: the *value* argument becomes the result…
+  - [`agen.athrow`](iteration-related-types/agen.athrow/README.md) — Returns an awaitable that, when run, raises an exception at the point where the underlying asynchronous generator function is currently suspended.
+  - [`agen.aclose`](iteration-related-types/agen.aclose/README.md) — Returns an awaitable that when run will throw a GeneratorExit into the underlying asynchronous generator function at the point where it is…
+- [Sequence Types — list, tuple, range](sequence-types-list-tuple-range/README.md) — There are three basic sequence types: lists, tuples, and range objects.
+  - [`list.count`](sequence-types-list-tuple-range/list.count/README.md)
+  - [`range.count`](sequence-types-list-tuple-range/range.count/README.md) — Documented together with list.count.
+  - [`tuple.count`](sequence-types-list-tuple-range/tuple.count/README.md) — Documented together with list.count.
+  - [`sequence.count`](sequence-types-list-tuple-range/sequence.count/README.md) — Return the total number of occurrences of *value* in *sequence*.
+  - [`list.index`](sequence-types-list-tuple-range/list.index/README.md)
+  - [`range.index`](sequence-types-list-tuple-range/range.index/README.md) — Documented together with list.index.
+  - [`tuple.index`](sequence-types-list-tuple-range/tuple.index/README.md) — Documented together with list.index.
+  - [`sequence.index`](sequence-types-list-tuple-range/sequence.index/README.md) — Return the index of the first occurrence of *value* in *sequence*.
+  - [`bytearray.append`](sequence-types-list-tuple-range/bytearray.append/README.md)
+  - [`list.append`](sequence-types-list-tuple-range/list.append/README.md) — Documented together with bytearray.append.
+  - [`sequence.append`](sequence-types-list-tuple-range/sequence.append/README.md) — Append *value* to the end of the sequence.
+  - [`bytearray.clear`](sequence-types-list-tuple-range/bytearray.clear/README.md)
+  - [`list.clear`](sequence-types-list-tuple-range/list.clear/README.md) — Documented together with bytearray.clear.
+  - [`sequence.clear`](sequence-types-list-tuple-range/sequence.clear/README.md) — Remove all items from *sequence*.
+  - [`bytearray.copy`](sequence-types-list-tuple-range/bytearray.copy/README.md)
+  - [`list.copy`](sequence-types-list-tuple-range/list.copy/README.md) — Documented together with bytearray.copy.
+  - [`sequence.copy`](sequence-types-list-tuple-range/sequence.copy/README.md) — Create a shallow copy of *sequence*.
+  - [`bytearray.extend`](sequence-types-list-tuple-range/bytearray.extend/README.md)
+  - [`list.extend`](sequence-types-list-tuple-range/list.extend/README.md) — Documented together with bytearray.extend.
+  - [`sequence.extend`](sequence-types-list-tuple-range/sequence.extend/README.md) — Extend *sequence* with the contents of *iterable*.
+  - [`bytearray.insert`](sequence-types-list-tuple-range/bytearray.insert/README.md)
+  - [`list.insert`](sequence-types-list-tuple-range/list.insert/README.md) — Documented together with bytearray.insert.
+  - [`sequence.insert`](sequence-types-list-tuple-range/sequence.insert/README.md) — Insert *value* into *sequence* at the given *index*.
+  - [`bytearray.pop`](sequence-types-list-tuple-range/bytearray.pop/README.md)
+  - [`list.pop`](sequence-types-list-tuple-range/list.pop/README.md) — Documented together with bytearray.pop.
+  - [`sequence.pop`](sequence-types-list-tuple-range/sequence.pop/README.md) — Retrieve the item at *index* and also remove it from *sequence*.
+  - [`bytearray.remove`](sequence-types-list-tuple-range/bytearray.remove/README.md)
+  - [`list.remove`](sequence-types-list-tuple-range/list.remove/README.md) — Documented together with bytearray.remove.
+  - [`sequence.remove`](sequence-types-list-tuple-range/sequence.remove/README.md) — Remove the first item from *sequence* where sequence[i] == value.
+  - [`bytearray.reverse`](sequence-types-list-tuple-range/bytearray.reverse/README.md)
+  - [`list.reverse`](sequence-types-list-tuple-range/list.reverse/README.md) — Documented together with bytearray.reverse.
+  - [`sequence.reverse`](sequence-types-list-tuple-range/sequence.reverse/README.md) — Reverse the items of *sequence* in place.
+  - [`list`](sequence-types-list-tuple-range/list/README.md) — Lists may be constructed in several ways:
+  - [`tuple`](sequence-types-list-tuple-range/tuple/README.md) — Tuples may be constructed in a number of ways:
+  - [`range`](sequence-types-list-tuple-range/range/README.md) — The arguments to the range constructor must be integers (either built-in int or any object that implements the __index__() special method).
+- [Text and Binary Sequence Type Methods Summary](text-and-binary-sequence-type-methods-summary/README.md) — The following table summarizes the text and binary sequence types methods by category.
+- [Text Sequence Type — str](text-sequence-type-str/README.md) — Textual data in Python is handled with str objects, or strings.
+  - [`str`](text-sequence-type-str/str/README.md) — Return a string version of *object*.
+  - [`str.capitalize`](text-sequence-type-str/str.capitalize/README.md) — Return a copy of the string with its first character capitalized and the rest lowercased.
+  - [`str.casefold`](text-sequence-type-str/str.casefold/README.md) — Return a casefolded copy of the string.
+  - [`str.center`](text-sequence-type-str/str.center/README.md) — Return centered in a string of length *width*.
+  - [`str.count`](text-sequence-type-str/str.count/README.md) — Return the number of non-overlapping occurrences of substring *sub* in the range [*start*, *end*].
+  - [`str.encode`](text-sequence-type-str/str.encode/README.md) — Return the string encoded to bytes.
+  - [`str.endswith`](text-sequence-type-str/str.endswith/README.md) — Return True if the string ends with the specified *suffix*, otherwise return False.
+  - [`str.expandtabs`](text-sequence-type-str/str.expandtabs/README.md) — Return a copy of the string where all tab characters are replaced by one or more spaces, depending on the current column and the given tab size.
+  - [`str.find`](text-sequence-type-str/str.find/README.md) — Return the lowest index in the string where substring *sub* is found within the slice s[start:end].
+  - [`str.format`](text-sequence-type-str/str.format/README.md) — Perform a string formatting operation.
+  - [`str.format_map`](text-sequence-type-str/str.format_map/README.md) — Similar to str.format(**mapping), except that mapping is used directly and not copied to a dict.
+  - [`str.index`](text-sequence-type-str/str.index/README.md) — Like find(), but raise ValueError when the substring is not found.
+  - [`str.isalnum`](text-sequence-type-str/str.isalnum/README.md) — Return True if all characters in the string are alphanumeric and there is at least one character, False otherwise.
+  - [`str.isalpha`](text-sequence-type-str/str.isalpha/README.md) — Return True if all characters in the string are alphabetic and there is at least one character, False otherwise.
+  - [`str.isascii`](text-sequence-type-str/str.isascii/README.md) — Return True if the string is empty or all characters in the string are ASCII, False otherwise.
+  - [`str.isdecimal`](text-sequence-type-str/str.isdecimal/README.md) — Return True if all characters in the string are decimal characters and there is at least one character, False otherwise.
+  - [`str.isdigit`](text-sequence-type-str/str.isdigit/README.md) — Return True if all characters in the string are digits and there is at least one character, False otherwise.
+  - [`str.isidentifier`](text-sequence-type-str/str.isidentifier/README.md) — Return True if the string is a valid identifier according to the language definition, section Names (identifiers and keywords).
+  - [`str.islower`](text-sequence-type-str/str.islower/README.md) — Return True if all cased characters [^1] in the string are lowercase and there is at least one cased character, False otherwise.
+  - [`str.isnumeric`](text-sequence-type-str/str.isnumeric/README.md) — Return True if all characters in the string are numeric characters, and there is at least one character, False otherwise.
+  - [`str.isprintable`](text-sequence-type-str/str.isprintable/README.md) — Return True if all characters in the string are printable, False if it contains at least one non-printable character.
+  - [`str.isspace`](text-sequence-type-str/str.isspace/README.md) — Return True if there are only whitespace characters in the string and there is at least one character, False otherwise.
+  - [`str.istitle`](text-sequence-type-str/str.istitle/README.md) — Return True if the string is a titlecased string and there is at least one character, for example uppercase characters may only follow uncased…
+  - [`str.isupper`](text-sequence-type-str/str.isupper/README.md) — Return True if all cased characters [^1] in the string are uppercase and there is at least one cased character, False otherwise.
+  - [`str.join`](text-sequence-type-str/str.join/README.md) — Return a string which is the concatenation of the strings in *iterable*.
+  - [`str.ljust`](text-sequence-type-str/str.ljust/README.md) — Return the string left justified in a string of length *width*.
+  - [`str.lower`](text-sequence-type-str/str.lower/README.md) — Return a copy of the string with all the cased characters [^1] converted to lowercase.
+  - [`str.lstrip`](text-sequence-type-str/str.lstrip/README.md) — Return a copy of the string with leading characters removed.
+  - [`str.maketrans`](text-sequence-type-str/str.maketrans/README.md) — This static method returns a translation table usable for str.translate().
+  - [`str.partition`](text-sequence-type-str/str.partition/README.md) — Split the string at the first occurrence of *sep*, and return a 3-tuple containing the part before the separator, the separator itself, and the…
+  - [`str.removeprefix`](text-sequence-type-str/str.removeprefix/README.md) — If the string starts with the *prefix* string, return string[len(prefix):].
+  - [`str.removesuffix`](text-sequence-type-str/str.removesuffix/README.md) — If the string ends with the *suffix* string and that *suffix* is not empty, return string[:-len(suffix)].
+  - [`str.replace`](text-sequence-type-str/str.replace/README.md) — Return a copy of the string with all occurrences of substring *old* replaced by *new*.
+  - [`str.rfind`](text-sequence-type-str/str.rfind/README.md) — Return the highest index in the string where substring *sub* is found, such that *sub* is contained within s[start:end].
+  - [`str.rindex`](text-sequence-type-str/str.rindex/README.md) — Like rfind() but raises ValueError when the substring *sub* is not found.
+  - [`str.rjust`](text-sequence-type-str/str.rjust/README.md) — Return the string right justified in a string of length *width*.
+  - [`str.rpartition`](text-sequence-type-str/str.rpartition/README.md) — Split the string at the last occurrence of *sep*, and return a 3-tuple containing the part before the separator, the separator itself, and the…
+  - [`str.rsplit`](text-sequence-type-str/str.rsplit/README.md) — Return a list of the words in the string, using *sep* as the delimiter string.
+  - [`str.rstrip`](text-sequence-type-str/str.rstrip/README.md) — Return a copy of the string with trailing characters removed.
+  - [`str.split`](text-sequence-type-str/str.split/README.md) — Return a list of the words in the string, using *sep* as the delimiter string.
+  - [`str.splitlines`](text-sequence-type-str/str.splitlines/README.md) — Return a list of the lines in the string, breaking at line boundaries.
+  - [`str.startswith`](text-sequence-type-str/str.startswith/README.md) — Return True if string starts with the *prefix*, otherwise return False.
+  - [`str.strip`](text-sequence-type-str/str.strip/README.md) — Return a copy of the string with the leading and trailing characters removed.
+  - [`str.swapcase`](text-sequence-type-str/str.swapcase/README.md) — Return a copy of the string with uppercase characters converted to lowercase and vice versa.
+  - [`str.title`](text-sequence-type-str/str.title/README.md) — Return a titlecased version of the string where words start with an uppercase character and the remaining characters are lowercase.
+  - [`str.translate`](text-sequence-type-str/str.translate/README.md) — Return a copy of the string in which each character has been mapped through the given translation table.
+  - [`str.upper`](text-sequence-type-str/str.upper/README.md) — Return a copy of the string with all the cased characters [^1] converted to uppercase.
+  - [`str.zfill`](text-sequence-type-str/str.zfill/README.md) — Return a copy of the string left filled with ASCII '0' digits to make a string of length *width*.
+- [Binary Sequence Types — bytes, bytearray, memoryview](binary-sequence-types-bytes-bytearray-memoryview/README.md) — The core built-in types for manipulating binary data are bytes and bytearray.
+  - [`bytes`](binary-sequence-types-bytes-bytearray-memoryview/bytes/README.md) — Firstly, the syntax for bytes literals is largely the same as that for string literals, except that a b prefix is added:
+  - [`bytearray`](binary-sequence-types-bytes-bytearray-memoryview/bytearray/README.md) — There is no dedicated literal syntax for bytearray objects, instead they are always created by calling the constructor:
+  - [`bytes.count`](binary-sequence-types-bytes-bytearray-memoryview/bytes.count/README.md) — Return the number of non-overlapping occurrences of subsequence *sub* in the range [*start*, *end*].
+  - [`bytearray.count`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.count/README.md) — Documented together with bytes.count.
+  - [`bytes.removeprefix`](binary-sequence-types-bytes-bytearray-memoryview/bytes.removeprefix/README.md) — If the binary data starts with the *prefix* string, return bytes[len(prefix):].
+  - [`bytearray.removeprefix`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.removeprefix/README.md) — Documented together with bytes.removeprefix.
+  - [`bytes.removesuffix`](binary-sequence-types-bytes-bytearray-memoryview/bytes.removesuffix/README.md) — If the binary data ends with the *suffix* string and that *suffix* is not empty, return bytes[:-len(suffix)].
+  - [`bytearray.removesuffix`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.removesuffix/README.md) — Documented together with bytes.removesuffix.
+  - [`bytes.decode`](binary-sequence-types-bytes-bytearray-memoryview/bytes.decode/README.md) — Return the bytes decoded to a str.
+  - [`bytearray.decode`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.decode/README.md) — Documented together with bytes.decode.
+  - [`bytes.endswith`](binary-sequence-types-bytes-bytearray-memoryview/bytes.endswith/README.md) — Return True if the binary data ends with the specified *suffix*, otherwise return False.
+  - [`bytearray.endswith`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.endswith/README.md) — Documented together with bytes.endswith.
+  - [`bytes.find`](binary-sequence-types-bytes-bytearray-memoryview/bytes.find/README.md) — Return the lowest index in the data where the subsequence *sub* is found, such that *sub* is contained in the slice s[start:end].
+  - [`bytearray.find`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.find/README.md) — Documented together with bytes.find.
+  - [`bytes.index`](binary-sequence-types-bytes-bytearray-memoryview/bytes.index/README.md) — Like find(), but raise ValueError when the subsequence is not found.
+  - [`bytearray.index`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.index/README.md) — Documented together with bytes.index.
+  - [`bytes.join`](binary-sequence-types-bytes-bytearray-memoryview/bytes.join/README.md) — Return a bytes or bytearray object which is the concatenation of the binary data sequences in *iterable*.
+  - [`bytearray.join`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.join/README.md) — Documented together with bytes.join.
+  - [`bytes.maketrans`](binary-sequence-types-bytes-bytearray-memoryview/bytes.maketrans/README.md) — This static method returns a translation table usable for bytes.translate() that will map each character in *from* into the character at the same…
+  - [`bytearray.maketrans`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.maketrans/README.md) — Documented together with bytes.maketrans.
+  - [`bytes.partition`](binary-sequence-types-bytes-bytearray-memoryview/bytes.partition/README.md) — Split the sequence at the first occurrence of *sep*, and return a 3-tuple containing the part before the separator, the separator itself or its…
+  - [`bytearray.partition`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.partition/README.md) — Documented together with bytes.partition.
+  - [`bytes.replace`](binary-sequence-types-bytes-bytearray-memoryview/bytes.replace/README.md) — Return a copy of the sequence with all occurrences of subsequence *old* replaced by *new*.
+  - [`bytearray.replace`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.replace/README.md) — Documented together with bytes.replace.
+  - [`bytes.rfind`](binary-sequence-types-bytes-bytearray-memoryview/bytes.rfind/README.md) — Return the highest index in the sequence where the subsequence *sub* is found, such that *sub* is contained within s[start:end].
+  - [`bytearray.rfind`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.rfind/README.md) — Documented together with bytes.rfind.
+  - [`bytes.rindex`](binary-sequence-types-bytes-bytearray-memoryview/bytes.rindex/README.md) — Like rfind() but raises ValueError when the subsequence *sub* is not found.
+  - [`bytearray.rindex`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.rindex/README.md) — Documented together with bytes.rindex.
+  - [`bytes.rpartition`](binary-sequence-types-bytes-bytearray-memoryview/bytes.rpartition/README.md) — Split the sequence at the last occurrence of *sep*, and return a 3-tuple containing the part before the separator, the separator itself or its…
+  - [`bytearray.rpartition`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.rpartition/README.md) — Documented together with bytes.rpartition.
+  - [`bytes.startswith`](binary-sequence-types-bytes-bytearray-memoryview/bytes.startswith/README.md) — Return True if the binary data starts with the specified *prefix*, otherwise return False.
+  - [`bytearray.startswith`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.startswith/README.md) — Documented together with bytes.startswith.
+  - [`bytes.translate`](binary-sequence-types-bytes-bytearray-memoryview/bytes.translate/README.md) — Return a copy of the bytes or bytearray object where all bytes occurring in the optional argument *delete* are removed, and the remaining bytes…
+  - [`bytearray.translate`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.translate/README.md) — Documented together with bytes.translate.
+  - [`bytes.center`](binary-sequence-types-bytes-bytearray-memoryview/bytes.center/README.md) — Return a copy of the object centered in a sequence of length *width*.
+  - [`bytearray.center`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.center/README.md) — Documented together with bytes.center.
+  - [`bytes.ljust`](binary-sequence-types-bytes-bytearray-memoryview/bytes.ljust/README.md) — Return a copy of the object left justified in a sequence of length *width*.
+  - [`bytearray.ljust`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.ljust/README.md) — Documented together with bytes.ljust.
+  - [`bytes.lstrip`](binary-sequence-types-bytes-bytearray-memoryview/bytes.lstrip/README.md) — Return a copy of the sequence with specified leading bytes removed.
+  - [`bytearray.lstrip`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.lstrip/README.md) — Documented together with bytes.lstrip.
+  - [`bytes.rjust`](binary-sequence-types-bytes-bytearray-memoryview/bytes.rjust/README.md) — Return a copy of the object right justified in a sequence of length *width*.
+  - [`bytearray.rjust`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.rjust/README.md) — Documented together with bytes.rjust.
+  - [`bytes.rsplit`](binary-sequence-types-bytes-bytearray-memoryview/bytes.rsplit/README.md) — Split the binary sequence into subsequences of the same type, using *sep* as the delimiter string.
+  - [`bytearray.rsplit`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.rsplit/README.md) — Documented together with bytes.rsplit.
+  - [`bytes.rstrip`](binary-sequence-types-bytes-bytearray-memoryview/bytes.rstrip/README.md) — Return a copy of the sequence with specified trailing bytes removed.
+  - [`bytearray.rstrip`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.rstrip/README.md) — Documented together with bytes.rstrip.
+  - [`bytes.split`](binary-sequence-types-bytes-bytearray-memoryview/bytes.split/README.md) — Split the binary sequence into subsequences of the same type, using *sep* as the delimiter string.
+  - [`bytearray.split`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.split/README.md) — Documented together with bytes.split.
+  - [`bytes.strip`](binary-sequence-types-bytes-bytearray-memoryview/bytes.strip/README.md) — Return a copy of the sequence with specified leading and trailing bytes removed.
+  - [`bytearray.strip`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.strip/README.md) — Documented together with bytes.strip.
+  - [`bytes.capitalize`](binary-sequence-types-bytes-bytearray-memoryview/bytes.capitalize/README.md) — Return a copy of the sequence with each byte interpreted as an ASCII character, and the first byte capitalized and the rest lowercased.
+  - [`bytearray.capitalize`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.capitalize/README.md) — Documented together with bytes.capitalize.
+  - [`bytes.expandtabs`](binary-sequence-types-bytes-bytearray-memoryview/bytes.expandtabs/README.md) — Return a copy of the sequence where all ASCII tab characters are replaced by one or more ASCII spaces, depending on the current column and the…
+  - [`bytearray.expandtabs`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.expandtabs/README.md) — Documented together with bytes.expandtabs.
+  - [`bytes.isalnum`](binary-sequence-types-bytes-bytearray-memoryview/bytes.isalnum/README.md) — Return True if all bytes in the sequence are alphabetical ASCII characters or ASCII decimal digits and the sequence is not empty, False otherwise.
+  - [`bytearray.isalnum`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.isalnum/README.md) — Documented together with bytes.isalnum.
+  - [`bytes.isalpha`](binary-sequence-types-bytes-bytearray-memoryview/bytes.isalpha/README.md) — Return True if all bytes in the sequence are alphabetic ASCII characters and the sequence is not empty, False otherwise.
+  - [`bytearray.isalpha`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.isalpha/README.md) — Documented together with bytes.isalpha.
+  - [`bytes.isascii`](binary-sequence-types-bytes-bytearray-memoryview/bytes.isascii/README.md) — Return True if the sequence is empty or all bytes in the sequence are ASCII, False otherwise.
+  - [`bytearray.isascii`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.isascii/README.md) — Documented together with bytes.isascii.
+  - [`bytes.isdigit`](binary-sequence-types-bytes-bytearray-memoryview/bytes.isdigit/README.md) — Return True if all bytes in the sequence are ASCII decimal digits and the sequence is not empty, False otherwise.
+  - [`bytearray.isdigit`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.isdigit/README.md) — Documented together with bytes.isdigit.
+  - [`bytes.islower`](binary-sequence-types-bytes-bytearray-memoryview/bytes.islower/README.md) — Return True if there is at least one lowercase ASCII character in the sequence and no uppercase ASCII characters, False otherwise.
+  - [`bytearray.islower`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.islower/README.md) — Documented together with bytes.islower.
+  - [`bytes.isspace`](binary-sequence-types-bytes-bytearray-memoryview/bytes.isspace/README.md) — Return True if all bytes in the sequence are ASCII whitespace and the sequence is not empty, False otherwise.
+  - [`bytearray.isspace`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.isspace/README.md) — Documented together with bytes.isspace.
+  - [`bytes.istitle`](binary-sequence-types-bytes-bytearray-memoryview/bytes.istitle/README.md) — Return True if the sequence is ASCII titlecase and the sequence is not empty, False otherwise.
+  - [`bytearray.istitle`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.istitle/README.md) — Documented together with bytes.istitle.
+  - [`bytes.isupper`](binary-sequence-types-bytes-bytearray-memoryview/bytes.isupper/README.md) — Return True if there is at least one uppercase alphabetic ASCII character in the sequence and no lowercase ASCII characters, False otherwise.
+  - [`bytearray.isupper`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.isupper/README.md) — Documented together with bytes.isupper.
+  - [`bytes.lower`](binary-sequence-types-bytes-bytearray-memoryview/bytes.lower/README.md) — Return a copy of the sequence with all the uppercase ASCII characters converted to their corresponding lowercase counterpart.
+  - [`bytearray.lower`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.lower/README.md) — Documented together with bytes.lower.
+  - [`bytes.splitlines`](binary-sequence-types-bytes-bytearray-memoryview/bytes.splitlines/README.md) — Return a list of the lines in the binary sequence, breaking at ASCII line boundaries.
+  - [`bytearray.splitlines`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.splitlines/README.md) — Documented together with bytes.splitlines.
+  - [`bytes.swapcase`](binary-sequence-types-bytes-bytearray-memoryview/bytes.swapcase/README.md) — Return a copy of the sequence with all the lowercase ASCII characters converted to their corresponding uppercase counterpart and vice-versa.
+  - [`bytearray.swapcase`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.swapcase/README.md) — Documented together with bytes.swapcase.
+  - [`bytes.title`](binary-sequence-types-bytes-bytearray-memoryview/bytes.title/README.md) — Return a titlecased version of the binary sequence where words start with an uppercase ASCII character and the remaining characters are lowercase.
+  - [`bytearray.title`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.title/README.md) — Documented together with bytes.title.
+  - [`bytes.upper`](binary-sequence-types-bytes-bytearray-memoryview/bytes.upper/README.md) — Return a copy of the sequence with all the lowercase ASCII characters converted to their corresponding uppercase counterpart.
+  - [`bytearray.upper`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.upper/README.md) — Documented together with bytes.upper.
+  - [`bytes.zfill`](binary-sequence-types-bytes-bytearray-memoryview/bytes.zfill/README.md) — Return a copy of the sequence left filled with ASCII b'0' digits to make a sequence of length *width*.
+  - [`bytearray.zfill`](binary-sequence-types-bytes-bytearray-memoryview/bytearray.zfill/README.md) — Documented together with bytes.zfill.
+  - [`memoryview`](binary-sequence-types-bytes-bytearray-memoryview/memoryview/README.md) — Create a memoryview that references *object*.
+- [Set Types — set, frozenset](set-types-set-frozenset/README.md) — A set object is an unordered collection of distinct hashable objects.
+  - [`set`](set-types-set-frozenset/set/README.md) — Return a new set or frozenset object whose elements are taken from *iterable*.
+  - [`frozenset`](set-types-set-frozenset/frozenset/README.md) — Documented together with set.
+  - [`frozenset.isdisjoint`](set-types-set-frozenset/frozenset.isdisjoint/README.md) — Return True if the set has no elements in common with *other*.
+  - [`set.isdisjoint`](set-types-set-frozenset/set.isdisjoint/README.md) — Documented together with frozenset.isdisjoint.
+  - [`frozenset.issubset`](set-types-set-frozenset/frozenset.issubset/README.md)
+  - [`set.issubset`](set-types-set-frozenset/set.issubset/README.md) — Documented together with frozenset.issubset.
+  - [`frozenset.issuperset`](set-types-set-frozenset/frozenset.issuperset/README.md)
+  - [`set.issuperset`](set-types-set-frozenset/set.issuperset/README.md) — Documented together with frozenset.issuperset.
+  - [`frozenset.union`](set-types-set-frozenset/frozenset.union/README.md)
+  - [`set.union`](set-types-set-frozenset/set.union/README.md) — Documented together with frozenset.union.
+  - [`frozenset.intersection`](set-types-set-frozenset/frozenset.intersection/README.md)
+  - [`set.intersection`](set-types-set-frozenset/set.intersection/README.md) — Documented together with frozenset.intersection.
+  - [`frozenset.difference`](set-types-set-frozenset/frozenset.difference/README.md)
+  - [`set.difference`](set-types-set-frozenset/set.difference/README.md) — Documented together with frozenset.difference.
+  - [`frozenset.symmetric_difference`](set-types-set-frozenset/frozenset.symmetric_difference/README.md)
+  - [`set.symmetric_difference`](set-types-set-frozenset/set.symmetric_difference/README.md) — Documented together with frozenset.symmetric_difference.
+  - [`frozenset.copy`](set-types-set-frozenset/frozenset.copy/README.md) — Return a shallow copy of the set.
+  - [`set.copy`](set-types-set-frozenset/set.copy/README.md) — Documented together with frozenset.copy.
+  - [`set.update`](set-types-set-frozenset/set.update/README.md)
+  - [`set.intersection_update`](set-types-set-frozenset/set.intersection_update/README.md)
+  - [`set.difference_update`](set-types-set-frozenset/set.difference_update/README.md)
+  - [`set.symmetric_difference_update`](set-types-set-frozenset/set.symmetric_difference_update/README.md)
+  - [`set.add`](set-types-set-frozenset/set.add/README.md) — Add element *elem* to the set.
+  - [`set.remove`](set-types-set-frozenset/set.remove/README.md) — Remove element *elem* from the set.
+  - [`set.discard`](set-types-set-frozenset/set.discard/README.md) — Remove element *elem* from the set if it is present.
+  - [`set.pop`](set-types-set-frozenset/set.pop/README.md) — Remove and return an arbitrary element from the set.
+  - [`set.clear`](set-types-set-frozenset/set.clear/README.md) — Remove all elements from the set.
+- [Mapping types — dict, frozendict](mapping-types-dict-frozendict/README.md) — A mapping object maps hashable values to arbitrary objects.
+  - [`dict`](mapping-types-dict-frozendict/dict/README.md) — Return a new dictionary initialized from an optional positional argument and a possibly empty set of keyword arguments.
+  - [`frozendict`](mapping-types-dict-frozendict/frozendict/README.md) — Return a new frozen dictionary initialized from an optional positional argument and a possibly empty set of keyword arguments.
+- [Context Manager Types](context-manager-types/README.md) — Python's with statement supports the concept of a runtime context defined by a context manager.
+  - [`contextmanager.__enter__`](context-manager-types/contextmanager.__enter__/README.md) — Enter the runtime context and return either this object or another object related to the runtime context.
+  - [`contextmanager.__exit__`](context-manager-types/contextmanager.__exit__/README.md) — Exit the runtime context and return a Boolean flag indicating if any exception that occurred should be suppressed.
+- [Type Annotation Types — Generic Alias , Union ](type-annotation-types-generic-alias-union/README.md) — The core built-in types for type annotations are Generic Alias and Union.
+  - [`genericalias.__origin__`](type-annotation-types-generic-alias-union/genericalias.__origin__/README.md) — This attribute points at the non-parameterized generic class:
+  - [`genericalias.__args__`](type-annotation-types-generic-alias-union/genericalias.__args__/README.md) — This attribute is a tuple (possibly of length 1) of generic types passed to the original __class_getitem__() of the generic class:
+  - [`genericalias.__parameters__`](type-annotation-types-generic-alias-union/genericalias.__parameters__/README.md) — This attribute is a lazily computed tuple (possibly empty) of unique type variables found in __args__:
+  - [`genericalias.__unpacked__`](type-annotation-types-generic-alias-union/genericalias.__unpacked__/README.md) — A boolean that is true if the alias has been unpacked using the * operator (see TypeVarTuple).
+- [Other Built-in Types](other-built-in-types/README.md) — The interpreter supports several other kinds of objects.
+- [Special Attributes](special-attributes/README.md) — The implementation adds a few special read-only attributes to several object types, where they are relevant.
+  - [`definition.__name__`](special-attributes/definition.__name__/README.md) — The name of the class, function, method, descriptor, or generator instance.
+  - [`definition.__qualname__`](special-attributes/definition.__qualname__/README.md) — The qualified name of the class, function, method, descriptor, or generator instance.
+  - [`definition.__module__`](special-attributes/definition.__module__/README.md) — The name of the module in which a class or function was defined.
+  - [`definition.__doc__`](special-attributes/definition.__doc__/README.md) — The documentation string of a class or function, or None if undefined.
+  - [`definition.__type_params__`](special-attributes/definition.__type_params__/README.md) — The type parameters of generic classes, functions, and type aliases.
+- [Integer string conversion length limitation](integer-string-conversion-length-limitation/README.md) — CPython has a global limit for converting between int and str to mitigate denial of service attacks.

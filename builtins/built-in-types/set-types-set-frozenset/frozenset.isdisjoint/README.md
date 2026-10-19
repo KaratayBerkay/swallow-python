@@ -1,0 +1,9 @@
+## `frozenset.isdisjoint`
+
+```
+frozenset.isdisjoint(other, /)
+set.isdisjoint(other, /)
+```
+
+Return `True` if the set has no elements in common with *other*.  Sets are
+disjoint if and only if their intersection is the empty set.

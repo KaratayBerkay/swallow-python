@@ -1,0 +1,5 @@
+print(repr('spam, spam, spam'.count('spam')))
+print(repr('spam, spam, spam'.count('spam', 5)))
+print(repr('spam, spam, spam'.count('spam', 5, 10)))
+print(repr('spam, spam, spam'.count('eggs')))
+print(repr('spam, spam, spam'.count('')))

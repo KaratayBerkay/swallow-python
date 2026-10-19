@@ -1,0 +1,8 @@
+print(repr(complex('+1.23')))
+print(repr(complex('-4.5j')))
+print(repr(complex('-1.23+4.5j')))
+print(repr(complex('\t( -1.23+4.5J )\n')))
+print(repr(complex('-Infinity+NaNj')))
+print(repr(complex(1.23)))
+print(repr(complex(imag=-4.5)))
+print(repr(complex(-1.23, 4.5)))
